@@ -1,0 +1,2310 @@
+KSSS,w1,w2,w3,weights_mape_pct,ml_best_model,ml_best_mape_pct,current_mape_pct,chosen_source,chosen_model,chosen_w1,chosen_w2,chosen_w3,chosen_mape_pct
+159201,0.0,0.06,0.94,12.07,RandomForest,22.802,6.618,current,current,,,,6.618
+57402,0.0,1.0,0.0,240.46,HoltWinters,13.883,6.684,current,current,,,,6.684
+6430,0.58,0.12,0.3,7.64,RandomForest,12.403,6.786,current,current,,,,6.786
+135057,0.0,0.3,0.7,17.2,HoltWinters,13.708,7.524,current,current,,,,7.524
+133458,0.41,0.08,0.51,8.28,SARIMAX,8.418,7.715,current,current,,,,7.715
+133457,0.23,0.08,0.69,9.07,RandomForest,8.171,7.906,current,current,,,,7.906
+2549,0.76,0.11,0.13,10.08,RandomForest,28.424,8.017,current,current,,,,8.017
+2890,0.55,0.01,0.44,9.74,RandomForest,13.312,8.022,current,current,,,,8.022
+50601,0.7,0.0,0.3,8.39,RandomForest,17.951,8.229,current,current,,,,8.229
+133589,0.71,0.18,0.11,12.9,RandomForest,16.208,8.315,current,current,,,,8.315
+125653,0.0,0.46,0.54,24.77,HoltWinters,45.36,8.38,current,current,,,,8.38
+9207,0.49,0.24,0.27,9.9,RandomForest,11.201,8.44,current,current,,,,8.44
+133679,0.82,0.03,0.15,9.03,RandomForest,14.624,8.515,current,current,,,,8.515
+8714,0.0,0.23,0.77,16.25,RandomForest,8.698,8.524,current,current,,,,8.524
+64203,0.38,0.24,0.38,11.47,SARIMAX,9.847,8.81,current,current,,,,8.81
+66208,0.43,0.32,0.25,13.95,RandomForest,15.656,8.876,current,current,,,,8.876
+135033,0.72,0.13,0.15,10.28,RandomForest,10.983,9.009,current,current,,,,9.009
+3755,0.0,0.45,0.55,11.32,RandomForest,10.374,9.02,current,current,,,,9.02
+63803,0.91,0.0,0.09,13.1,RandomForest,15.344,9.082,current,current,,,,9.082
+5974,0.45,0.13,0.42,10.0,RandomForest,11.627,9.153,current,current,,,,9.153
+155036,0.84,0.1,0.06,11.25,RandomForest,9.219,9.174,current,current,,,,9.174
+126204,0.86,0.09,0.05,10.29,RandomForest,9.755,9.191,current,current,,,,9.191
+9315,0.0,0.16,0.84,10.04,RandomForest,10.746,9.253,current,current,,,,9.253
+133438,0.54,0.09,0.37,12.1,RandomForest,14.371,9.328,current,current,,,,9.328
+1886,0.62,0.09,0.29,12.68,RandomForest,16.144,9.338,current,current,,,,9.338
+6479,0.39,0.11,0.5,11.85,HoltWinters,9.781,9.466,current,current,,,,9.466
+133313,0.43,0.16,0.41,12.66,HoltWinters,9.599,9.515,current,current,,,,9.515
+133626,0.32,0.14,0.54,12.15,HoltWinters,12.28,9.613,current,current,,,,9.613
+133620,0.6,0.25,0.15,11.84,HoltWinters,10.684,9.614,current,current,,,,9.614
+5037,0.0,0.09,0.91,14.81,HoltWinters,11.702,9.615,current,current,,,,9.615
+136911,0.22,0.02,0.76,9.73,RandomForest,12.971,9.645,current,current,,,,9.645
+133232,0.56,0.02,0.42,11.32,RandomForest,12.344,9.681,current,current,,,,9.681
+135058,0.35,0.2,0.45,13.95,RandomForest,11.048,9.705,current,current,,,,9.705
+155013,0.75,0.07,0.18,14.7,RandomForest,10.426,9.772,current,current,,,,9.772
+134145,0.6,0.28,0.12,12.03,RandomForest,15.103,9.953,current,current,,,,9.953
+133529,0.55,0.05,0.4,11.46,RandomForest,15.305,9.956,current,current,,,,9.956
+1963,0.8,0.0,0.2,11.52,RandomForest,14.724,9.958,current,current,,,,9.958
+3972,0.01,0.19,0.8,12.85,HoltWinters,11.565,9.964,current,current,,,,9.964
+7283,0.43,0.16,0.41,13.54,RandomForest,17.567,9.966,current,current,,,,9.966
+35401,0.35,0.22,0.43,15.0,RandomForest,15.749,9.995,current,current,,,,9.995
+133603,0.36,0.09,0.55,11.88,RandomForest,10.694,9.998,current,current,,,,9.998
+1255,0.58,0.19,0.23,10.87,RandomForest,16.915,10.053,current,current,,,,10.053
+136938,1.0,0.0,0.0,15.64,RandomForest,66.711,10.067,current,current,,,,10.067
+133379,0.72,0.0,0.28,11.7,RandomForest,12.922,10.07,current,current,,,,10.07
+135059,0.32,0.14,0.54,11.28,RandomForest,10.335,10.115,current,current,,,,10.115
+155110,0.0,0.0,1.0,51.27,SARIMAX,10.969,10.168,current,current,,,,10.168
+1270,0.0,0.23,0.77,12.35,SARIMAX,13.478,10.174,current,current,,,,10.174
+9378,0.05,0.19,0.76,10.93,RandomForest,14.787,10.202,current,current,,,,10.202
+1834,0.14,0.25,0.61,14.21,RandomForest,16.693,10.213,current,current,,,,10.213
+133802,0.0,0.5,0.5,10.77,RandomForest,12.304,10.242,current,current,,,,10.242
+139801,0.0,0.35,0.65,11.88,SARIMAX,12.74,10.328,current,current,,,,10.328
+4216,0.81,0.07,0.12,17.61,HoltWinters,71.155,10.404,current,current,,,,10.404
+136939,0.03,0.34,0.63,15.49,RandomForest,11.233,10.446,current,current,,,,10.446
+133299,0.0,0.09,0.91,11.73,RandomForest,12.185,10.449,current,current,,,,10.449
+78602,0.57,0.03,0.4,11.25,SARIMAX,17.919,10.464,current,current,,,,10.464
+155033,0.76,0.0,0.24,12.61,RandomForest,18.858,10.465,current,current,,,,10.465
+133715,0.98,0.0,0.02,11.43,HoltWinters,29.039,10.576,current,current,,,,10.576
+155037,0.58,0.01,0.41,14.33,RandomForest,15.937,10.666,current,current,,,,10.666
+133591,0.92,0.08,-0.0,13.7,RandomForest,11.727,10.677,current,current,,,,10.677
+133696,1.0,0.0,0.0,12.38,RandomForest,12.004,10.696,current,current,,,,10.696
+63802,0.89,0.0,0.11,11.6,RandomForest,14.464,10.714,current,current,,,,10.714
+155095,0.31,0.02,0.67,12.1,RandomForest,15.224,10.858,current,current,,,,10.858
+134153,0.62,0.17,0.21,14.13,RandomForest,12.25,10.889,current,current,,,,10.889
+1089,0.1,0.28,0.62,11.7,RandomForest,12.957,10.903,current,current,,,,10.903
+160027,0.07,0.12,0.81,11.21,HoltWinters,11.964,10.926,current,current,,,,10.926
+155027,0.63,0.03,0.34,16.37,RandomForest,20.289,10.958,current,current,,,,10.958
+35403,0.79,0.01,0.2,15.68,RandomForest,24.422,10.966,current,current,,,,10.966
+134189,0.05,0.47,0.48,14.88,HoltWinters,27.061,10.981,current,current,,,,10.981
+127001,0.62,0.0,0.38,12.46,RandomForest,17.959,11.052,current,current,,,,11.052
+134135,0.76,0.19,0.05,12.93,HoltWinters,19.754,11.065,current,current,,,,11.065
+3205,0.71,0.08,0.21,14.54,RandomForest,14.331,11.066,current,current,,,,11.066
+155030,0.68,0.0,0.32,16.36,RandomForest,12.064,11.098,current,current,,,,11.098
+133340,0.0,0.92,0.08,21.87,HoltWinters,12.01,11.141,current,current,,,,11.141
+155088,0.17,0.03,0.8,11.96,SARIMAX,13.286,11.177,current,current,,,,11.177
+155094,0.84,0.0,0.16,13.45,HoltWinters,73.218,11.224,current,current,,,,11.224
+8214,0.23,0.77,0.0,28.61,RandomForest,31.781,11.249,current,current,,,,11.249
+1779,0.92,0.0,0.08,18.42,RandomForest,16.878,11.272,current,current,,,,11.272
+9521,0.53,0.43,0.04,16.75,HoltWinters,19.925,11.355,current,current,,,,11.355
+134157,0.36,0.51,0.13,12.74,RandomForest,12.289,11.388,current,current,,,,11.388
+163223,0.4,0.12,0.48,13.75,RandomForest,13.527,11.45,current,current,,,,11.45
+133282,0.03,0.14,0.83,13.47,HoltWinters,11.725,11.456,current,current,,,,11.456
+7192,0.91,0.07,0.02,16.09,RandomForest,16.44,11.477,current,current,,,,11.477
+133728,0.92,0.08,-0.0,11.61,RandomForest,19.687,11.49,current,current,,,,11.49
+133642,0.9,0.0,0.1,13.96,RandomForest,35.947,11.497,current,current,,,,11.497
+133610,0.34,0.04,0.62,12.44,RandomForest,27.945,11.544,current,current,,,,11.544
+133700,0.82,0.07,0.11,15.05,RandomForest,41.657,11.566,current,current,,,,11.566
+133712,0.62,0.15,0.23,12.15,HoltWinters,13.72,11.57,current,current,,,,11.57
+133602,1.0,0.0,0.0,18.16,RandomForest,91.642,11.628,current,current,,,,11.628
+1254,0.36,0.3,0.34,15.13,RandomForest,18.387,11.634,current,current,,,,11.634
+133798,0.68,0.01,0.31,11.74,RandomForest,14.625,11.674,current,current,,,,11.674
+134164,0.49,0.19,0.32,18.23,RandomForest,20.34,11.732,current,current,,,,11.732
+136926,0.44,0.15,0.41,13.07,RandomForest,12.203,11.902,current,current,,,,11.902
+133574,0.08,0.13,0.79,13.98,RandomForest,15.543,11.906,current,current,,,,11.906
+6465,0.11,0.2,0.69,12.29,RandomForest,15.189,11.938,current,current,,,,11.938
+133756,0.0,0.2,0.8,30.67,SARIMAX,37.811,11.954,current,current,,,,11.954
+133613,0.85,0.1,0.05,14.73,RandomForest,20.072,11.981,current,current,,,,11.981
+133242,0.71,0.02,0.27,17.79,RandomForest,24.684,12.014,current,current,,,,12.014
+3000,0.47,0.28,0.25,15.41,HoltWinters,12.575,12.031,current,current,,,,12.031
+135016,0.44,0.02,0.54,17.76,RandomForest,19.11,12.053,current,current,,,,12.053
+133680,0.88,0.12,0.0,13.09,HoltWinters,45.674,12.129,current,current,,,,12.129
+1827,0.0,0.28,0.72,17.11,HoltWinters,14.59,12.283,current,current,,,,12.283
+3401,0.0,0.61,0.39,12.8,HoltWinters,13.186,12.377,current,current,,,,12.377
+133470,0.64,0.0,0.36,12.78,RandomForest,17.478,12.407,current,current,,,,12.407
+135025,0.51,0.49,0.0,17.82,SARIMAX,13.403,12.423,current,current,,,,12.423
+133704,0.85,0.15,0.0,13.31,HoltWinters,34.73,12.46,current,current,,,,12.46
+133660,0.14,0.44,0.42,16.21,SARIMAX,13.032,12.542,current,current,,,,12.542
+3740,0.49,0.08,0.43,16.61,RandomForest,32.648,12.549,current,current,,,,12.549
+134146,0.58,0.09,0.33,15.18,RandomForest,23.535,12.582,current,current,,,,12.582
+2930,0.78,0.03,0.19,21.72,RandomForest,47.945,12.772,current,current,,,,12.772
+133454,0.03,0.09,0.88,14.14,SARIMAX,13.503,12.817,current,current,,,,12.817
+136853,0.86,0.11,0.03,15.99,RandomForest,51.455,12.869,current,current,,,,12.869
+133754,0.99,0.0,0.01,27.56,RandomForest,79.007,12.917,current,current,,,,12.917
+3961,0.77,0.12,0.11,16.43,RandomForest,23.398,12.925,current,current,,,,12.925
+134076,0.0,0.44,0.56,22.05,RandomForest,23.164,12.937,current,current,,,,12.937
+3002,0.83,0.12,0.05,26.27,RandomForest,23.458,13.003,current,current,,,,13.003
+1861,0.04,0.1,0.86,14.54,SARIMAX,21.167,13.012,current,current,,,,13.012
+136811,0.91,0.0,0.09,13.92,RandomForest,61.856,13.019,current,current,,,,13.019
+135040,0.24,0.03,0.73,14.45,SARIMAX,16.37,13.206,current,current,,,,13.206
+2707,0.61,0.28,0.11,15.16,RandomForest,1749.626,13.281,current,current,,,,13.281
+136813,1.0,0.0,0.0,23.81,RandomForest,31.016,13.299,current,current,,,,13.299
+3357,0.69,0.0,0.31,15.04,RandomForest,20.103,13.377,current,current,,,,13.377
+2750,0.2,0.05,0.75,15.32,RandomForest,17.466,13.417,current,current,,,,13.417
+5226,0.86,0.0,0.14,13.82,RandomForest,30.156,13.55,current,current,,,,13.55
+163625,0.46,0.4,0.14,19.16,HoltWinters,23.394,13.573,current,current,,,,13.573
+7286,0.34,0.45,0.21,15.23,SARIMAX,13.784,13.615,current,current,,,,13.615
+133640,0.91,0.09,-0.0,20.43,RandomForest,50.351,13.619,current,current,,,,13.619
+35001,0.56,0.17,0.27,13.73,RandomForest,20.854,13.62,current,current,,,,13.62
+9724,0.8,0.08,0.12,17.81,RandomForest,22.646,13.645,current,current,,,,13.645
+8901,0.75,0.17,0.08,46.05,SARIMAX,14.355,13.686,current,current,,,,13.686
+125620,0.55,0.27,0.18,14.69,RandomForest,30.237,13.697,current,current,,,,13.697
+155079,0.87,0.0,0.13,16.95,RandomForest,68.891,13.702,current,current,,,,13.702
+59002,0.39,0.0,0.61,19.13,RandomForest,17.284,13.702,current,current,,,,13.702
+2604,0.95,0.05,0.0,23.05,RandomForest,108.155,13.724,current,current,,,,13.724
+1257,1.0,0.0,0.0,19.54,RandomForest,71.365,13.829,current,current,,,,13.829
+125603,0.94,0.06,0.0,13.98,RandomForest,16.193,13.841,current,current,,,,13.841
+155039,0.27,0.22,0.51,14.56,SARIMAX,14.902,13.854,current,current,,,,13.854
+3207,0.62,0.0,0.38,22.94,RandomForest,48.959,13.865,current,current,,,,13.865
+133781,0.68,0.15,0.17,18.46,RandomForest,15.201,14.0,current,current,,,,14.0
+39207,0.44,0.09,0.47,20.06,HoltWinters,14.796,14.046,current,current,,,,14.046
+155078,0.82,0.05,0.13,16.9,RandomForest,20.033,14.074,current,current,,,,14.074
+133768,0.0,0.09,0.91,15.85,RandomForest,14.464,14.106,current,current,,,,14.106
+7067,0.55,0.04,0.41,16.74,RandomForest,41.832,14.131,current,current,,,,14.131
+2987,0.84,0.0,0.16,18.0,RandomForest,42.423,14.132,current,current,,,,14.132
+90001,0.35,0.05,0.6,17.11,RandomForest,18.6,14.153,current,current,,,,14.153
+8747,0.44,0.15,0.41,18.0,RandomForest,19.359,14.172,current,current,,,,14.172
+1917,0.26,0.05,0.69,17.17,RandomForest,20.825,14.204,current,current,,,,14.204
+3645,0.27,0.29,0.44,22.64,RandomForest,20.745,14.264,current,current,,,,14.264
+133604,0.89,0.07,0.04,21.13,RandomForest,16.018,14.289,current,current,,,,14.289
+5076,0.0,0.07,0.93,14.32,SARIMAX,14.849,14.292,current,current,,,,14.292
+125609,0.94,0.06,0.0,16.25,RandomForest,20.534,14.338,current,current,,,,14.338
+155090,0.0,0.46,0.54,17.86,HoltWinters,18.606,14.344,current,current,,,,14.344
+125638,1.0,0.0,0.0,17.38,RandomForest,63.086,14.347,current,current,,,,14.347
+9465,0.24,0.0,0.76,73.65,RandomForest,25.32,14.374,current,current,,,,14.374
+159202,0.3,0.09,0.61,22.98,RandomForest,31.85,14.486,current,current,,,,14.486
+9430,0.75,0.0,0.25,14.58,RandomForest,26.243,14.542,current,current,,,,14.542
+4172,0.21,0.42,0.37,18.28,RandomForest,15.764,14.645,current,current,,,,14.645
+134026,0.26,0.69,0.05,18.84,SARIMAX,17.988,14.654,current,current,,,,14.654
+136937,0.97,0.0,0.03,15.39,RandomForest,15.079,14.734,current,current,,,,14.734
+118601,0.92,0.0,0.08,20.86,HoltWinters,57.993,14.776,current,current,,,,14.776
+1978,0.53,0.0,0.47,19.04,RandomForest,36.725,14.778,current,current,,,,14.778
+2654,0.94,0.05,0.01,17.33,RandomForest,20.279,14.877,current,current,,,,14.877
+136815,0.35,0.37,0.28,20.04,HoltWinters,16.04,14.939,current,current,,,,14.939
+150210,0.59,0.3,0.11,24.69,RandomForest,33.271,14.945,current,current,,,,14.945
+136814,0.43,0.2,0.37,18.02,HoltWinters,40.062,14.957,current,current,,,,14.957
+155018,0.63,0.03,0.34,21.48,RandomForest,18.311,14.988,current,current,,,,14.988
+8729,0.69,0.0,0.31,16.84,RandomForest,23.008,15.0,current,current,,,,15.0
+134171,0.0,0.71,0.29,15.99,SARIMAX,16.377,15.102,current,current,,,,15.102
+161201,0.42,0.16,0.42,18.55,RandomForest,21.783,15.175,current,current,,,,15.175
+155130,0.66,0.07,0.27,20.8,HoltWinters,19.203,15.177,current,current,,,,15.177
+94005,0.88,0.06,0.06,17.03,RandomForest,17.407,15.298,current,current,,,,15.298
+3748,0.72,0.0,0.28,16.95,RandomForest,25.168,15.332,current,current,,,,15.332
+133749,0.78,0.07,0.15,17.01,RandomForest,45.789,15.37,current,current,,,,15.37
+133755,0.91,0.09,-0.0,18.27,HoltWinters,68.664,15.433,current,current,,,,15.433
+125639,0.78,0.0,0.22,16.4,RandomForest,36.356,15.437,current,current,,,,15.437
+155004,0.72,0.19,0.09,18.02,HoltWinters,19.675,15.679,current,current,,,,15.679
+125650,0.25,0.67,0.08,16.14,SARIMAX,17.823,15.693,current,current,,,,15.693
+6482,0.11,0.27,0.62,17.94,SARIMAX,15.928,15.707,current,current,,,,15.707
+155093,0.55,0.14,0.31,17.19,RandomForest,33.592,15.777,current,current,,,,15.777
+135028,0.53,0.47,0.0,16.08,HoltWinters,18.963,15.811,current,current,,,,15.811
+1941,0.95,0.0,0.05,17.8,RandomForest,25.213,15.857,current,current,,,,15.857
+136602,0.89,0.02,0.09,17.39,RandomForest,48.52,15.923,current,current,,,,15.923
+1831,0.54,0.0,0.46,25.97,HoltWinters,18.336,15.931,current,current,,,,15.931
+3844,0.35,0.14,0.51,16.2,RandomForest,25.926,16.053,current,current,,,,16.053
+161203,0.48,0.22,0.3,19.95,RandomForest,19.535,16.11,current,current,,,,16.11
+2664,0.13,0.59,0.28,26.41,HoltWinters,21.974,16.141,current,current,,,,16.141
+134197,0.28,0.13,0.59,18.58,RandomForest,19.043,16.164,current,current,,,,16.164
+155080,0.86,0.04,0.1,21.86,HoltWinters,51.613,16.228,current,current,,,,16.228
+133436,0.0,1.0,0.0,42.08,RandomForest,16.998,16.449,current,current,,,,16.449
+3150,0.0,0.59,0.41,19.07,HoltWinters,18.454,16.569,current,current,,,,16.569
+31401,0.68,0.14,0.18,18.47,RandomForest,25.181,16.665,current,current,,,,16.665
+125623,0.99,0.0,0.01,17.02,RandomForest,29.588,16.676,current,current,,,,16.676
+125632,1.0,0.0,0.0,17.39,RandomForest,20.815,16.813,current,current,,,,16.813
+136916,0.0,0.43,0.57,19.22,RandomForest,20.582,16.835,current,current,,,,16.835
+5013,0.24,0.1,0.66,18.19,HoltWinters,27.811,16.868,current,current,,,,16.868
+8734,0.72,0.15,0.13,26.79,RandomForest,27.072,16.868,current,current,,,,16.868
+135036,0.08,0.65,0.27,19.64,SARIMAX,17.453,16.876,current,current,,,,16.876
+8754,0.0,1.0,0.0,37.52,RandomForest,18.44,17.002,current,current,,,,17.002
+3395,1.0,0.0,0.0,106.56,RandomForest,21.17,17.01,current,current,,,,17.01
+3374,0.8,0.01,0.19,19.15,HoltWinters,81.993,17.032,current,current,,,,17.032
+136917,0.0,0.7,0.3,21.73,HoltWinters,18.309,17.082,current,current,,,,17.082
+125641,0.91,0.0,0.09,18.55,RandomForest,53.01,17.169,current,current,,,,17.169
+7064,0.61,0.07,0.32,23.84,RandomForest,49.295,17.289,current,current,,,,17.289
+133237,0.18,0.4,0.42,20.11,HoltWinters,17.962,17.339,current,current,,,,17.339
+3052,0.58,0.0,0.42,20.45,RandomForest,23.574,17.529,current,current,,,,17.529
+136802,0.86,0.03,0.11,19.59,RandomForest,26.131,17.543,current,current,,,,17.543
+136872,0.34,0.66,-0.0,18.86,RandomForest,19.074,18.055,current,current,,,,18.055
+133676,0.71,0.29,0.0,18.84,RandomForest,32.639,18.142,current,current,,,,18.142
+2717,1.0,0.0,0.0,885.29,RandomForest,20.463,18.44,current,current,,,,18.44
+125669,0.94,0.06,0.0,20.89,RandomForest,49.383,18.478,current,current,,,,18.478
+133303,0.24,0.75,0.01,22.02,RandomForest,22.835,18.558,current,current,,,,18.558
+3832,0.65,0.04,0.31,20.46,RandomForest,27.115,18.63,current,current,,,,18.63
+127802,0.87,0.13,0.0,31.71,RandomForest,43.299,18.639,current,current,,,,18.639
+125634,0.91,0.09,-0.0,20.98,RandomForest,53.789,18.941,current,current,,,,18.941
+3962,0.26,0.43,0.31,22.27,HoltWinters,20.478,18.963,current,current,,,,18.963
+64801,0.35,0.48,0.17,19.8,RandomForest,19.549,18.994,current,current,,,,18.994
+125629,0.85,0.0,0.15,24.17,RandomForest,40.512,19.003,current,current,,,,19.003
+136921,1.0,0.0,0.0,24.72,RandomForest,75.867,19.066,current,current,,,,19.066
+134054,0.11,0.36,0.53,21.72,HoltWinters,23.187,19.318,current,current,,,,19.318
+2882,0.53,0.25,0.22,19.88,RandomForest,22.379,19.766,current,current,,,,19.766
+170004,0.0,0.38,0.62,45.25,RandomForest,39.603,19.798,current,current,,,,19.798
+5095,0.0,0.56,0.44,33.66,SARIMAX,46.675,19.863,current,current,,,,19.863
+128801,0.62,0.12,0.26,28.43,RandomForest,29.86,20.108,current,current,,,,20.108
+6394,0.6,0.05,0.35,21.58,RandomForest,26.573,20.289,current,current,,,,20.289
+133488,0.0,0.7,0.3,25.44,HoltWinters,23.391,21.042,current,current,,,,21.042
+158401,0.8,0.02,0.18,24.03,RandomForest,77.7,21.058,current,current,,,,21.058
+1858,0.0,0.23,0.77,24.87,RandomForest,42.94,21.143,current,current,,,,21.143
+2136,0.58,0.13,0.29,21.92,HoltWinters,32.279,21.79,current,current,,,,21.79
+5071,0.0,0.18,0.82,21.98,HoltWinters,35.724,21.811,current,current,,,,21.811
+64406,0.18,0.05,0.77,27.34,HoltWinters,22.896,22.388,current,current,,,,22.388
+2611,0.79,0.17,0.04,25.21,RandomForest,41.8,22.49,current,current,,,,22.49
+9304,0.16,0.57,0.27,23.12,RandomForest,29.242,22.577,current,current,,,,22.577
+9385,1.0,0.0,0.0,46.6,RandomForest,53.204,23.623,current,current,,,,23.623
+1751,0.26,0.21,0.53,31.68,SARIMAX,110.318,24.102,current,current,,,,24.102
+3987,0.0,0.57,0.43,35.32,RandomForest,44.789,24.742,current,current,,,,24.742
+4174,0.43,0.0,0.57,130.03,RandomForest,44.429,25.089,current,current,,,,25.089
+3369,0.0,0.23,0.77,159.72,SARIMAX,34.909,25.178,current,current,,,,25.178
+1075,0.0,0.7,0.3,266.35,RandomForest,1124.297,25.214,current,current,,,,25.214
+39202,1.0,0.0,0.0,88.52,SARIMAX,86.452,25.476,current,current,,,,25.476
+133750,0.82,0.13,0.05,30.02,HoltWinters,71.798,26.053,current,current,,,,26.053
+171802,0.0,0.02,0.98,66.82,RandomForest,95.373,27.077,current,current,,,,27.077
+8958,0.14,0.8,0.06,54.29,HoltWinters,31.8,30.571,current,current,,,,30.571
+163805,0.41,0.59,0.0,43.38,RandomForest,74.927,31.794,current,current,,,,31.794
+155120,0.0,0.54,0.46,133.57,RandomForest,76.92,36.168,current,current,,,,36.168
+133799,0.0,0.23,0.77,189.49,HoltWinters,88.182,36.611,current,current,,,,36.611
+168201,0.54,0.3,0.16,59.48,RandomForest,57.447,41.187,current,current,,,,41.187
+155109,0.0,0.55,0.45,84.19,RandomForest,71.643,41.393,current,current,,,,41.393
+2155,1.0,0.0,0.0,177.91,RandomForest,123.94,47.761,current,current,,,,47.761
+169013,0.0,0.44,0.56,315.7,RandomForest,66.092,56.189,current,current,,,,56.189
+165610,0.33,0.0,0.67,92.61,RandomForest,63.903,58.087,current,current,,,,58.087
+169014,0.0,0.42,0.58,115.51,RandomForest,60.794,59.08,current,current,,,,59.08
+133510,1.0,0.0,0.0,303.26,RandomForest,158.319,79.875,current,current,,,,79.875
+5099,0.22,0.63,0.15,8.74,RandomForest,3.605,15.299,ml,RandomForest,,,,3.605
+133674,0.46,0.19,0.35,6.73,RandomForest,3.78,6.808,ml,RandomForest,,,,3.78
+162602,0.05,0.29,0.66,7.94,SARIMAX,3.915,8.658,ml,SARIMAX,,,,3.915
+160008,0.0,0.5,0.5,10.61,RandomForest,3.968,15.941,ml,RandomForest,,,,3.968
+9337,0.0,0.53,0.47,17.39,HoltWinters,3.972,16.634,ml,HoltWinters,,,,3.972
+7131,0.16,0.21,0.63,8.19,HoltWinters,4.091,7.803,ml,HoltWinters,,,,4.091
+145001,0.0,0.05,0.95,8.2,HoltWinters,4.097,9.912,ml,HoltWinters,,,,4.097
+92405,0.19,0.54,0.27,14.85,HoltWinters,4.109,12.312,ml,HoltWinters,,,,4.109
+124002,1.0,0.0,0.0,263.03,HoltWinters,4.139,371.457,ml,HoltWinters,,,,4.139
+7126,0.04,0.17,0.79,12.17,HoltWinters,4.153,15.663,ml,HoltWinters,,,,4.153
+3853,0.01,0.29,0.7,10.9,SARIMAX,4.155,30.903,ml,SARIMAX,,,,4.155
+133719,0.94,0.03,0.03,10.29,RandomForest,4.237,12.013,ml,RandomForest,,,,4.237
+1060,0.08,0.0,0.92,6.57,RandomForest,4.288,7.287,ml,RandomForest,,,,4.288
+3144,0.0,0.26,0.74,11.37,HoltWinters,4.328,9.899,ml,HoltWinters,,,,4.328
+3651,0.16,0.11,0.73,9.12,SARIMAX,4.351,11.556,ml,SARIMAX,,,,4.351
+6416,0.0,0.42,0.58,14.99,SARIMAX,4.382,9.721,ml,SARIMAX,,,,4.382
+133656,0.17,0.15,0.68,7.76,HoltWinters,4.409,9.001,ml,HoltWinters,,,,4.409
+133296,0.23,0.07,0.7,8.78,HoltWinters,4.415,9.226,ml,HoltWinters,,,,4.415
+134170,0.71,0.2,0.09,11.41,HoltWinters,4.421,11.917,ml,HoltWinters,,,,4.421
+7073,0.0,0.85,0.15,88.56,RandomForest,4.435,26.592,ml,RandomForest,,,,4.435
+2993,0.0,0.52,0.48,13.42,SARIMAX,4.437,12.955,ml,SARIMAX,,,,4.437
+5972,0.56,0.29,0.15,10.62,RandomForest,4.457,8.831,ml,RandomForest,,,,4.457
+3729,0.3,0.02,0.68,6.81,RandomForest,4.466,7.899,ml,RandomForest,,,,4.466
+1907,0.0,0.35,0.65,45.94,RandomForest,4.491,24.367,ml,RandomForest,,,,4.491
+9333,0.07,0.08,0.85,8.47,HoltWinters,4.491,8.831,ml,HoltWinters,,,,4.491
+132203,0.1,0.19,0.71,10.01,HoltWinters,4.494,10.466,ml,HoltWinters,,,,4.494
+9719,0.0,0.09,0.91,357.35,HoltWinters,4.495,583.147,ml,HoltWinters,,,,4.495
+3143,0.08,0.62,0.3,10.45,RandomForest,4.507,11.891,ml,RandomForest,,,,4.507
+5000,0.11,0.55,0.34,20.43,HoltWinters,4.546,16.392,ml,HoltWinters,,,,4.546
+2613,0.29,0.62,0.09,16.52,RandomForest,4.577,12.461,ml,RandomForest,,,,4.577
+133507,0.13,0.1,0.77,10.15,SARIMAX,4.592,10.648,ml,SARIMAX,,,,4.592
+5015,0.11,0.04,0.85,7.91,HoltWinters,4.599,9.914,ml,HoltWinters,,,,4.599
+9317,0.57,0.11,0.32,8.71,RandomForest,4.61,10.066,ml,RandomForest,,,,4.61
+155048,0.04,0.08,0.88,8.76,RandomForest,4.637,10.065,ml,RandomForest,,,,4.637
+5035,0.0,0.44,0.56,14.49,HoltWinters,4.641,11.784,ml,HoltWinters,,,,4.641
+139407,0.22,0.07,0.71,8.96,SARIMAX,4.649,8.562,ml,SARIMAX,,,,4.649
+9346,0.22,0.2,0.58,10.79,HoltWinters,4.676,8.361,ml,HoltWinters,,,,4.676
+1890,0.0,0.29,0.71,11.46,HoltWinters,4.692,10.251,ml,HoltWinters,,,,4.692
+5045,0.06,0.0,0.94,8.29,RandomForest,4.693,13.372,ml,RandomForest,,,,4.693
+1279,0.57,0.0,0.43,7.56,RandomForest,4.703,9.436,ml,RandomForest,,,,4.703
+3749,0.15,0.08,0.77,6.63,HoltWinters,4.705,8.697,ml,HoltWinters,,,,4.705
+5098,0.02,0.16,0.82,10.42,SARIMAX,4.705,,ml,SARIMAX,,,,4.705
+84802,0.12,0.15,0.73,10.77,HoltWinters,4.705,7.17,ml,HoltWinters,,,,4.705
+163002,0.09,0.1,0.81,7.52,RandomForest,4.743,,ml,RandomForest,,,,4.743
+1106,0.03,0.0,0.97,7.56,RandomForest,4.744,9.027,ml,RandomForest,,,,4.744
+152001,0.17,0.03,0.8,7.48,RandomForest,4.751,10.281,ml,RandomForest,,,,4.751
+6429,0.43,0.3,0.27,10.93,HoltWinters,4.769,12.595,ml,HoltWinters,,,,4.769
+1756,0.02,0.09,0.89,6.58,HoltWinters,4.779,8.472,ml,HoltWinters,,,,4.779
+3136,0.0,0.59,0.41,14.59,SARIMAX,4.799,26.71,ml,SARIMAX,,,,4.799
+3544,0.0,0.33,0.67,9.92,SARIMAX,4.8,35.602,ml,SARIMAX,,,,4.8
+1064,0.07,0.09,0.84,8.98,RandomForest,4.814,11.95,ml,RandomForest,,,,4.814
+133577,0.56,0.25,0.19,10.94,RandomForest,4.843,13.333,ml,RandomForest,,,,4.843
+3127,0.0,0.22,0.78,10.83,HoltWinters,4.844,9.386,ml,HoltWinters,,,,4.844
+133686,0.13,0.06,0.81,6.08,SARIMAX,4.851,7.721,ml,SARIMAX,,,,4.851
+49212,0.05,0.13,0.82,10.87,HoltWinters,4.865,13.868,ml,HoltWinters,,,,4.865
+3760,0.0,0.48,0.52,24.53,SARIMAX,4.867,23.401,ml,SARIMAX,,,,4.867
+133608,0.0,0.28,0.72,10.86,RandomForest,4.871,10.436,ml,RandomForest,,,,4.871
+6446,0.13,0.42,0.45,10.59,SARIMAX,4.875,12.249,ml,SARIMAX,,,,4.875
+133617,0.06,0.06,0.88,7.26,SARIMAX,4.879,8.843,ml,SARIMAX,,,,4.879
+3368,0.12,0.02,0.86,8.3,RandomForest,4.89,9.684,ml,RandomForest,,,,4.89
+8774,0.08,0.38,0.54,8.85,RandomForest,4.894,9.882,ml,RandomForest,,,,4.894
+1921,0.0,0.46,0.54,23.01,RandomForest,4.896,15.899,ml,RandomForest,,,,4.896
+163001,0.06,0.0,0.94,7.28,RandomForest,4.903,,ml,RandomForest,,,,4.903
+133787,0.15,0.32,0.53,12.09,SARIMAX,4.904,12.249,ml,SARIMAX,,,,4.904
+1071,0.12,0.06,0.82,8.98,HoltWinters,4.906,9.162,ml,HoltWinters,,,,4.906
+3750,0.39,0.0,0.61,8.15,RandomForest,4.907,,ml,RandomForest,,,,4.907
+133633,0.12,0.22,0.66,11.27,SARIMAX,4.917,9.525,ml,SARIMAX,,,,4.917
+3008,0.0,0.48,0.52,11.88,RandomForest,4.924,9.305,ml,RandomForest,,,,4.924
+3049,0.01,0.05,0.94,11.21,SARIMAX,4.932,11.081,ml,SARIMAX,,,,4.932
+9222,0.29,0.2,0.51,9.06,SARIMAX,4.939,8.938,ml,SARIMAX,,,,4.939
+54403,0.0,0.22,0.78,10.1,RandomForest,4.942,10.579,ml,RandomForest,,,,4.942
+133685,0.42,0.11,0.47,8.18,RandomForest,4.96,8.194,ml,RandomForest,,,,4.96
+2588,0.02,0.04,0.94,9.17,SARIMAX,4.968,10.765,ml,SARIMAX,,,,4.968
+3388,0.16,0.2,0.64,9.02,RandomForest,4.98,8.638,ml,RandomForest,,,,4.98
+133611,0.13,0.02,0.85,8.94,SARIMAX,4.994,14.634,ml,SARIMAX,,,,4.994
+69201,0.0,0.05,0.95,8.94,RandomForest,5.017,11.933,ml,RandomForest,,,,5.017
+3797,1.0,0.0,0.0,108.92,RandomForest,5.028,12.058,ml,RandomForest,,,,5.028
+133241,0.16,0.14,0.7,13.37,SARIMAX,5.055,17.791,ml,SARIMAX,,,,5.055
+9312,0.0,0.1,0.9,9.2,SARIMAX,5.055,9.302,ml,SARIMAX,,,,5.055
+2887,0.0,0.19,0.81,10.28,SARIMAX,5.058,10.821,ml,SARIMAX,,,,5.058
+133546,0.11,0.05,0.84,8.62,SARIMAX,5.075,10.587,ml,SARIMAX,,,,5.075
+1969,0.35,0.18,0.47,9.05,RandomForest,5.075,8.361,ml,RandomForest,,,,5.075
+5041,0.1,0.22,0.68,12.25,HoltWinters,5.077,11.704,ml,HoltWinters,,,,5.077
+57403,0.3,0.06,0.64,12.41,RandomForest,5.078,12.183,ml,RandomForest,,,,5.078
+7141,0.0,0.53,0.47,19.51,SARIMAX,5.104,13.059,ml,SARIMAX,,,,5.104
+133689,0.08,0.12,0.8,8.69,RandomForest,5.115,9.33,ml,RandomForest,,,,5.115
+129003,0.0,0.32,0.68,12.13,HoltWinters,5.117,9.818,ml,HoltWinters,,,,5.117
+44002,0.0,0.1,0.9,9.41,RandomForest,5.121,11.366,ml,RandomForest,,,,5.121
+1781,0.03,0.0,0.97,7.01,HoltWinters,5.122,8.458,ml,HoltWinters,,,,5.122
+83602,0.16,0.36,0.48,10.01,HoltWinters,5.132,6.925,ml,HoltWinters,,,,5.132
+133789,0.53,0.12,0.35,8.82,RandomForest,5.134,15.768,ml,RandomForest,,,,5.134
+3006,0.0,0.36,0.64,25.37,RandomForest,5.135,14.925,ml,RandomForest,,,,5.135
+133531,0.11,0.01,0.88,8.9,HoltWinters,5.136,19.625,ml,HoltWinters,,,,5.136
+133291,,,,,HoltWinters,5.14,,ml,HoltWinters,,,,5.14
+1104,0.06,0.0,0.94,7.94,HoltWinters,5.142,11.665,ml,HoltWinters,,,,5.142
+1105,0.1,0.08,0.82,8.62,SARIMAX,5.151,,ml,SARIMAX,,,,5.151
+133487,0.22,0.32,0.46,7.92,HoltWinters,5.153,43.855,ml,HoltWinters,,,,5.153
+133557,0.4,0.26,0.34,12.86,RandomForest,5.154,10.873,ml,RandomForest,,,,5.154
+3370,0.06,0.07,0.87,7.8,SARIMAX,5.162,9.643,ml,SARIMAX,,,,5.162
+1914,0.18,0.12,0.7,11.9,SARIMAX,5.167,10.786,ml,SARIMAX,,,,5.167
+66202,0.0,0.18,0.82,15.68,RandomForest,5.169,23.803,ml,RandomForest,,,,5.169
+133250,0.06,0.15,0.79,11.06,RandomForest,5.173,16.705,ml,RandomForest,,,,5.173
+136930,0.0,0.14,0.86,9.25,HoltWinters,5.173,13.776,ml,HoltWinters,,,,5.173
+3331,0.03,0.12,0.85,8.31,HoltWinters,5.182,9.457,ml,HoltWinters,,,,5.182
+3009,0.0,0.34,0.66,23.29,HoltWinters,5.199,12.509,ml,HoltWinters,,,,5.199
+104801,0.0,0.24,0.76,8.08,RandomForest,5.215,8.643,ml,RandomForest,,,,5.215
+133455,0.02,0.05,0.93,8.05,HoltWinters,5.215,12.602,ml,HoltWinters,,,,5.215
+6452,0.12,0.09,0.79,10.93,RandomForest,5.216,11.255,ml,RandomForest,,,,5.216
+1918,0.04,0.02,0.94,8.37,SARIMAX,5.221,10.144,ml,SARIMAX,,,,5.221
+133638,0.0,0.3,0.7,10.46,RandomForest,5.227,10.626,ml,RandomForest,,,,5.227
+3063,0.0,0.19,0.81,8.91,SARIMAX,5.229,9.163,ml,SARIMAX,,,,5.229
+133619,0.21,0.08,0.71,8.83,SARIMAX,5.236,9.446,ml,SARIMAX,,,,5.236
+92203,0.05,0.24,0.71,8.54,HoltWinters,5.24,10.06,ml,HoltWinters,,,,5.24
+133297,0.07,0.0,0.93,8.69,SARIMAX,5.243,11.757,ml,SARIMAX,,,,5.243
+2903,0.03,0.12,0.85,8.99,HoltWinters,5.245,10.078,ml,HoltWinters,,,,5.245
+133210,0.36,0.28,0.36,12.77,HoltWinters,5.264,10.798,ml,HoltWinters,,,,5.264
+133322,0.17,0.42,0.41,15.37,SARIMAX,5.267,19.125,ml,SARIMAX,,,,5.267
+133256,0.05,0.06,0.89,7.76,HoltWinters,5.268,8.861,ml,HoltWinters,,,,5.268
+135049,0.0,0.26,0.74,87.49,SARIMAX,5.272,34.783,ml,SARIMAX,,,,5.272
+3381,0.02,0.13,0.85,19.19,HoltWinters,5.288,32.416,ml,HoltWinters,,,,5.288
+3408,0.0,0.57,0.43,230.5,HoltWinters,5.288,33.7,ml,HoltWinters,,,,5.288
+5072,0.0,0.0,1.0,609.09,RandomForest,5.296,3026.731,ml,RandomForest,,,,5.296
+2202,0.17,0.0,0.83,9.74,SARIMAX,5.298,13.099,ml,SARIMAX,,,,5.298
+3438,0.11,0.07,0.82,8.47,RandomForest,5.301,10.064,ml,RandomForest,,,,5.301
+155049,0.03,0.03,0.94,10.34,RandomForest,5.32,9.61,ml,RandomForest,,,,5.32
+7079,0.44,0.0,0.56,8.62,SARIMAX,5.324,10.96,ml,SARIMAX,,,,5.324
+135037,0.33,0.21,0.46,13.86,RandomForest,5.333,9.823,ml,RandomForest,,,,5.333
+91401,0.01,0.2,0.79,10.32,HoltWinters,5.34,11.088,ml,HoltWinters,,,,5.34
+3338,0.04,0.04,0.92,6.96,RandomForest,5.343,10.223,ml,RandomForest,,,,5.343
+153002,0.0,0.33,0.67,6.86,HoltWinters,5.345,8.676,ml,HoltWinters,,,,5.345
+133298,0.02,0.04,0.94,8.19,RandomForest,5.347,10.672,ml,RandomForest,,,,5.347
+3171,0.0,0.21,0.79,9.82,HoltWinters,5.356,11.114,ml,HoltWinters,,,,5.356
+133698,0.06,0.02,0.92,7.29,RandomForest,5.359,10.201,ml,RandomForest,,,,5.359
+114602,0.02,0.04,0.94,6.28,SARIMAX,5.365,9.291,ml,SARIMAX,,,,5.365
+9313,0.0,0.12,0.88,10.54,SARIMAX,5.371,11.501,ml,SARIMAX,,,,5.371
+85001,0.08,0.68,0.24,17.39,SARIMAX,5.386,14.732,ml,SARIMAX,,,,5.386
+133652,0.04,0.09,0.87,7.83,RandomForest,5.396,9.416,ml,RandomForest,,,,5.396
+160071,0.0,0.37,0.63,14.58,HoltWinters,5.398,20.01,ml,HoltWinters,,,,5.398
+133629,0.02,0.05,0.93,9.48,SARIMAX,5.406,9.533,ml,SARIMAX,,,,5.406
+3722,0.02,0.01,0.97,9.72,SARIMAX,5.406,10.613,ml,SARIMAX,,,,5.406
+3339,0.0,0.19,0.81,10.56,RandomForest,5.414,10.594,ml,RandomForest,,,,5.414
+3756,0.0,0.42,0.58,312.03,RandomForest,5.417,15.768,ml,RandomForest,,,,5.417
+2998,0.0,0.0,1.0,7.41,SARIMAX,5.427,10.895,ml,SARIMAX,,,,5.427
+7323,0.0,0.13,0.87,14.25,RandomForest,5.438,11.171,ml,RandomForest,,,,5.438
+3141,0.0,0.56,0.44,57.81,SARIMAX,5.44,13.359,ml,SARIMAX,,,,5.44
+133295,0.13,0.01,0.86,7.79,RandomForest,5.448,11.502,ml,RandomForest,,,,5.448
+5088,0.03,0.14,0.83,9.89,RandomForest,5.458,10.023,ml,RandomForest,,,,5.458
+9318,0.0,0.08,0.92,10.34,RandomForest,5.463,10.948,ml,RandomForest,,,,5.463
+1788,0.66,0.34,-0.0,12.05,HoltWinters,5.465,18.038,ml,HoltWinters,,,,5.465
+3982,0.08,0.11,0.81,8.69,RandomForest,5.465,7.951,ml,RandomForest,,,,5.465
+5024,0.0,0.45,0.55,32.96,SARIMAX,5.476,11.346,ml,SARIMAX,,,,5.476
+133670,0.11,0.07,0.82,7.86,SARIMAX,5.502,9.164,ml,SARIMAX,,,,5.502
+2715,0.0,0.86,0.14,31.2,RandomForest,5.504,27.106,ml,RandomForest,,,,5.504
+8911,0.41,0.09,0.5,9.39,RandomForest,5.52,13.823,ml,RandomForest,,,,5.52
+155099,0.01,0.19,0.8,9.05,SARIMAX,5.53,10.084,ml,SARIMAX,,,,5.53
+133471,0.02,0.02,0.96,8.63,HoltWinters,5.532,11.764,ml,HoltWinters,,,,5.532
+2738,0.03,0.11,0.86,7.37,SARIMAX,5.542,10.911,ml,SARIMAX,,,,5.542
+8742,0.24,0.46,0.3,15.65,SARIMAX,5.543,18.033,ml,SARIMAX,,,,5.543
+5006,0.28,0.29,0.43,10.52,SARIMAX,5.546,8.889,ml,SARIMAX,,,,5.546
+133647,0.02,0.05,0.93,7.1,RandomForest,5.567,,ml,RandomForest,,,,5.567
+3158,0.09,0.02,0.89,10.89,SARIMAX,5.592,11.16,ml,SARIMAX,,,,5.592
+133659,0.08,0.06,0.86,9.44,RandomForest,5.596,12.965,ml,RandomForest,,,,5.596
+3347,0.2,0.3,0.5,6.91,RandomForest,5.596,6.6,ml,RandomForest,,,,5.596
+133527,0.51,0.11,0.38,9.81,RandomForest,5.597,9.223,ml,RandomForest,,,,5.597
+35804,0.11,0.23,0.66,10.96,RandomForest,5.617,10.505,ml,RandomForest,,,,5.617
+133318,0.0,0.42,0.58,160.98,RandomForest,5.619,28.593,ml,RandomForest,,,,5.619
+134141,0.21,0.18,0.61,10.4,RandomForest,5.62,10.607,ml,RandomForest,,,,5.62
+155058,0.01,0.02,0.97,9.0,RandomForest,5.623,13.084,ml,RandomForest,,,,5.623
+160012,0.0,0.73,0.27,25.69,HoltWinters,5.623,34.031,ml,HoltWinters,,,,5.623
+1908,0.0,0.21,0.79,14.1,HoltWinters,5.623,23.691,ml,HoltWinters,,,,5.623
+9335,0.13,0.17,0.7,9.18,RandomForest,5.626,12.331,ml,RandomForest,,,,5.626
+3217,0.0,0.39,0.61,22.61,HoltWinters,5.629,11.436,ml,HoltWinters,,,,5.629
+158601,0.0,0.15,0.85,9.66,SARIMAX,5.638,12.363,ml,SARIMAX,,,,5.638
+2886,0.07,0.14,0.79,7.23,RandomForest,5.64,9.944,ml,RandomForest,,,,5.64
+133569,0.0,0.15,0.85,8.86,HoltWinters,5.646,8.135,ml,HoltWinters,,,,5.646
+3714,0.07,0.06,0.87,8.69,HoltWinters,5.648,9.894,ml,HoltWinters,,,,5.648
+3497,0.04,0.47,0.49,10.79,HoltWinters,5.659,10.523,ml,HoltWinters,,,,5.659
+3815,0.77,0.17,0.06,11.39,RandomForest,5.67,10.659,ml,RandomForest,,,,5.67
+2605,0.22,0.1,0.68,8.35,RandomForest,5.672,9.454,ml,RandomForest,,,,5.672
+133273,0.0,0.61,0.39,19.95,RandomForest,5.677,11.743,ml,RandomForest,,,,5.677
+133306,0.26,0.27,0.47,12.62,SARIMAX,5.679,10.712,ml,SARIMAX,,,,5.679
+9244,0.35,0.0,0.65,236.86,RandomForest,5.692,1083.846,ml,RandomForest,,,,5.692
+3733,0.25,0.13,0.62,8.82,RandomForest,5.694,,ml,RandomForest,,,,5.694
+8788,0.4,0.23,0.37,14.21,RandomForest,5.698,9.215,ml,RandomForest,,,,5.698
+69401,0.0,0.34,0.66,12.5,RandomForest,5.702,12.096,ml,RandomForest,,,,5.702
+5063,0.0,0.62,0.38,136.96,HoltWinters,5.705,22.304,ml,HoltWinters,,,,5.705
+6428,0.48,0.18,0.34,16.1,HoltWinters,5.709,12.922,ml,HoltWinters,,,,5.709
+9353,0.0,0.01,0.99,9.13,SARIMAX,5.716,12.817,ml,SARIMAX,,,,5.716
+1107,0.15,0.17,0.68,11.06,HoltWinters,5.719,,ml,HoltWinters,,,,5.719
+9241,0.41,0.16,0.43,8.4,RandomForest,5.726,10.371,ml,RandomForest,,,,5.726
+3955,0.3,0.16,0.54,9.35,HoltWinters,5.729,8.085,ml,HoltWinters,,,,5.729
+66209,0.0,0.23,0.77,9.77,RandomForest,5.733,13.391,ml,RandomForest,,,,5.733
+2729,0.02,0.02,0.96,8.75,SARIMAX,5.742,19.278,ml,SARIMAX,,,,5.742
+7339,0.17,0.59,0.24,13.65,HoltWinters,5.742,15.075,ml,HoltWinters,,,,5.742
+9311,0.08,0.0,0.92,8.66,RandomForest,5.744,10.427,ml,RandomForest,,,,5.744
+155046,0.0,0.41,0.59,15.37,SARIMAX,5.75,21.131,ml,SARIMAX,,,,5.75
+129401,0.83,0.0,0.17,38.95,RandomForest,5.752,,ml,RandomForest,,,,5.752
+2996,0.03,0.19,0.78,15.52,SARIMAX,5.76,13.058,ml,SARIMAX,,,,5.76
+155022,0.5,0.11,0.39,12.19,HoltWinters,5.763,13.111,ml,HoltWinters,,,,5.763
+136803,0.0,0.14,0.86,10.7,HoltWinters,5.766,10.6,ml,HoltWinters,,,,5.766
+3132,0.06,0.15,0.79,10.47,HoltWinters,5.768,11.301,ml,HoltWinters,,,,5.768
+125606,0.0,0.3,0.7,9.08,SARIMAX,5.771,9.929,ml,SARIMAX,,,,5.771
+133702,0.13,0.02,0.85,8.08,RandomForest,5.778,9.023,ml,RandomForest,,,,5.778
+1062,0.11,0.01,0.88,7.46,HoltWinters,5.779,8.025,ml,HoltWinters,,,,5.779
+2789,0.0,0.18,0.82,9.05,RandomForest,5.786,9.384,ml,RandomForest,,,,5.786
+1894,0.0,0.41,0.59,17.33,SARIMAX,5.787,13.999,ml,SARIMAX,,,,5.787
+2612,0.02,0.0,0.98,7.25,RandomForest,5.787,9.161,ml,RandomForest,,,,5.787
+2653,0.53,0.21,0.26,8.57,HoltWinters,5.788,9.184,ml,HoltWinters,,,,5.788
+9720,0.04,0.01,0.95,7.72,RandomForest,5.788,10.116,ml,RandomForest,,,,5.788
+63604,0.0,0.04,0.96,8.23,SARIMAX,5.791,13.686,ml,SARIMAX,,,,5.791
+135009,0.0,0.1,0.9,10.11,SARIMAX,5.792,10.581,ml,SARIMAX,,,,5.792
+1916,0.0,0.19,0.81,13.22,HoltWinters,5.794,11.572,ml,HoltWinters,,,,5.794
+134072,0.28,0.11,0.61,17.4,HoltWinters,5.795,13.938,ml,HoltWinters,,,,5.795
+8750,0.0,0.55,0.45,123.73,HoltWinters,5.798,14.264,ml,HoltWinters,,,,5.798
+155034,0.27,0.41,0.32,12.24,SARIMAX,5.806,10.347,ml,SARIMAX,,,,5.806
+39605,0.0,0.3,0.7,12.82,RandomForest,5.819,9.421,ml,RandomForest,,,,5.819
+157601,0.09,0.11,0.8,8.5,RandomForest,5.82,8.755,ml,RandomForest,,,,5.82
+2651,0.0,0.49,0.51,480.07,SARIMAX,5.826,676.168,ml,SARIMAX,,,,5.826
+8899,0.21,0.2,0.59,9.04,SARIMAX,5.832,9.042,ml,SARIMAX,,,,5.832
+133321,0.04,0.31,0.65,16.81,RandomForest,5.834,17.457,ml,RandomForest,,,,5.834
+3984,0.0,0.11,0.89,10.94,HoltWinters,5.835,10.461,ml,HoltWinters,,,,5.835
+136805,0.17,0.22,0.61,9.78,SARIMAX,5.837,10.881,ml,SARIMAX,,,,5.837
+134140,0.11,0.0,0.89,140.74,HoltWinters,5.863,322.629,ml,HoltWinters,,,,5.863
+1777,0.1,0.05,0.85,7.84,HoltWinters,5.863,8.943,ml,HoltWinters,,,,5.863
+125610,0.0,0.53,0.47,17.56,RandomForest,5.867,14.752,ml,RandomForest,,,,5.867
+1904,0.0,0.27,0.73,14.89,HoltWinters,5.867,13.35,ml,HoltWinters,,,,5.867
+2994,0.0,0.68,0.32,772.45,HoltWinters,5.868,11.144,ml,HoltWinters,,,,5.868
+155025,0.65,0.01,0.34,11.67,RandomForest,5.872,8.738,ml,RandomForest,,,,5.872
+159004,0.18,0.15,0.67,12.71,RandomForest,5.873,9.804,ml,RandomForest,,,,5.873
+134121,0.0,0.03,0.97,8.17,SARIMAX,5.879,11.599,ml,SARIMAX,,,,5.879
+160050,0.0,0.08,0.92,30.15,SARIMAX,5.882,51.246,ml,SARIMAX,,,,5.882
+1814,0.43,0.02,0.55,9.13,RandomForest,5.885,10.525,ml,RandomForest,,,,5.885
+133614,0.01,0.07,0.92,7.0,SARIMAX,5.887,8.215,ml,SARIMAX,,,,5.887
+134036,0.33,0.24,0.43,9.05,RandomForest,5.888,10.575,ml,RandomForest,,,,5.888
+1110,0.03,0.0,0.97,7.17,RandomForest,5.901,10.014,ml,RandomForest,,,,5.901
+136808,0.19,0.27,0.54,11.86,RandomForest,5.909,42.977,ml,RandomForest,,,,5.909
+6467,0.06,0.06,0.88,11.25,HoltWinters,5.916,11.109,ml,HoltWinters,,,,5.916
+8794,0.29,0.51,0.2,12.94,SARIMAX,5.92,12.406,ml,SARIMAX,,,,5.92
+8308,0.49,0.19,0.32,21.34,SARIMAX,5.932,32.765,ml,SARIMAX,,,,5.932
+107801,0.0,0.53,0.47,33.83,RandomForest,5.936,,ml,RandomForest,,,,5.936
+3739,0.34,0.12,0.54,8.87,HoltWinters,5.936,10.555,ml,HoltWinters,,,,5.936
+3177,0.0,0.87,0.13,19.94,SARIMAX,5.939,10.515,ml,SARIMAX,,,,5.939
+133561,0.48,0.06,0.46,9.1,RandomForest,5.94,9.654,ml,RandomForest,,,,5.94
+160045,0.02,0.43,0.55,11.08,RandomForest,5.94,16.513,ml,RandomForest,,,,5.94
+5058,0.0,0.24,0.76,56.21,RandomForest,5.942,22.897,ml,RandomForest,,,,5.942
+1809,0.0,0.33,0.67,58.95,RandomForest,5.946,16.553,ml,RandomForest,,,,5.946
+1794,0.37,0.03,0.6,19.55,RandomForest,5.95,23.35,ml,RandomForest,,,,5.95
+133357,0.25,0.17,0.58,11.74,RandomForest,5.952,12.79,ml,RandomForest,,,,5.952
+4260,0.0,0.37,0.63,207.93,RandomForest,5.955,13.612,ml,RandomForest,,,,5.955
+155055,0.0,0.19,0.81,12.52,SARIMAX,5.966,11.959,ml,SARIMAX,,,,5.966
+133666,0.0,0.38,0.62,10.37,RandomForest,5.967,10.104,ml,RandomForest,,,,5.967
+133481,0.0,0.59,0.41,19.62,SARIMAX,5.968,18.456,ml,SARIMAX,,,,5.968
+1119,0.08,0.04,0.88,9.27,RandomForest,5.969,8.269,ml,RandomForest,,,,5.969
+133644,0.15,0.12,0.73,8.75,HoltWinters,5.973,9.821,ml,HoltWinters,,,,5.973
+153001,0.0,0.09,0.91,10.07,HoltWinters,6.0,12.213,ml,HoltWinters,,,,6.0
+2912,0.14,0.12,0.74,10.32,SARIMAX,6.002,9.057,ml,SARIMAX,,,,6.002
+133480,0.34,0.42,0.24,12.54,RandomForest,6.011,21.83,ml,RandomForest,,,,6.011
+133459,0.37,0.15,0.48,9.45,HoltWinters,6.026,8.978,ml,HoltWinters,,,,6.026
+155042,0.0,0.06,0.94,11.25,SARIMAX,6.028,11.395,ml,SARIMAX,,,,6.028
+133616,0.02,0.1,0.88,7.79,HoltWinters,6.029,8.631,ml,HoltWinters,,,,6.029
+155054,0.46,0.08,0.46,13.21,HoltWinters,6.04,11.273,ml,HoltWinters,,,,6.04
+2250,0.49,0.21,0.3,9.51,SARIMAX,6.046,10.086,ml,SARIMAX,,,,6.046
+8755,,,,,SARIMAX,6.049,,ml,SARIMAX,,,,6.049
+6431,0.08,0.37,0.55,11.1,RandomForest,6.057,13.103,ml,RandomForest,,,,6.057
+1266,0.37,0.25,0.38,8.21,SARIMAX,6.067,8.235,ml,SARIMAX,,,,6.067
+64403,0.01,0.26,0.73,7.97,SARIMAX,6.073,15.614,ml,SARIMAX,,,,6.073
+90401,0.41,0.29,0.3,11.8,SARIMAX,6.091,10.269,ml,SARIMAX,,,,6.091
+133441,0.07,0.32,0.61,9.01,RandomForest,6.093,10.539,ml,RandomForest,,,,6.093
+155112,0.18,0.12,0.7,11.58,RandomForest,6.093,11.242,ml,RandomForest,,,,6.093
+133662,0.0,0.01,0.99,87.88,SARIMAX,6.094,148.012,ml,SARIMAX,,,,6.094
+1077,0.34,0.06,0.6,8.91,SARIMAX,6.097,14.843,ml,SARIMAX,,,,6.097
+1078,0.2,0.27,0.53,10.27,SARIMAX,6.097,10.779,ml,SARIMAX,,,,6.097
+155111,0.18,0.08,0.74,9.58,RandomForest,6.099,11.428,ml,RandomForest,,,,6.099
+155047,0.19,0.1,0.71,11.77,RandomForest,6.129,11.421,ml,RandomForest,,,,6.129
+3256,0.0,0.09,0.91,14.05,RandomForest,6.132,10.984,ml,RandomForest,,,,6.132
+3316,0.28,0.13,0.59,7.88,SARIMAX,6.137,9.475,ml,SARIMAX,,,,6.137
+133506,0.23,0.34,0.43,17.84,HoltWinters,6.155,13.877,ml,HoltWinters,,,,6.155
+8160,0.16,0.11,0.73,11.6,HoltWinters,6.158,12.912,ml,HoltWinters,,,,6.158
+135069,0.65,0.35,0.0,10.91,RandomForest,6.164,9.015,ml,RandomForest,,,,6.164
+133650,0.82,0.13,0.05,10.25,RandomForest,6.166,11.392,ml,RandomForest,,,,6.166
+3173,0.0,0.51,0.49,16.62,HoltWinters,6.168,12.27,ml,HoltWinters,,,,6.168
+133655,0.33,0.24,0.43,8.64,RandomForest,6.169,8.527,ml,RandomForest,,,,6.169
+2092,0.0,0.17,0.83,12.67,RandomForest,6.181,12.791,ml,RandomForest,,,,6.181
+133354,0.11,0.08,0.81,9.36,RandomForest,6.182,9.848,ml,RandomForest,,,,6.182
+9404,0.0,0.44,0.56,11.31,RandomForest,6.192,9.867,ml,RandomForest,,,,6.192
+3350,0.72,0.13,0.15,10.42,RandomForest,6.193,9.463,ml,RandomForest,,,,6.193
+133664,0.4,0.08,0.52,8.37,RandomForest,6.199,8.141,ml,RandomForest,,,,6.199
+3446,0.24,0.11,0.65,9.27,RandomForest,6.204,10.635,ml,RandomForest,,,,6.204
+133651,0.12,0.22,0.66,9.15,SARIMAX,6.207,,ml,SARIMAX,,,,6.207
+5085,0.12,0.2,0.68,11.74,SARIMAX,6.216,16.032,ml,SARIMAX,,,,6.216
+134167,0.42,0.53,0.05,13.57,RandomForest,6.218,14.081,ml,RandomForest,,,,6.218
+4080,0.09,0.34,0.57,12.4,RandomForest,6.218,,ml,RandomForest,,,,6.218
+4078,0.06,0.03,0.91,9.85,RandomForest,6.22,,ml,RandomForest,,,,6.22
+1073,0.0,0.04,0.96,9.02,SARIMAX,6.223,12.25,ml,SARIMAX,,,,6.223
+2252,0.22,0.16,0.62,17.59,RandomForest,6.241,,ml,RandomForest,,,,6.241
+136904,0.25,0.26,0.49,7.88,SARIMAX,6.245,10.806,ml,SARIMAX,,,,6.245
+136915,0.29,0.16,0.55,10.48,HoltWinters,6.245,10.276,ml,HoltWinters,,,,6.245
+1101,0.05,0.02,0.93,7.33,RandomForest,6.255,9.528,ml,RandomForest,,,,6.255
+3056,0.15,0.46,0.39,47.87,HoltWinters,6.256,18.453,ml,HoltWinters,,,,6.256
+133271,0.0,0.1,0.9,9.68,SARIMAX,6.26,10.835,ml,SARIMAX,,,,6.26
+104005,0.13,0.43,0.44,49.78,RandomForest,6.266,10.78,ml,RandomForest,,,,6.266
+3329,0.57,0.1,0.33,8.51,RandomForest,6.281,11.36,ml,RandomForest,,,,6.281
+2726,0.0,0.16,0.84,10.6,RandomForest,6.282,492.614,ml,RandomForest,,,,6.282
+166003,0.0,0.12,0.88,23.68,HoltWinters,6.284,65.493,ml,HoltWinters,,,,6.284
+3498,0.0,0.0,1.0,25.25,HoltWinters,6.286,34.856,ml,HoltWinters,,,,6.286
+133592,0.09,0.05,0.86,7.83,SARIMAX,6.288,10.685,ml,SARIMAX,,,,6.288
+155001,0.7,0.0,0.3,10.11,RandomForest,6.288,9.009,ml,RandomForest,,,,6.288
+133508,0.19,0.04,0.77,11.12,SARIMAX,6.294,9.768,ml,SARIMAX,,,,6.294
+1955,0.0,0.4,0.6,9.31,RandomForest,6.294,8.866,ml,RandomForest,,,,6.294
+133397,0.32,0.16,0.52,9.31,HoltWinters,6.299,9.648,ml,HoltWinters,,,,6.299
+1112,0.0,0.37,0.63,152.98,HoltWinters,6.302,,ml,HoltWinters,,,,6.302
+1949,0.2,0.08,0.72,8.44,RandomForest,6.303,7.685,ml,RandomForest,,,,6.303
+5042,0.1,0.18,0.72,13.6,RandomForest,6.303,11.211,ml,RandomForest,,,,6.303
+133797,1.0,0.0,0.0,105.21,RandomForest,6.305,,ml,RandomForest,,,,6.305
+163005,0.03,0.12,0.85,7.81,HoltWinters,6.306,,ml,HoltWinters,,,,6.306
+3159,0.0,0.54,0.46,20.8,SARIMAX,6.306,13.337,ml,SARIMAX,,,,6.306
+1772,0.0,0.21,0.79,15.97,RandomForest,6.308,,ml,RandomForest,,,,6.308
+1798,0.22,0.0,0.78,14.73,RandomForest,6.308,13.624,ml,RandomForest,,,,6.308
+133693,0.04,0.08,0.88,9.9,RandomForest,6.312,10.188,ml,RandomForest,,,,6.312
+3062,0.16,0.04,0.8,10.23,RandomForest,6.312,10.881,ml,RandomForest,,,,6.312
+39402,0.04,0.06,0.9,8.48,RandomForest,6.319,10.254,ml,RandomForest,,,,6.319
+1874,0.31,0.32,0.37,12.5,SARIMAX,6.321,11.551,ml,SARIMAX,,,,6.321
+133367,0.06,0.08,0.86,9.36,HoltWinters,6.324,12.365,ml,HoltWinters,,,,6.324
+4208,0.0,0.0,1.0,107.89,SARIMAX,6.326,14.814,ml,SARIMAX,,,,6.326
+133499,0.0,0.55,0.45,24.32,RandomForest,6.328,30.484,ml,RandomForest,,,,6.328
+3148,0.03,0.45,0.52,10.86,SARIMAX,6.33,14.077,ml,SARIMAX,,,,6.33
+3206,0.63,0.11,0.26,10.28,RandomForest,6.333,8.714,ml,RandomForest,,,,6.333
+133473,0.04,0.01,0.95,9.7,RandomForest,6.335,11.078,ml,RandomForest,,,,6.335
+155056,0.0,0.33,0.67,12.39,RandomForest,6.335,12.172,ml,RandomForest,,,,6.335
+1897,0.0,0.18,0.82,12.39,SARIMAX,6.34,11.38,ml,SARIMAX,,,,6.34
+134147,0.27,0.24,0.49,11.97,RandomForest,6.349,12.598,ml,RandomForest,,,,6.349
+133536,0.85,0.12,0.03,346.76,HoltWinters,6.352,50.849,ml,HoltWinters,,,,6.352
+134192,0.02,0.05,0.93,8.4,RandomForest,6.359,9.982,ml,RandomForest,,,,6.359
+95805,0.01,0.04,0.95,8.72,RandomForest,6.36,10.609,ml,RandomForest,,,,6.36
+135072,0.32,0.15,0.53,11.94,RandomForest,6.361,10.199,ml,RandomForest,,,,6.361
+1260,0.07,0.01,0.92,11.09,RandomForest,6.371,18.514,ml,RandomForest,,,,6.371
+133513,0.2,0.09,0.71,12.27,SARIMAX,6.375,9.786,ml,SARIMAX,,,,6.375
+3163,0.07,0.22,0.71,9.03,HoltWinters,6.377,8.782,ml,HoltWinters,,,,6.377
+2607,0.34,0.15,0.51,9.86,SARIMAX,6.378,8.691,ml,SARIMAX,,,,6.378
+3731,0.33,0.02,0.65,9.65,RandomForest,6.397,,ml,RandomForest,,,,6.397
+133309,0.42,0.07,0.51,11.82,RandomForest,6.41,13.022,ml,RandomForest,,,,6.41
+124401,0.0,0.31,0.69,10.55,SARIMAX,6.422,10.28,ml,SARIMAX,,,,6.422
+133300,0.22,0.09,0.69,10.69,RandomForest,6.424,,ml,RandomForest,,,,6.424
+3135,0.07,0.0,0.93,8.1,HoltWinters,6.426,9.557,ml,HoltWinters,,,,6.426
+2451,0.56,0.24,0.2,11.92,HoltWinters,6.431,10.843,ml,HoltWinters,,,,6.431
+125613,0.33,0.24,0.43,10.91,HoltWinters,6.435,16.504,ml,HoltWinters,,,,6.435
+4219,0.0,0.18,0.82,12.94,SARIMAX,6.449,17.68,ml,SARIMAX,,,,6.449
+5018,0.0,0.99,0.01,56.49,RandomForest,6.454,26.72,ml,RandomForest,,,,6.454
+1906,0.07,0.45,0.48,245.14,HoltWinters,6.462,13.076,ml,HoltWinters,,,,6.462
+1905,0.0,0.13,0.87,10.68,SARIMAX,6.464,9.837,ml,SARIMAX,,,,6.464
+136809,0.0,0.06,0.94,7.67,RandomForest,6.467,22.023,ml,RandomForest,,,,6.467
+160031,0.0,0.29,0.71,11.2,RandomForest,6.468,10.205,ml,RandomForest,,,,6.468
+2615,0.26,0.37,0.37,15.84,HoltWinters,6.468,12.977,ml,HoltWinters,,,,6.468
+133609,0.38,0.18,0.44,12.28,SARIMAX,6.474,10.791,ml,SARIMAX,,,,6.474
+133319,0.09,0.18,0.73,9.67,SARIMAX,6.479,14.249,ml,SARIMAX,,,,6.479
+133372,0.02,0.21,0.77,8.54,HoltWinters,6.491,9.786,ml,HoltWinters,,,,6.491
+4214,0.09,0.2,0.71,15.26,RandomForest,6.491,10.503,ml,RandomForest,,,,6.491
+1891,0.0,0.29,0.71,168.15,SARIMAX,6.505,32.988,ml,SARIMAX,,,,6.505
+133568,0.0,0.05,0.95,9.16,SARIMAX,6.51,10.737,ml,SARIMAX,,,,6.51
+3179,0.0,0.26,0.74,12.68,SARIMAX,6.512,11.868,ml,SARIMAX,,,,6.512
+160413,0.42,0.33,0.25,11.23,RandomForest,6.515,11.013,ml,RandomForest,,,,6.515
+1909,0.0,0.14,0.86,11.31,SARIMAX,6.517,10.523,ml,SARIMAX,,,,6.517
+3595,0.21,0.29,0.5,9.84,RandomForest,6.52,9.53,ml,RandomForest,,,,6.52
+133525,0.06,0.15,0.79,6.94,RandomForest,6.531,16.33,ml,RandomForest,,,,6.531
+2876,0.0,0.2,0.8,7.65,SARIMAX,6.532,8.278,ml,SARIMAX,,,,6.532
+2722,0.09,0.0,0.91,34.9,SARIMAX,6.533,,ml,SARIMAX,,,,6.533
+5091,0.02,0.09,0.89,11.94,HoltWinters,6.538,13.352,ml,HoltWinters,,,,6.538
+1892,0.0,0.51,0.49,14.27,HoltWinters,6.539,8.743,ml,HoltWinters,,,,6.539
+133678,0.06,0.04,0.9,8.37,SARIMAX,6.54,9.6,ml,SARIMAX,,,,6.54
+2736,0.13,0.27,0.6,11.13,HoltWinters,6.548,8.87,ml,HoltWinters,,,,6.548
+133400,0.34,0.06,0.6,10.32,SARIMAX,6.55,10.924,ml,SARIMAX,,,,6.55
+134031,0.54,0.14,0.32,10.43,RandomForest,6.561,9.553,ml,RandomForest,,,,6.561
+1888,0.0,0.04,0.96,12.71,HoltWinters,6.561,12.489,ml,HoltWinters,,,,6.561
+2711,0.01,0.0,0.99,8.56,RandomForest,6.561,11.163,ml,RandomForest,,,,6.561
+134132,0.45,0.25,0.3,14.35,RandomForest,6.563,12.431,ml,RandomForest,,,,6.563
+2911,0.05,0.07,0.88,8.69,HoltWinters,6.564,9.743,ml,HoltWinters,,,,6.564
+133663,0.26,0.13,0.61,11.54,SARIMAX,6.576,10.158,ml,SARIMAX,,,,6.576
+8912,0.04,0.1,0.86,7.84,SARIMAX,6.577,9.579,ml,SARIMAX,,,,6.577
+5073,0.22,0.06,0.72,9.93,SARIMAX,6.579,12.001,ml,SARIMAX,,,,6.579
+133456,0.29,0.2,0.51,16.98,RandomForest,6.582,14.041,ml,RandomForest,,,,6.582
+1920,0.0,0.2,0.8,10.43,SARIMAX,6.584,9.982,ml,SARIMAX,,,,6.584
+2997,0.02,0.1,0.88,12.68,HoltWinters,6.587,11.413,ml,HoltWinters,,,,6.587
+133443,0.41,0.24,0.35,10.46,RandomForest,6.59,8.965,ml,RandomForest,,,,6.59
+4177,0.0,0.29,0.71,27.43,SARIMAX,6.602,26.326,ml,SARIMAX,,,,6.602
+3435,0.0,0.56,0.44,15.55,HoltWinters,6.605,,ml,HoltWinters,,,,6.605
+1855,0.19,0.3,0.51,25.92,HoltWinters,6.611,22.222,ml,HoltWinters,,,,6.611
+133565,0.3,0.49,0.21,15.12,RandomForest,6.624,11.897,ml,RandomForest,,,,6.624
+133544,0.09,0.06,0.85,8.37,RandomForest,6.626,10.03,ml,RandomForest,,,,6.626
+128201,0.0,0.22,0.78,14.43,HoltWinters,6.629,14.635,ml,HoltWinters,,,,6.629
+166002,0.0,0.85,0.15,14.52,SARIMAX,6.641,20.379,ml,SARIMAX,,,,6.641
+3336,0.18,0.14,0.68,9.08,RandomForest,6.645,11.302,ml,RandomForest,,,,6.645
+3312,0.54,0.05,0.41,12.86,RandomForest,6.647,12.743,ml,RandomForest,,,,6.647
+39206,0.0,0.09,0.91,9.93,HoltWinters,6.647,12.159,ml,HoltWinters,,,,6.647
+134128,0.04,0.0,0.96,120.84,SARIMAX,6.653,292.589,ml,SARIMAX,,,,6.653
+133378,0.0,0.21,0.79,15.3,SARIMAX,6.657,13.724,ml,SARIMAX,,,,6.657
+3145,0.0,0.71,0.29,126.03,SARIMAX,6.659,16.847,ml,SARIMAX,,,,6.659
+5053,0.0,0.54,0.46,16.54,RandomForest,6.661,,ml,RandomForest,,,,6.661
+3175,0.13,0.02,0.85,10.13,RandomForest,6.662,,ml,RandomForest,,,,6.662
+155075,0.0,0.54,0.46,10.07,RandomForest,6.666,10.065,ml,RandomForest,,,,6.666
+2226,0.1,0.15,0.75,8.22,SARIMAX,6.666,9.719,ml,SARIMAX,,,,6.666
+134055,0.0,0.73,0.27,16.38,SARIMAX,6.671,28.166,ml,SARIMAX,,,,6.671
+2999,0.07,0.55,0.38,20.13,RandomForest,6.673,22.432,ml,RandomForest,,,,6.673
+133515,0.0,0.16,0.84,8.22,SARIMAX,6.675,9.854,ml,SARIMAX,,,,6.675
+155052,0.15,0.02,0.83,13.97,SARIMAX,6.685,16.369,ml,SARIMAX,,,,6.685
+3342,0.0,0.33,0.67,9.85,HoltWinters,6.688,10.703,ml,HoltWinters,,,,6.688
+2896,0.0,0.18,0.82,9.12,RandomForest,6.689,9.787,ml,RandomForest,,,,6.689
+133509,0.0,0.28,0.72,30.35,RandomForest,6.699,21.268,ml,RandomForest,,,,6.699
+5102,0.07,0.15,0.78,9.72,HoltWinters,6.702,17.611,ml,HoltWinters,,,,6.702
+3274,0.0,0.45,0.55,13.82,HoltWinters,6.708,,ml,HoltWinters,,,,6.708
+3176,0.0,0.15,0.85,10.76,RandomForest,6.711,10.303,ml,RandomForest,,,,6.711
+155007,0.72,0.02,0.26,11.52,RandomForest,6.714,10.282,ml,RandomForest,,,,6.714
+156401,0.0,0.16,0.84,13.08,RandomForest,6.727,11.508,ml,RandomForest,,,,6.727
+9755,0.37,0.22,0.41,8.95,HoltWinters,6.727,9.122,ml,HoltWinters,,,,6.727
+133252,0.0,0.07,0.93,9.77,RandomForest,6.729,10.735,ml,RandomForest,,,,6.729
+1913,0.0,0.09,0.91,25.61,RandomForest,6.744,,ml,RandomForest,,,,6.744
+133277,0.18,0.01,0.81,10.33,SARIMAX,6.747,11.365,ml,SARIMAX,,,,6.747
+3213,0.12,0.09,0.79,10.05,RandomForest,6.752,12.562,ml,RandomForest,,,,6.752
+3328,0.13,0.0,0.87,8.94,SARIMAX,6.752,10.715,ml,SARIMAX,,,,6.752
+163205,0.0,0.19,0.81,22.83,RandomForest,6.755,,ml,RandomForest,,,,6.755
+133673,0.14,0.24,0.62,9.03,RandomForest,6.756,8.066,ml,RandomForest,,,,6.756
+133564,0.09,0.04,0.87,8.7,RandomForest,6.759,9.819,ml,RandomForest,,,,6.759
+155023,0.52,0.04,0.44,13.02,RandomForest,6.76,9.819,ml,RandomForest,,,,6.76
+133227,0.28,0.09,0.63,11.98,HoltWinters,6.762,11.222,ml,HoltWinters,,,,6.762
+6405,0.11,0.13,0.76,7.65,SARIMAX,6.763,9.352,ml,SARIMAX,,,,6.763
+6986,0.52,0.03,0.45,7.25,RandomForest,6.766,8.575,ml,RandomForest,,,,6.766
+2685,0.0,0.43,0.57,15.28,SARIMAX,6.784,11.629,ml,SARIMAX,,,,6.784
+1072,0.17,0.0,0.83,24.36,HoltWinters,6.786,46.917,ml,HoltWinters,,,,6.786
+133605,0.34,0.09,0.57,9.54,RandomForest,6.789,9.685,ml,RandomForest,,,,6.789
+8934,0.0,0.34,0.66,11.03,RandomForest,6.789,9.973,ml,RandomForest,,,,6.789
+155060,0.2,0.04,0.76,9.8,HoltWinters,6.79,11.843,ml,HoltWinters,,,,6.79
+9316,0.0,0.05,0.95,11.86,RandomForest,6.79,13.857,ml,RandomForest,,,,6.79
+3462,0.13,0.22,0.65,9.5,SARIMAX,6.791,15.465,ml,SARIMAX,,,,6.791
+133267,0.26,0.09,0.65,10.45,HoltWinters,6.794,,ml,HoltWinters,,,,6.794
+163803,0.27,0.32,0.41,22.29,RandomForest,6.795,,ml,RandomForest,,,,6.795
+2879,1.0,0.0,0.0,86.94,RandomForest,6.806,9.533,ml,RandomForest,,,,6.806
+1102,0.04,0.01,0.95,9.71,RandomForest,6.816,12.133,ml,RandomForest,,,,6.816
+133601,0.63,0.15,0.22,12.32,RandomForest,6.816,9.171,ml,RandomForest,,,,6.816
+134029,0.38,0.18,0.44,12.72,RandomForest,6.816,14.713,ml,RandomForest,,,,6.816
+3126,0.01,0.15,0.84,11.76,RandomForest,6.816,10.5,ml,RandomForest,,,,6.816
+125652,0.5,0.39,0.11,12.0,RandomForest,6.82,,ml,RandomForest,,,,6.82
+2891,0.0,0.65,0.35,15.33,SARIMAX,6.823,12.85,ml,SARIMAX,,,,6.823
+6448,0.0,0.4,0.6,17.84,HoltWinters,6.824,16.786,ml,HoltWinters,,,,6.824
+3967,0.04,0.09,0.87,8.75,HoltWinters,6.829,11.134,ml,HoltWinters,,,,6.829
+3361,0.0,0.63,0.37,11.85,HoltWinters,6.834,13.797,ml,HoltWinters,,,,6.834
+133450,0.39,0.03,0.58,8.94,SARIMAX,6.842,11.936,ml,SARIMAX,,,,6.842
+133708,0.0,0.25,0.75,16.55,RandomForest,6.842,21.482,ml,RandomForest,,,,6.842
+1947,0.29,0.2,0.51,7.42,RandomForest,6.849,7.675,ml,RandomForest,,,,6.849
+3543,0.0,0.41,0.59,13.42,RandomForest,6.849,22.155,ml,RandomForest,,,,6.849
+104001,0.02,0.0,0.98,8.81,SARIMAX,6.854,11.186,ml,SARIMAX,,,,6.854
+63601,0.0,0.0,1.0,13.41,SARIMAX,6.866,,ml,SARIMAX,,,,6.866
+6438,0.0,0.78,0.22,21.79,HoltWinters,6.866,21.445,ml,HoltWinters,,,,6.866
+3715,0.0,0.1,0.9,11.72,HoltWinters,6.87,13.809,ml,HoltWinters,,,,6.87
+1114,0.04,0.1,0.86,7.88,SARIMAX,6.873,,ml,SARIMAX,,,,6.873
+133530,0.6,0.0,0.4,8.63,RandomForest,6.873,8.141,ml,RandomForest,,,,6.873
+3767,0.0,0.36,0.64,16.76,RandomForest,6.873,18.23,ml,RandomForest,,,,6.873
+133266,0.0,0.07,0.93,9.7,RandomForest,6.878,10.089,ml,RandomForest,,,,6.878
+9320,0.1,0.11,0.79,7.81,HoltWinters,6.883,9.405,ml,HoltWinters,,,,6.883
+5008,0.25,0.53,0.22,13.48,RandomForest,6.884,18.541,ml,RandomForest,,,,6.884
+2828,0.0,0.61,0.39,18.11,HoltWinters,6.896,10.797,ml,HoltWinters,,,,6.896
+141801,0.03,0.08,0.89,8.82,RandomForest,6.903,11.668,ml,RandomForest,,,,6.903
+133229,0.37,0.05,0.58,11.94,SARIMAX,6.904,12.522,ml,SARIMAX,,,,6.904
+3174,0.09,0.49,0.42,12.82,RandomForest,6.912,28.371,ml,RandomForest,,,,6.912
+3957,0.0,0.63,0.37,13.7,SARIMAX,6.912,25.08,ml,SARIMAX,,,,6.912
+9310,0.52,0.12,0.36,10.79,HoltWinters,6.914,33.534,ml,HoltWinters,,,,6.914
+134027,0.57,0.08,0.35,13.03,RandomForest,6.916,,ml,RandomForest,,,,6.916
+133643,0.04,0.3,0.66,12.16,SARIMAX,6.919,,ml,SARIMAX,,,,6.919
+133245,0.0,0.47,0.53,18.66,RandomForest,6.921,18.197,ml,RandomForest,,,,6.921
+9745,0.12,0.04,0.84,9.02,HoltWinters,6.93,12.073,ml,HoltWinters,,,,6.93
+3802,0.33,0.08,0.59,10.0,HoltWinters,6.938,10.574,ml,HoltWinters,,,,6.938
+3817,0.4,0.14,0.46,8.51,HoltWinters,6.939,8.826,ml,HoltWinters,,,,6.939
+1059,0.07,0.05,0.88,10.12,SARIMAX,6.95,11.411,ml,SARIMAX,,,,6.95
+160074,0.0,0.07,0.93,13.06,HoltWinters,6.962,16.886,ml,HoltWinters,,,,6.962
+133672,0.0,0.13,0.87,12.09,SARIMAX,6.965,9.489,ml,SARIMAX,,,,6.965
+8727,0.31,0.48,0.21,11.67,RandomForest,6.971,11.484,ml,RandomForest,,,,6.971
+155015,0.74,0.12,0.14,12.74,RandomForest,6.998,10.443,ml,RandomForest,,,,6.998
+133667,0.02,0.04,0.94,11.68,HoltWinters,7.009,12.458,ml,HoltWinters,,,,7.009
+62801,0.06,0.41,0.53,11.47,SARIMAX,7.016,12.625,ml,SARIMAX,,,,7.016
+133498,0.26,0.26,0.48,10.68,SARIMAX,7.017,11.883,ml,SARIMAX,,,,7.017
+135043,0.33,0.27,0.4,12.42,HoltWinters,7.018,10.346,ml,HoltWinters,,,,7.018
+155083,0.04,0.19,0.77,11.14,HoltWinters,7.026,10.04,ml,HoltWinters,,,,7.026
+1901,0.0,0.41,0.59,14.49,RandomForest,7.028,,ml,RandomForest,,,,7.028
+133272,0.09,0.23,0.68,10.06,SARIMAX,7.03,10.139,ml,SARIMAX,,,,7.03
+92401,0.0,0.14,0.86,245.02,RandomForest,7.031,17.201,ml,RandomForest,,,,7.031
+1823,0.05,0.09,0.86,11.62,SARIMAX,7.036,12.014,ml,SARIMAX,,,,7.036
+3808,0.3,0.54,0.16,11.23,SARIMAX,7.036,12.691,ml,SARIMAX,,,,7.036
+134163,0.06,0.22,0.72,10.18,HoltWinters,7.039,11.969,ml,HoltWinters,,,,7.039
+42801,0.37,0.25,0.38,20.43,SARIMAX,7.039,,ml,SARIMAX,,,,7.039
+134005,0.55,0.09,0.36,9.74,HoltWinters,7.041,9.889,ml,HoltWinters,,,,7.041
+133239,0.0,0.1,0.9,67.45,RandomForest,7.043,19.269,ml,RandomForest,,,,7.043
+133243,,,,,SARIMAX,7.049,,ml,SARIMAX,,,,7.049
+1066,0.06,0.0,0.94,8.99,RandomForest,7.058,9.215,ml,RandomForest,,,,7.058
+2646,0.33,0.0,0.67,19.33,SARIMAX,7.062,8.475,ml,SARIMAX,,,,7.062
+63801,0.96,0.04,0.0,11.61,RandomForest,7.068,8.54,ml,RandomForest,,,,7.068
+134120,0.14,0.14,0.72,9.49,RandomForest,7.071,10.714,ml,RandomForest,,,,7.071
+2609,0.64,0.02,0.34,9.39,RandomForest,7.072,8.769,ml,RandomForest,,,,7.072
+2908,0.28,0.22,0.5,14.12,RandomForest,7.074,11.818,ml,RandomForest,,,,7.074
+133474,0.0,0.14,0.86,13.86,RandomForest,7.082,12.994,ml,RandomForest,,,,7.082
+3165,0.01,0.49,0.5,12.04,RandomForest,7.083,11.402,ml,RandomForest,,,,7.083
+6424,0.0,1.0,0.0,33.12,HoltWinters,7.084,22.786,ml,HoltWinters,,,,7.084
+2192,0.21,0.15,0.64,8.68,HoltWinters,7.093,9.31,ml,HoltWinters,,,,7.093
+3737,0.27,0.0,0.73,10.25,RandomForest,7.099,,ml,RandomForest,,,,7.099
+62404,0.01,0.11,0.88,12.7,RandomForest,7.102,13.232,ml,RandomForest,,,,7.102
+134047,0.19,0.15,0.66,14.78,SARIMAX,7.103,16.8,ml,SARIMAX,,,,7.103
+3004,0.57,0.32,0.11,15.13,RandomForest,7.125,16.475,ml,RandomForest,,,,7.125
+5051,0.06,0.51,0.43,13.97,SARIMAX,7.13,,ml,SARIMAX,,,,7.13
+133212,0.41,0.42,0.17,24.53,HoltWinters,7.137,23.0,ml,HoltWinters,,,,7.137
+99602,0.01,0.09,0.9,11.63,RandomForest,7.142,13.138,ml,RandomForest,,,,7.142
+2307,0.0,0.0,1.0,65.37,SARIMAX,7.146,152.897,ml,SARIMAX,,,,7.146
+3340,0.0,0.09,0.91,11.53,HoltWinters,7.153,,ml,HoltWinters,,,,7.153
+8079,0.0,0.45,0.55,9.28,RandomForest,7.154,10.492,ml,RandomForest,,,,7.154
+133691,0.0,0.27,0.73,10.45,SARIMAX,7.158,,ml,SARIMAX,,,,7.158
+133235,0.0,0.04,0.96,16.12,RandomForest,7.16,16.71,ml,RandomForest,,,,7.16
+133632,0.0,0.25,0.75,9.25,SARIMAX,7.161,11.914,ml,SARIMAX,,,,7.161
+163409,0.41,0.3,0.29,14.29,RandomForest,7.164,29.329,ml,RandomForest,,,,7.164
+133486,0.33,0.31,0.36,14.14,SARIMAX,7.171,16.135,ml,SARIMAX,,,,7.171
+134162,0.13,0.11,0.76,9.48,SARIMAX,7.171,10.989,ml,SARIMAX,,,,7.171
+135029,0.42,0.47,0.11,15.92,SARIMAX,7.172,13.844,ml,SARIMAX,,,,7.172
+134004,0.09,0.15,0.76,8.02,RandomForest,7.175,10.719,ml,RandomForest,,,,7.175
+2877,0.44,0.22,0.34,8.88,HoltWinters,7.175,8.439,ml,HoltWinters,,,,7.175
+133599,0.0,0.44,0.56,13.12,HoltWinters,7.176,10.171,ml,HoltWinters,,,,7.176
+3443,0.14,0.2,0.66,11.28,RandomForest,7.178,14.695,ml,RandomForest,,,,7.178
+1767,1.0,0.0,0.0,95.89,RandomForest,7.179,165.56,ml,RandomForest,,,,7.179
+2548,0.19,0.62,0.19,11.48,SARIMAX,7.182,10.214,ml,SARIMAX,,,,7.182
+1098,0.0,0.11,0.89,12.41,SARIMAX,7.184,,ml,SARIMAX,,,,7.184
+3221,0.16,0.07,0.77,9.76,RandomForest,7.184,11.338,ml,RandomForest,,,,7.184
+133573,0.31,0.11,0.58,12.37,HoltWinters,7.19,11.415,ml,HoltWinters,,,,7.19
+2174,0.08,0.23,0.69,10.39,HoltWinters,7.195,,ml,HoltWinters,,,,7.195
+3540,0.75,0.13,0.12,11.04,RandomForest,7.197,12.923,ml,RandomForest,,,,7.197
+3215,0.0,0.26,0.74,15.33,RandomForest,7.199,14.304,ml,RandomForest,,,,7.199
+2709,0.25,0.13,0.62,10.88,SARIMAX,7.202,10.011,ml,SARIMAX,,,,7.202
+1896,0.26,0.0,0.74,9.97,HoltWinters,7.207,,ml,HoltWinters,,,,7.207
+1774,0.0,0.34,0.66,11.12,RandomForest,7.208,,ml,RandomForest,,,,7.208
+155003,0.03,0.02,0.95,8.64,HoltWinters,7.21,9.611,ml,HoltWinters,,,,7.21
+155103,0.0,0.41,0.59,14.35,RandomForest,7.21,21.924,ml,RandomForest,,,,7.21
+133358,0.0,0.56,0.44,11.34,SARIMAX,7.211,13.725,ml,SARIMAX,,,,7.211
+133545,0.07,0.12,0.81,9.77,RandomForest,7.212,11.949,ml,RandomForest,,,,7.212
+9424,0.0,0.24,0.76,9.3,SARIMAX,7.218,10.226,ml,SARIMAX,,,,7.218
+3765,0.0,0.0,1.0,24.92,RandomForest,7.222,16.159,ml,RandomForest,,,,7.222
+9812,0.21,0.2,0.59,12.07,HoltWinters,7.227,11.996,ml,HoltWinters,,,,7.227
+125607,0.0,0.13,0.87,7.37,RandomForest,7.232,9.054,ml,RandomForest,,,,7.232
+5043,0.09,0.09,0.82,9.34,SARIMAX,7.239,9.387,ml,SARIMAX,,,,7.239
+133809,0.58,0.42,0.0,18.24,RandomForest,7.24,12.196,ml,RandomForest,,,,7.24
+135076,0.28,0.37,0.35,12.72,HoltWinters,7.242,9.37,ml,HoltWinters,,,,7.242
+3725,0.02,0.09,0.89,10.51,SARIMAX,7.243,11.282,ml,SARIMAX,,,,7.243
+2713,0.0,0.24,0.76,9.7,SARIMAX,7.252,9.298,ml,SARIMAX,,,,7.252
+92202,0.24,0.16,0.6,9.38,HoltWinters,7.252,9.173,ml,HoltWinters,,,,7.252
+133675,0.02,0.09,0.89,15.05,SARIMAX,7.258,13.203,ml,SARIMAX,,,,7.258
+2616,0.52,0.28,0.2,14.14,SARIMAX,7.27,13.677,ml,SARIMAX,,,,7.27
+125618,0.5,0.5,0.0,15.31,RandomForest,7.272,12.231,ml,RandomForest,,,,7.272
+3059,0.12,0.39,0.49,26.18,RandomForest,7.274,19.085,ml,RandomForest,,,,7.274
+133323,0.0,0.85,0.15,36.87,HoltWinters,7.28,,ml,HoltWinters,,,,7.28
+3396,0.62,0.0,0.38,15.51,RandomForest,7.282,25.86,ml,RandomForest,,,,7.282
+1768,0.15,0.03,0.82,8.61,HoltWinters,7.284,,ml,HoltWinters,,,,7.284
+3813,0.34,0.12,0.54,12.21,HoltWinters,7.286,,ml,HoltWinters,,,,7.286
+133717,0.5,0.12,0.38,11.62,HoltWinters,7.287,,ml,HoltWinters,,,,7.287
+64401,0.0,0.64,0.36,17.29,SARIMAX,7.288,12.833,ml,SARIMAX,,,,7.288
+39208,0.24,0.15,0.61,9.65,RandomForest,7.298,11.102,ml,RandomForest,,,,7.298
+5026,0.03,0.09,0.88,10.67,RandomForest,7.306,12.081,ml,RandomForest,,,,7.306
+163623,0.24,0.29,0.47,12.23,RandomForest,7.312,12.97,ml,RandomForest,,,,7.312
+3822,0.5,0.26,0.24,13.23,HoltWinters,7.32,14.0,ml,HoltWinters,,,,7.32
+133492,0.0,0.77,0.23,19.06,RandomForest,7.322,20.907,ml,RandomForest,,,,7.322
+133595,0.0,0.0,1.0,320.61,SARIMAX,7.326,,ml,SARIMAX,,,,7.326
+3394,0.47,0.0,0.53,12.39,RandomForest,7.331,13.129,ml,RandomForest,,,,7.331
+5069,0.0,0.25,0.75,25.15,RandomForest,7.331,36.437,ml,RandomForest,,,,7.331
+7426,0.25,0.14,0.61,11.32,RandomForest,7.332,12.593,ml,RandomForest,,,,7.332
+8662,0.17,0.07,0.76,10.27,SARIMAX,7.333,10.592,ml,SARIMAX,,,,7.333
+5068,0.0,0.29,0.71,17.04,SARIMAX,7.335,16.757,ml,SARIMAX,,,,7.335
+133710,0.29,0.07,0.64,9.62,RandomForest,7.336,10.842,ml,RandomForest,,,,7.336
+3445,0.27,0.16,0.57,9.89,RandomForest,7.343,10.335,ml,RandomForest,,,,7.343
+3805,0.0,0.04,0.96,8.41,HoltWinters,7.349,,ml,HoltWinters,,,,7.349
+9319,0.11,0.16,0.73,11.0,SARIMAX,7.349,12.258,ml,SARIMAX,,,,7.349
+135023,0.29,0.33,0.38,16.54,SARIMAX,7.353,12.545,ml,SARIMAX,,,,7.353
+160032,0.0,0.69,0.31,14.82,RandomForest,7.364,,ml,RandomForest,,,,7.364
+3346,0.07,0.01,0.92,7.51,HoltWinters,7.366,9.29,ml,HoltWinters,,,,7.366
+2749,0.42,0.33,0.25,12.63,SARIMAX,7.37,10.588,ml,SARIMAX,,,,7.37
+61001,0.0,0.16,0.84,12.85,RandomForest,7.381,13.849,ml,RandomForest,,,,7.381
+136812,0.0,0.2,0.8,9.52,RandomForest,7.389,9.295,ml,RandomForest,,,,7.389
+3330,0.0,0.52,0.48,10.53,RandomForest,7.391,9.114,ml,RandomForest,,,,7.391
+64402,0.0,0.21,0.79,26.39,RandomForest,7.402,56.436,ml,RandomForest,,,,7.402
+3377,0.25,0.33,0.42,10.05,RandomForest,7.404,8.843,ml,RandomForest,,,,7.404
+8796,0.26,0.24,0.5,12.65,HoltWinters,7.405,14.826,ml,HoltWinters,,,,7.405
+3818,0.09,0.17,0.74,12.36,HoltWinters,7.411,16.038,ml,HoltWinters,,,,7.411
+6417,0.15,0.0,0.85,9.05,HoltWinters,7.414,10.822,ml,HoltWinters,,,,7.414
+5097,0.0,0.5,0.5,13.0,HoltWinters,7.428,10.988,ml,HoltWinters,,,,7.428
+3397,0.0,0.59,0.41,15.03,SARIMAX,7.429,14.588,ml,SARIMAX,,,,7.429
+133386,0.07,0.08,0.85,7.69,RandomForest,7.43,10.37,ml,RandomForest,,,,7.43
+133630,0.25,0.08,0.67,10.69,HoltWinters,7.43,8.848,ml,HoltWinters,,,,7.43
+94403,0.06,0.06,0.88,14.08,SARIMAX,7.43,22.016,ml,SARIMAX,,,,7.43
+125604,0.29,0.33,0.38,10.24,SARIMAX,7.436,12.994,ml,SARIMAX,,,,7.436
+2894,0.01,0.07,0.92,9.96,RandomForest,7.436,12.028,ml,RandomForest,,,,7.436
+133519,0.36,0.06,0.58,12.41,SARIMAX,7.438,11.332,ml,SARIMAX,,,,7.438
+134010,0.0,0.44,0.56,12.98,SARIMAX,7.459,8.368,ml,SARIMAX,,,,7.459
+155021,0.35,0.34,0.31,11.28,HoltWinters,7.462,9.034,ml,HoltWinters,,,,7.462
+2910,0.0,0.23,0.77,12.78,RandomForest,7.463,12.611,ml,RandomForest,,,,7.463
+1808,0.77,0.0,0.23,15.72,RandomForest,7.47,,ml,RandomForest,,,,7.47
+2747,0.0,0.3,0.7,56.23,RandomForest,7.478,,ml,RandomForest,,,,7.478
+134022,0.14,0.58,0.28,12.84,RandomForest,7.479,15.216,ml,RandomForest,,,,7.479
+92404,0.0,0.22,0.78,50.88,SARIMAX,7.479,22.921,ml,SARIMAX,,,,7.479
+2608,0.4,0.07,0.53,10.53,HoltWinters,7.488,11.583,ml,HoltWinters,,,,7.488
+5104,0.48,0.04,0.48,15.01,RandomForest,7.488,17.826,ml,RandomForest,,,,7.488
+133240,0.08,0.24,0.68,14.92,HoltWinters,7.49,15.238,ml,HoltWinters,,,,7.49
+3352,0.38,0.08,0.54,8.73,RandomForest,7.495,10.214,ml,RandomForest,,,,7.495
+155100,0.25,0.35,0.4,11.12,SARIMAX,7.504,13.131,ml,SARIMAX,,,,7.504
+3393,0.0,0.52,0.48,13.07,RandomForest,7.512,15.078,ml,RandomForest,,,,7.512
+1859,0.34,0.3,0.36,25.82,SARIMAX,7.515,13.49,ml,SARIMAX,,,,7.515
+134053,0.24,0.2,0.56,12.76,HoltWinters,7.519,12.798,ml,HoltWinters,,,,7.519
+136880,0.31,0.17,0.52,14.18,RandomForest,7.525,12.41,ml,RandomForest,,,,7.525
+125617,0.56,0.19,0.25,10.42,HoltWinters,7.527,10.797,ml,HoltWinters,,,,7.527
+133657,0.0,0.21,0.79,10.42,HoltWinters,7.527,9.727,ml,HoltWinters,,,,7.527
+136804,0.0,0.88,0.12,20.77,SARIMAX,7.53,,ml,SARIMAX,,,,7.53
+3836,0.0,0.24,0.76,9.39,RandomForest,7.536,10.569,ml,RandomForest,,,,7.536
+134127,0.86,0.11,0.03,9.62,RandomForest,7.538,9.096,ml,RandomForest,,,,7.538
+9340,0.06,0.15,0.79,9.53,SARIMAX,7.54,7.983,ml,SARIMAX,,,,7.54
+3138,0.23,0.31,0.46,8.65,RandomForest,7.543,10.505,ml,RandomForest,,,,7.543
+155002,0.38,0.02,0.6,14.21,RandomForest,7.548,12.7,ml,RandomForest,,,,7.548
+155105,0.44,0.18,0.38,8.24,RandomForest,7.552,8.136,ml,RandomForest,,,,7.552
+1097,0.04,0.0,0.96,9.13,SARIMAX,7.553,12.241,ml,SARIMAX,,,,7.553
+134009,0.6,0.14,0.26,10.7,RandomForest,7.554,10.994,ml,RandomForest,,,,7.554
+47401,0.25,0.06,0.69,11.89,RandomForest,7.555,13.678,ml,RandomForest,,,,7.555
+133356,0.03,0.03,0.94,7.93,HoltWinters,7.557,,ml,HoltWinters,,,,7.557
+3146,0.48,0.32,0.2,13.8,HoltWinters,7.564,11.056,ml,HoltWinters,,,,7.564
+9338,0.07,0.61,0.32,37.35,SARIMAX,7.569,12.002,ml,SARIMAX,,,,7.569
+1895,0.0,0.13,0.87,11.95,RandomForest,7.57,10.563,ml,RandomForest,,,,7.57
+5005,0.13,0.36,0.51,10.38,SARIMAX,7.571,10.8,ml,SARIMAX,,,,7.571
+155014,0.94,0.06,0.0,11.69,RandomForest,7.581,10.98,ml,RandomForest,,,,7.581
+2271,0.41,0.36,0.23,22.39,RandomForest,7.581,20.909,ml,RandomForest,,,,7.581
+134034,0.06,0.04,0.9,11.2,HoltWinters,7.585,14.451,ml,HoltWinters,,,,7.585
+5090,0.08,0.02,0.9,12.85,SARIMAX,7.589,,ml,SARIMAX,,,,7.589
+3318,0.06,0.06,0.88,9.87,HoltWinters,7.592,10.749,ml,HoltWinters,,,,7.592
+7324,0.09,0.17,0.74,10.87,SARIMAX,7.605,10.129,ml,SARIMAX,,,,7.605
+133301,0.03,0.21,0.76,21.28,RandomForest,7.611,24.594,ml,RandomForest,,,,7.611
+1864,0.6,0.31,0.09,17.21,RandomForest,7.611,12.18,ml,RandomForest,,,,7.611
+171010,0.17,0.34,0.49,36.81,SARIMAX,7.613,,ml,SARIMAX,,,,7.613
+1121,0.0,0.03,0.97,16.48,HoltWinters,7.614,13.307,ml,HoltWinters,,,,7.614
+133723,0.0,0.17,0.83,8.7,RandomForest,7.614,10.564,ml,RandomForest,,,,7.614
+133407,0.09,0.16,0.75,7.66,RandomForest,7.616,10.414,ml,RandomForest,,,,7.616
+133465,0.0,0.41,0.59,12.61,RandomForest,7.618,10.744,ml,RandomForest,,,,7.618
+133747,0.04,0.08,0.88,9.32,HoltWinters,7.621,,ml,HoltWinters,,,,7.621
+3763,0.0,0.37,0.63,17.6,RandomForest,7.627,19.79,ml,RandomForest,,,,7.627
+133701,0.0,0.33,0.67,17.99,HoltWinters,7.631,,ml,HoltWinters,,,,7.631
+8903,0.5,0.2,0.3,11.62,RandomForest,7.642,12.207,ml,RandomForest,,,,7.642
+3332,0.02,0.24,0.74,10.84,RandomForest,7.643,11.492,ml,RandomForest,,,,7.643
+155084,0.05,0.11,0.84,9.05,HoltWinters,7.65,10.078,ml,HoltWinters,,,,7.65
+4178,0.0,0.36,0.64,16.73,SARIMAX,7.658,16.438,ml,SARIMAX,,,,7.658
+2235,0.0,0.32,0.68,9.19,HoltWinters,7.66,11.058,ml,HoltWinters,,,,7.66
+3459,0.0,0.59,0.41,15.89,RandomForest,7.661,,ml,RandomForest,,,,7.661
+133405,0.1,0.02,0.88,8.23,SARIMAX,7.665,9.824,ml,SARIMAX,,,,7.665
+133551,0.11,0.09,0.8,11.4,RandomForest,7.666,,ml,RandomForest,,,,7.666
+5094,0.03,0.02,0.95,9.85,RandomForest,7.666,12.62,ml,RandomForest,,,,7.666
+135017,0.24,0.24,0.52,15.28,RandomForest,7.691,15.052,ml,RandomForest,,,,7.691
+3781,0.0,0.15,0.85,19.71,SARIMAX,7.703,14.034,ml,SARIMAX,,,,7.703
+1801,0.09,0.0,0.91,10.37,RandomForest,7.706,11.249,ml,RandomForest,,,,7.706
+135055,0.35,0.47,0.18,14.25,HoltWinters,7.71,10.833,ml,HoltWinters,,,,7.71
+2827,0.0,0.47,0.53,9.6,RandomForest,7.712,9.259,ml,RandomForest,,,,7.712
+133461,0.1,0.07,0.83,10.36,SARIMAX,7.72,9.37,ml,SARIMAX,,,,7.72
+115007,0.24,0.45,0.31,23.7,RandomForest,7.721,21.047,ml,RandomForest,,,,7.721
+155016,0.7,0.15,0.15,15.6,RandomForest,7.722,14.921,ml,RandomForest,,,,7.722
+133444,0.01,0.54,0.45,14.96,HoltWinters,7.723,13.139,ml,HoltWinters,,,,7.723
+133278,,,,,SARIMAX,7.724,,ml,SARIMAX,,,,7.724
+155005,0.06,0.08,0.86,12.59,HoltWinters,7.729,,ml,HoltWinters,,,,7.729
+160028,0.0,0.26,0.74,17.66,HoltWinters,7.731,31.682,ml,HoltWinters,,,,7.731
+133344,0.39,0.61,0.0,29.9,RandomForest,7.732,31.745,ml,RandomForest,,,,7.732
+9049,0.44,0.38,0.18,23.66,SARIMAX,7.745,13.185,ml,SARIMAX,,,,7.745
+133634,0.0,0.16,0.84,8.81,SARIMAX,7.746,9.652,ml,SARIMAX,,,,7.746
+3129,0.0,0.53,0.47,14.23,RandomForest,7.75,10.775,ml,RandomForest,,,,7.75
+154401,0.0,0.22,0.78,11.81,RandomForest,7.755,12.55,ml,RandomForest,,,,7.755
+155010,0.56,0.12,0.32,12.45,RandomForest,7.757,9.253,ml,RandomForest,,,,7.757
+133805,0.8,0.07,0.13,11.98,RandomForest,7.758,11.886,ml,RandomForest,,,,7.758
+5083,,,,,SARIMAX,7.758,,ml,SARIMAX,,,,7.758
+5017,0.45,0.19,0.36,10.25,HoltWinters,7.759,10.75,ml,HoltWinters,,,,7.759
+3399,0.09,0.07,0.84,8.88,SARIMAX,7.763,12.461,ml,SARIMAX,,,,7.763
+134169,0.58,0.42,0.0,16.95,HoltWinters,7.764,14.271,ml,HoltWinters,,,,7.764
+5009,0.0,0.61,0.39,23.13,HoltWinters,7.767,13.429,ml,HoltWinters,,,,7.767
+133268,0.52,0.03,0.45,12.29,RandomForest,7.768,10.926,ml,RandomForest,,,,7.768
+3326,0.51,0.2,0.29,14.68,HoltWinters,7.769,17.262,ml,HoltWinters,,,,7.769
+1095,0.0,0.38,0.62,12.95,HoltWinters,7.775,14.087,ml,HoltWinters,,,,7.775
+133293,0.05,0.46,0.49,14.65,HoltWinters,7.775,10.789,ml,HoltWinters,,,,7.775
+92201,0.19,0.02,0.79,9.13,SARIMAX,7.776,10.85,ml,SARIMAX,,,,7.776
+104802,0.2,0.21,0.59,10.15,HoltWinters,7.782,9.949,ml,HoltWinters,,,,7.782
+3220,0.0,0.39,0.61,15.01,RandomForest,7.786,15.388,ml,RandomForest,,,,7.786
+1081,0.07,0.02,0.91,8.9,RandomForest,7.789,9.624,ml,RandomForest,,,,7.789
+8174,0.45,0.17,0.38,11.35,RandomForest,7.79,10.97,ml,RandomForest,,,,7.79
+133535,0.12,0.1,0.78,19.61,RandomForest,7.792,35.545,ml,RandomForest,,,,7.792
+3654,0.0,0.1,0.9,9.33,RandomForest,7.792,9.827,ml,RandomForest,,,,7.792
+125608,0.0,0.76,0.24,22.3,SARIMAX,7.793,,ml,SARIMAX,,,,7.793
+134143,0.0,0.03,0.97,11.58,RandomForest,7.795,13.736,ml,RandomForest,,,,7.795
+5081,0.09,0.44,0.47,12.71,HoltWinters,7.8,14.153,ml,HoltWinters,,,,7.8
+133690,0.04,0.05,0.91,9.77,RandomForest,7.804,12.336,ml,RandomForest,,,,7.804
+133714,0.37,0.63,0.0,15.66,SARIMAX,7.807,14.676,ml,SARIMAX,,,,7.807
+2231,0.35,0.33,0.32,11.71,SARIMAX,7.814,,ml,SARIMAX,,,,7.814
+9085,0.71,0.04,0.25,10.83,RandomForest,7.814,8.928,ml,RandomForest,,,,7.814
+163404,0.06,0.45,0.49,12.73,HoltWinters,7.818,8.977,ml,HoltWinters,,,,7.818
+135070,0.03,0.05,0.92,9.58,HoltWinters,7.824,14.327,ml,HoltWinters,,,,7.824
+3363,0.0,0.1,0.9,9.14,HoltWinters,7.824,12.14,ml,HoltWinters,,,,7.824
+133270,0.0,0.46,0.54,16.35,RandomForest,7.828,,ml,RandomForest,,,,7.828
+133274,0.38,0.11,0.51,10.57,HoltWinters,7.828,9.678,ml,HoltWinters,,,,7.828
+133556,0.42,0.02,0.56,10.91,RandomForest,7.83,9.811,ml,RandomForest,,,,7.83
+2888,0.34,0.44,0.22,14.4,RandomForest,7.83,10.054,ml,RandomForest,,,,7.83
+3380,0.14,0.0,0.86,76.33,RandomForest,7.834,,ml,RandomForest,,,,7.834
+6400,0.24,0.56,0.2,13.46,SARIMAX,7.839,8.262,ml,SARIMAX,,,,7.839
+3054,0.51,0.22,0.27,13.69,SARIMAX,7.847,12.665,ml,SARIMAX,,,,7.847
+3222,0.0,0.07,0.93,11.02,SARIMAX,7.849,11.828,ml,SARIMAX,,,,7.849
+3351,0.21,0.01,0.78,8.38,HoltWinters,7.855,11.508,ml,HoltWinters,,,,7.855
+125662,0.6,0.22,0.18,14.48,RandomForest,7.857,14.095,ml,RandomForest,,,,7.857
+160005,0.29,0.29,0.42,13.08,HoltWinters,7.858,19.015,ml,HoltWinters,,,,7.858
+1092,0.05,0.05,0.9,11.17,RandomForest,7.877,,ml,RandomForest,,,,7.877
+134028,0.37,0.24,0.39,13.86,HoltWinters,7.879,,ml,HoltWinters,,,,7.879
+1268,0.33,0.07,0.6,11.53,RandomForest,7.884,12.492,ml,RandomForest,,,,7.884
+1883,0.0,0.16,0.84,11.61,RandomForest,7.891,15.842,ml,RandomForest,,,,7.891
+171804,0.01,0.81,0.18,35.12,RandomForest,7.892,,ml,RandomForest,,,,7.892
+2177,0.38,0.1,0.52,14.49,HoltWinters,7.892,14.302,ml,HoltWinters,,,,7.892
+134063,0.0,0.53,0.47,418.09,SARIMAX,7.904,30.505,ml,SARIMAX,,,,7.904
+161801,0.19,0.41,0.4,12.92,HoltWinters,7.904,13.556,ml,HoltWinters,,,,7.904
+115003,0.0,0.15,0.85,21.81,SARIMAX,7.907,14.017,ml,SARIMAX,,,,7.907
+5066,0.19,0.08,0.73,11.29,RandomForest,7.909,,ml,RandomForest,,,,7.909
+1889,0.0,0.4,0.6,14.87,RandomForest,7.911,,ml,RandomForest,,,,7.911
+133567,0.22,0.22,0.56,12.4,SARIMAX,7.918,12.896,ml,SARIMAX,,,,7.918
+3168,0.06,0.16,0.78,12.74,RandomForest,7.918,23.238,ml,RandomForest,,,,7.918
+133228,0.58,0.1,0.32,11.32,HoltWinters,7.923,11.121,ml,HoltWinters,,,,7.923
+36004,0.02,0.0,0.98,9.91,RandomForest,7.925,14.546,ml,RandomForest,,,,7.925
+133552,0.0,0.44,0.56,15.36,SARIMAX,7.928,,ml,SARIMAX,,,,7.928
+9426,0.0,0.08,0.92,13.77,HoltWinters,7.933,12.662,ml,HoltWinters,,,,7.933
+136801,0.0,0.23,0.77,12.66,RandomForest,7.937,11.792,ml,RandomForest,,,,7.937
+155097,0.45,0.25,0.3,14.58,HoltWinters,7.937,16.588,ml,HoltWinters,,,,7.937
+3981,0.0,0.01,0.99,16.7,RandomForest,7.937,31.305,ml,RandomForest,,,,7.937
+133249,0.02,0.19,0.79,15.0,SARIMAX,7.938,16.218,ml,SARIMAX,,,,7.938
+154601,,,,,SARIMAX,7.939,,ml,SARIMAX,,,,7.939
+125612,0.0,0.15,0.85,13.07,RandomForest,7.947,,ml,RandomForest,,,,7.947
+3212,0.02,0.13,0.85,11.35,RandomForest,7.949,12.782,ml,RandomForest,,,,7.949
+134199,0.0,0.75,0.25,200.59,SARIMAX,7.953,20.067,ml,SARIMAX,,,,7.953
+133394,0.19,0.41,0.4,12.39,SARIMAX,7.958,14.146,ml,SARIMAX,,,,7.958
+133365,0.33,0.28,0.39,11.35,SARIMAX,7.961,13.172,ml,SARIMAX,,,,7.961
+5016,0.57,0.08,0.35,14.66,RandomForest,7.969,16.332,ml,RandomForest,,,,7.969
+133255,0.12,0.05,0.83,53.2,SARIMAX,7.97,11.887,ml,SARIMAX,,,,7.97
+2674,0.0,0.53,0.47,17.43,RandomForest,7.97,15.098,ml,RandomForest,,,,7.97
+5052,0.03,0.06,0.91,11.22,RandomForest,7.97,12.911,ml,RandomForest,,,,7.97
+5027,0.04,0.12,0.84,9.71,RandomForest,7.972,11.559,ml,RandomForest,,,,7.972
+3410,0.21,0.34,0.45,10.71,RandomForest,7.973,11.074,ml,RandomForest,,,,7.973
+155135,0.14,0.11,0.75,8.04,SARIMAX,7.974,10.255,ml,SARIMAX,,,,7.974
+3124,0.0,0.24,0.76,25.62,RandomForest,7.974,21.439,ml,RandomForest,,,,7.974
+133384,0.01,0.01,0.98,12.18,RandomForest,7.975,,ml,RandomForest,,,,7.975
+39201,0.12,0.52,0.36,17.3,HoltWinters,7.975,15.344,ml,HoltWinters,,,,7.975
+5047,0.17,0.0,0.83,10.55,SARIMAX,7.976,14.402,ml,SARIMAX,,,,7.976
+3941,0.02,0.21,0.77,13.21,RandomForest,7.978,11.723,ml,RandomForest,,,,7.978
+3376,0.45,0.07,0.48,17.1,RandomForest,7.981,,ml,RandomForest,,,,7.981
+133681,0.09,0.25,0.66,12.53,HoltWinters,7.982,,ml,HoltWinters,,,,7.982
+134075,0.43,0.46,0.11,18.66,SARIMAX,7.985,12.444,ml,SARIMAX,,,,7.985
+134149,0.03,0.08,0.89,10.24,RandomForest,7.996,,ml,RandomForest,,,,7.996
+3155,0.02,0.24,0.74,11.17,SARIMAX,8.001,10.16,ml,SARIMAX,,,,8.001
+155070,0.1,0.11,0.79,10.07,SARIMAX,8.008,12.365,ml,SARIMAX,,,,8.008
+133763,0.32,0.6,0.08,15.07,RandomForest,8.017,14.74,ml,RandomForest,,,,8.017
+155065,0.0,1.0,0.0,343.4,HoltWinters,8.027,647.409,ml,HoltWinters,,,,8.027
+160007,0.0,0.2,0.8,13.32,HoltWinters,8.033,21.833,ml,HoltWinters,,,,8.033
+3745,0.02,0.41,0.57,12.84,RandomForest,8.038,16.176,ml,RandomForest,,,,8.038
+133376,0.4,0.18,0.42,10.02,SARIMAX,8.04,10.27,ml,SARIMAX,,,,8.04
+133251,0.0,0.51,0.49,19.45,SARIMAX,8.041,,ml,SARIMAX,,,,8.041
+3320,0.27,0.52,0.21,12.61,RandomForest,8.044,13.897,ml,RandomForest,,,,8.044
+133635,0.16,0.45,0.39,18.56,SARIMAX,8.049,,ml,SARIMAX,,,,8.049
+133317,0.24,0.46,0.3,22.18,HoltWinters,8.052,,ml,HoltWinters,,,,8.052
+134035,0.22,0.12,0.66,11.37,SARIMAX,8.056,13.452,ml,SARIMAX,,,,8.056
+133381,0.12,0.28,0.6,10.77,SARIMAX,8.081,,ml,SARIMAX,,,,8.081
+64405,0.0,0.69,0.31,15.69,HoltWinters,8.081,9.721,ml,HoltWinters,,,,8.081
+133534,0.57,0.2,0.23,10.75,RandomForest,8.084,9.748,ml,RandomForest,,,,8.084
+63603,0.3,0.14,0.56,11.22,RandomForest,8.084,14.47,ml,RandomForest,,,,8.084
+1789,0.28,0.13,0.59,27.1,HoltWinters,8.095,14.41,ml,HoltWinters,,,,8.095
+132002,0.0,0.23,0.77,9.28,RandomForest,8.097,14.496,ml,RandomForest,,,,8.097
+133477,0.0,0.09,0.91,11.5,RandomForest,8.1,11.168,ml,RandomForest,,,,8.1
+133275,0.7,0.13,0.17,21.08,RandomForest,8.101,12.121,ml,RandomForest,,,,8.101
+125605,0.09,0.13,0.78,8.94,RandomForest,8.104,11.671,ml,RandomForest,,,,8.104
+134159,0.08,0.47,0.45,20.82,SARIMAX,8.113,31.234,ml,SARIMAX,,,,8.113
+163403,0.11,0.33,0.56,21.63,RandomForest,8.118,23.286,ml,RandomForest,,,,8.118
+2301,0.0,0.17,0.83,10.4,RandomForest,8.129,10.546,ml,RandomForest,,,,8.129
+3024,0.0,0.14,0.86,13.78,HoltWinters,8.141,11.655,ml,HoltWinters,,,,8.141
+8181,0.0,0.23,0.77,16.19,RandomForest,8.149,19.976,ml,RandomForest,,,,8.149
+3453,0.0,0.67,0.33,19.39,RandomForest,8.15,,ml,RandomForest,,,,8.15
+2895,,,,,HoltWinters,8.152,,ml,HoltWinters,,,,8.152
+6432,0.59,0.12,0.29,20.48,RandomForest,8.155,,ml,RandomForest,,,,8.155
+6442,0.62,0.21,0.17,15.57,RandomForest,8.155,,ml,RandomForest,,,,8.155
+133645,0.06,0.1,0.84,10.88,SARIMAX,8.171,10.491,ml,SARIMAX,,,,8.171
+155101,0.48,0.52,0.0,56.92,RandomForest,8.172,23.98,ml,RandomForest,,,,8.172
+5038,0.01,0.15,0.84,15.43,RandomForest,8.175,13.94,ml,RandomForest,,,,8.175
+9321,0.07,0.13,0.8,8.85,HoltWinters,8.178,11.303,ml,HoltWinters,,,,8.178
+1871,0.02,0.8,0.18,47.95,HoltWinters,8.182,,ml,HoltWinters,,,,8.182
+133553,0.13,0.04,0.83,10.39,SARIMAX,8.187,16.543,ml,SARIMAX,,,,8.187
+133751,0.9,0.04,0.06,11.66,RandomForest,8.188,13.088,ml,RandomForest,,,,8.188
+2206,0.02,0.05,0.93,8.91,HoltWinters,8.188,9.979,ml,HoltWinters,,,,8.188
+8932,0.28,0.09,0.63,8.64,HoltWinters,8.188,10.791,ml,HoltWinters,,,,8.188
+136925,,,,,RandomForest,8.19,,ml,RandomForest,,,,8.19
+136912,0.0,0.11,0.89,9.5,RandomForest,8.191,10.523,ml,RandomForest,,,,8.191
+163405,0.33,0.27,0.4,18.41,RandomForest,8.193,40.102,ml,RandomForest,,,,8.193
+1885,0.0,0.5,0.5,26.37,RandomForest,8.194,15.158,ml,RandomForest,,,,8.194
+133636,0.13,0.15,0.72,12.62,RandomForest,8.196,11.8,ml,RandomForest,,,,8.196
+6425,0.0,0.38,0.62,22.26,HoltWinters,8.197,22.725,ml,HoltWinters,,,,8.197
+133483,0.26,0.26,0.48,16.91,RandomForest,8.203,17.556,ml,RandomForest,,,,8.203
+9811,0.0,0.64,0.36,11.1,RandomForest,8.209,9.83,ml,RandomForest,,,,8.209
+1122,0.0,0.05,0.95,14.71,RandomForest,8.212,16.175,ml,RandomForest,,,,8.212
+155006,0.39,0.18,0.43,19.35,RandomForest,8.215,,ml,RandomForest,,,,8.215
+3457,0.22,0.19,0.59,9.58,SARIMAX,8.216,12.466,ml,SARIMAX,,,,8.216
+1880,0.15,0.06,0.79,16.04,HoltWinters,8.219,16.216,ml,HoltWinters,,,,8.219
+133558,0.0,0.4,0.6,15.91,RandomForest,8.22,14.41,ml,RandomForest,,,,8.22
+8664,0.0,0.22,0.78,11.67,RandomForest,8.221,12.274,ml,RandomForest,,,,8.221
+137002,0.71,0.28,0.01,12.49,RandomForest,8.226,10.907,ml,RandomForest,,,,8.226
+3011,0.0,0.39,0.61,16.9,RandomForest,8.228,23.078,ml,RandomForest,,,,8.228
+155133,0.47,0.2,0.33,16.52,RandomForest,8.234,16.616,ml,RandomForest,,,,8.234
+3415,0.0,0.54,0.46,17.18,RandomForest,8.236,16.736,ml,RandomForest,,,,8.236
+133311,0.45,0.26,0.29,12.77,RandomForest,8.238,8.28,ml,RandomForest,,,,8.238
+134123,0.08,0.0,0.92,50.86,HoltWinters,8.24,111.21,ml,HoltWinters,,,,8.24
+5050,0.0,0.37,0.63,15.49,RandomForest,8.252,14.126,ml,RandomForest,,,,8.252
+133720,0.03,0.13,0.84,10.52,SARIMAX,8.253,10.993,ml,SARIMAX,,,,8.253
+3137,0.16,0.12,0.72,13.27,HoltWinters,8.268,17.402,ml,HoltWinters,,,,8.268
+1884,0.0,0.2,0.8,19.57,HoltWinters,8.269,14.449,ml,HoltWinters,,,,8.269
+8996,0.04,0.08,0.88,9.09,RandomForest,8.27,16.36,ml,RandomForest,,,,8.27
+1910,0.0,0.07,0.93,15.78,HoltWinters,8.272,14.167,ml,HoltWinters,,,,8.272
+136906,0.31,0.1,0.59,11.16,HoltWinters,8.276,14.949,ml,HoltWinters,,,,8.276
+134184,0.57,0.16,0.27,11.46,RandomForest,8.284,10.82,ml,RandomForest,,,,8.284
+133445,0.33,0.06,0.61,12.93,RandomForest,8.287,,ml,RandomForest,,,,8.287
+5039,0.08,0.07,0.85,12.46,RandomForest,8.312,14.437,ml,RandomForest,,,,8.312
+133348,0.52,0.13,0.35,14.66,SARIMAX,8.319,13.7,ml,SARIMAX,,,,8.319
+1835,0.12,0.16,0.72,12.16,RandomForest,8.319,10.826,ml,RandomForest,,,,8.319
+133743,0.0,0.1,0.9,9.56,RandomForest,8.323,10.451,ml,RandomForest,,,,8.323
+133343,0.08,0.4,0.52,15.58,RandomForest,8.325,16.181,ml,RandomForest,,,,8.325
+135030,0.48,0.52,0.0,18.35,HoltWinters,8.334,15.725,ml,HoltWinters,,,,8.334
+1919,0.0,0.23,0.77,19.77,RandomForest,8.349,17.823,ml,RandomForest,,,,8.349
+54402,0.0,0.1,0.9,13.44,HoltWinters,8.351,13.815,ml,HoltWinters,,,,8.351
+5079,0.09,0.15,0.76,15.05,RandomForest,8.353,13.807,ml,RandomForest,,,,8.353
+1912,0.0,0.29,0.71,18.73,RandomForest,8.36,,ml,RandomForest,,,,8.36
+136920,0.0,0.63,0.37,9.86,SARIMAX,8.362,10.772,ml,SARIMAX,,,,8.362
+1094,0.03,0.07,0.9,10.8,RandomForest,8.363,13.787,ml,RandomForest,,,,8.363
+133533,0.2,0.29,0.51,18.13,HoltWinters,8.364,14.898,ml,HoltWinters,,,,8.364
+134071,0.0,0.0,1.0,50.02,HoltWinters,8.371,14.828,ml,HoltWinters,,,,8.371
+3367,0.4,0.25,0.35,13.18,HoltWinters,8.376,11.526,ml,HoltWinters,,,,8.376
+44001,0.05,0.07,0.88,8.87,SARIMAX,8.38,21.355,ml,SARIMAX,,,,8.38
+5092,0.0,0.25,0.75,18.18,SARIMAX,8.38,,ml,SARIMAX,,,,8.38
+133310,0.3,0.02,0.68,11.09,HoltWinters,8.383,,ml,HoltWinters,,,,8.383
+5014,0.23,0.43,0.34,8.88,HoltWinters,8.388,9.769,ml,HoltWinters,,,,8.388
+133468,0.0,0.19,0.81,14.97,RandomForest,8.391,11.513,ml,RandomForest,,,,8.391
+3327,0.53,0.0,0.47,9.21,RandomForest,8.392,9.931,ml,RandomForest,,,,8.392
+3048,0.0,0.62,0.38,192.82,HoltWinters,8.404,15.827,ml,HoltWinters,,,,8.404
+3455,0.0,0.32,0.68,12.69,HoltWinters,8.407,13.615,ml,HoltWinters,,,,8.407
+133713,0.4,0.6,0.0,13.68,HoltWinters,8.409,12.047,ml,HoltWinters,,,,8.409
+133570,0.62,0.17,0.21,10.43,RandomForest,8.42,9.581,ml,RandomForest,,,,8.42
+133292,0.08,0.03,0.89,9.49,HoltWinters,8.422,12.272,ml,HoltWinters,,,,8.422
+133478,0.0,0.3,0.7,16.69,SARIMAX,8.425,16.819,ml,SARIMAX,,,,8.425
+3358,0.73,0.0,0.27,9.72,RandomForest,8.429,10.664,ml,RandomForest,,,,8.429
+134177,0.17,0.28,0.55,13.35,HoltWinters,8.436,16.438,ml,HoltWinters,,,,8.436
+6444,0.0,0.35,0.65,18.77,HoltWinters,8.436,,ml,HoltWinters,,,,8.436
+160030,0.0,0.66,0.34,17.16,SARIMAX,8.441,,ml,SARIMAX,,,,8.441
+3066,0.02,0.53,0.45,21.31,SARIMAX,8.447,19.764,ml,SARIMAX,,,,8.447
+5087,0.0,0.11,0.89,200.29,SARIMAX,8.45,10.814,ml,SARIMAX,,,,8.45
+6406,0.32,0.41,0.27,11.36,SARIMAX,8.452,11.281,ml,SARIMAX,,,,8.452
+2300,0.0,0.28,0.72,9.99,RandomForest,8.455,11.815,ml,RandomForest,,,,8.455
+115002,0.0,0.36,0.64,14.49,HoltWinters,8.459,19.853,ml,HoltWinters,,,,8.459
+4215,0.79,0.1,0.11,10.85,RandomForest,8.461,8.88,ml,RandomForest,,,,8.461
+133314,0.3,0.06,0.64,13.51,SARIMAX,8.469,17.031,ml,SARIMAX,,,,8.469
+7314,0.62,0.2,0.18,15.51,RandomForest,8.47,13.547,ml,RandomForest,,,,8.47
+135006,0.0,0.0,1.0,94.7,SARIMAX,8.479,291.53,ml,SARIMAX,,,,8.479
+5093,0.14,0.0,0.86,10.58,RandomForest,8.48,13.892,ml,RandomForest,,,,8.48
+136603,0.89,0.03,0.08,13.13,RandomForest,8.484,14.288,ml,RandomForest,,,,8.484
+133352,0.01,0.4,0.59,13.17,SARIMAX,8.485,11.899,ml,SARIMAX,,,,8.485
+133541,0.29,0.0,0.71,11.36,RandomForest,8.487,10.834,ml,RandomForest,,,,8.487
+9431,0.39,0.08,0.53,8.9,SARIMAX,8.492,9.714,ml,SARIMAX,,,,8.492
+1264,0.46,0.19,0.35,14.01,HoltWinters,8.496,14.619,ml,HoltWinters,,,,8.496
+134050,0.0,0.27,0.73,23.57,RandomForest,8.501,25.784,ml,RandomForest,,,,8.501
+133784,0.06,0.37,0.57,10.49,HoltWinters,8.502,10.314,ml,HoltWinters,,,,8.502
+2668,0.0,0.23,0.77,11.14,SARIMAX,8.521,12.363,ml,SARIMAX,,,,8.521
+135027,0.51,0.02,0.47,11.09,RandomForest,8.534,10.828,ml,RandomForest,,,,8.534
+4318,0.0,0.61,0.39,14.72,RandomForest,8.538,14.776,ml,RandomForest,,,,8.538
+2873,0.0,0.36,0.64,10.98,RandomForest,8.539,12.566,ml,RandomForest,,,,8.539
+3545,0.0,0.47,0.53,15.64,HoltWinters,8.542,14.255,ml,HoltWinters,,,,8.542
+133214,0.08,0.39,0.53,15.8,SARIMAX,8.568,29.39,ml,SARIMAX,,,,8.568
+160061,0.29,0.21,0.5,11.5,HoltWinters,8.568,19.209,ml,HoltWinters,,,,8.568
+155061,0.0,0.03,0.97,11.43,RandomForest,8.578,24.554,ml,RandomForest,,,,8.578
+5007,0.0,0.29,0.71,24.61,HoltWinters,8.581,15.211,ml,HoltWinters,,,,8.581
+4090,0.11,0.5,0.39,14.5,HoltWinters,8.584,,ml,HoltWinters,,,,8.584
+163218,0.22,0.0,0.78,15.97,RandomForest,8.585,,ml,RandomForest,,,,8.585
+133631,0.1,0.2,0.7,11.51,SARIMAX,8.602,11.282,ml,SARIMAX,,,,8.602
+5535,0.0,0.26,0.74,11.49,RandomForest,8.605,,ml,RandomForest,,,,8.605
+134178,0.46,0.17,0.37,13.54,HoltWinters,8.61,11.677,ml,HoltWinters,,,,8.61
+4224,0.05,0.02,0.93,10.15,HoltWinters,8.631,11.259,ml,HoltWinters,,,,8.631
+165002,0.33,0.28,0.39,8.89,RandomForest,8.636,,ml,RandomForest,,,,8.636
+133579,0.14,0.06,0.8,10.83,RandomForest,8.643,,ml,RandomForest,,,,8.643
+6480,0.22,0.2,0.58,11.14,HoltWinters,8.645,12.967,ml,HoltWinters,,,,8.645
+3139,0.01,0.02,0.97,12.99,HoltWinters,8.65,13.928,ml,HoltWinters,,,,8.65
+133494,0.44,0.19,0.37,14.67,HoltWinters,8.673,10.24,ml,HoltWinters,,,,8.673
+66201,0.34,0.0,0.66,10.63,HoltWinters,8.675,,ml,HoltWinters,,,,8.675
+133304,0.27,0.11,0.62,11.67,RandomForest,8.688,10.581,ml,RandomForest,,,,8.688
+133584,0.03,0.12,0.85,12.41,RandomForest,8.693,13.083,ml,RandomForest,,,,8.693
+133571,0.09,0.37,0.54,9.4,SARIMAX,8.696,12.364,ml,SARIMAX,,,,8.696
+155137,0.0,0.09,0.91,10.49,RandomForest,8.698,10.74,ml,RandomForest,,,,8.698
+5031,0.0,0.1,0.9,14.65,SARIMAX,8.724,13.399,ml,SARIMAX,,,,8.724
+5100,0.09,0.3,0.61,13.27,RandomForest,8.726,,ml,RandomForest,,,,8.726
+1776,0.47,0.13,0.4,12.59,HoltWinters,8.737,,ml,HoltWinters,,,,8.737
+3660,0.0,0.42,0.58,35.36,RandomForest,8.737,13.218,ml,RandomForest,,,,8.737
+5056,0.08,0.16,0.76,10.5,RandomForest,8.737,12.078,ml,RandomForest,,,,8.737
+4121,0.0,0.17,0.83,13.81,SARIMAX,8.745,27.081,ml,SARIMAX,,,,8.745
+133699,0.05,0.16,0.79,12.25,RandomForest,8.746,9.388,ml,RandomForest,,,,8.746
+134037,0.05,0.02,0.93,12.09,SARIMAX,8.747,14.678,ml,SARIMAX,,,,8.747
+133732,0.01,0.24,0.75,9.09,HoltWinters,8.752,10.506,ml,HoltWinters,,,,8.752
+135039,0.1,0.64,0.26,23.93,RandomForest,8.754,18.367,ml,RandomForest,,,,8.754
+2741,0.0,0.2,0.8,11.52,RandomForest,8.756,12.114,ml,RandomForest,,,,8.756
+3458,0.0,0.55,0.45,18.29,SARIMAX,8.756,,ml,SARIMAX,,,,8.756
+1899,0.0,0.14,0.86,18.17,SARIMAX,8.757,,ml,SARIMAX,,,,8.757
+1956,0.0,0.32,0.68,14.78,RandomForest,8.769,39.825,ml,RandomForest,,,,8.769
+3247,0.0,0.23,0.77,17.2,RandomForest,8.776,19.029,ml,RandomForest,,,,8.776
+153812,0.0,0.36,0.64,11.61,RandomForest,8.778,12.358,ml,RandomForest,,,,8.778
+135038,0.25,0.14,0.61,15.97,RandomForest,8.788,12.457,ml,RandomForest,,,,8.788
+7425,0.17,0.04,0.79,13.04,SARIMAX,8.805,,ml,SARIMAX,,,,8.805
+155068,,,,,SARIMAX,8.806,,ml,SARIMAX,,,,8.806
+3031,0.0,0.34,0.66,14.92,HoltWinters,8.809,,ml,HoltWinters,,,,8.809
+160062,0.0,0.17,0.83,13.04,RandomForest,8.816,16.439,ml,RandomForest,,,,8.816
+133320,0.28,0.53,0.19,35.8,RandomForest,8.819,23.856,ml,RandomForest,,,,8.819
+133460,0.32,0.06,0.62,11.93,SARIMAX,8.82,10.313,ml,SARIMAX,,,,8.82
+1116,0.0,0.06,0.94,11.69,RandomForest,8.823,16.043,ml,RandomForest,,,,8.823
+1973,0.0,0.41,0.59,13.61,HoltWinters,8.824,15.681,ml,HoltWinters,,,,8.824
+133462,0.02,0.22,0.76,13.12,HoltWinters,8.825,21.945,ml,HoltWinters,,,,8.825
+2649,0.5,0.09,0.41,11.19,HoltWinters,8.831,11.065,ml,HoltWinters,,,,8.831
+2904,0.0,0.71,0.29,18.6,RandomForest,8.841,24.773,ml,RandomForest,,,,8.841
+1957,0.0,0.25,0.75,11.98,RandomForest,8.842,12.075,ml,RandomForest,,,,8.842
+5034,0.06,0.0,0.94,12.95,RandomForest,8.87,13.034,ml,RandomForest,,,,8.87
+5030,0.09,0.21,0.7,11.14,RandomForest,8.883,12.809,ml,RandomForest,,,,8.883
+163407,0.53,0.26,0.21,17.88,RandomForest,8.884,15.914,ml,RandomForest,,,,8.884
+51601,0.01,0.02,0.97,10.67,RandomForest,8.895,13.752,ml,RandomForest,,,,8.895
+5055,0.0,0.06,0.94,10.53,RandomForest,8.897,12.478,ml,RandomForest,,,,8.897
+58201,0.27,0.71,0.02,20.2,RandomForest,8.9,13.033,ml,RandomForest,,,,8.9
+3276,0.46,0.0,0.54,17.02,RandomForest,8.905,12.844,ml,RandomForest,,,,8.905
+150601,0.0,0.98,0.02,71.08,HoltWinters,8.915,40.178,ml,HoltWinters,,,,8.915
+1862,0.0,0.07,0.93,15.45,RandomForest,8.917,14.969,ml,RandomForest,,,,8.917
+3424,0.47,0.33,0.2,12.77,RandomForest,8.922,14.007,ml,RandomForest,,,,8.922
+125649,0.0,0.4,0.6,13.39,HoltWinters,8.927,14.621,ml,HoltWinters,,,,8.927
+6481,0.67,0.14,0.19,17.13,RandomForest,8.94,18.71,ml,RandomForest,,,,8.94
+3412,0.24,0.03,0.73,14.46,SARIMAX,8.943,14.434,ml,SARIMAX,,,,8.943
+5001,0.16,0.07,0.77,13.56,HoltWinters,8.945,14.409,ml,HoltWinters,,,,8.945
+135047,0.08,0.09,0.83,8.97,RandomForest,8.948,11.386,ml,RandomForest,,,,8.948
+133682,0.45,0.2,0.35,12.37,RandomForest,8.96,11.315,ml,RandomForest,,,,8.96
+131803,0.24,0.73,0.03,21.44,SARIMAX,8.962,70.449,ml,SARIMAX,,,,8.962
+133808,0.75,0.25,0.0,14.56,HoltWinters,8.962,14.262,ml,HoltWinters,,,,8.962
+155129,0.29,0.11,0.6,11.28,RandomForest,8.967,9.753,ml,RandomForest,,,,8.967
+133653,0.24,0.17,0.59,9.91,RandomForest,8.971,9.884,ml,RandomForest,,,,8.971
+135018,0.0,0.43,0.57,70.5,RandomForest,8.971,32.99,ml,RandomForest,,,,8.971
+6426,0.16,0.08,0.76,11.66,SARIMAX,8.973,15.137,ml,SARIMAX,,,,8.973
+133305,0.0,0.65,0.35,17.55,HoltWinters,8.975,10.554,ml,HoltWinters,,,,8.975
+133547,0.53,0.22,0.25,11.55,HoltWinters,8.977,11.627,ml,HoltWinters,,,,8.977
+3057,0.08,0.14,0.78,17.64,HoltWinters,8.981,12.041,ml,HoltWinters,,,,8.981
+133366,0.0,0.0,1.0,188.64,RandomForest,8.989,,ml,RandomForest,,,,8.989
+8933,0.0,0.57,0.43,24.72,HoltWinters,8.993,21.701,ml,HoltWinters,,,,8.993
+3365,0.0,0.01,0.99,9.81,SARIMAX,8.997,12.331,ml,SARIMAX,,,,8.997
+133523,0.02,0.04,0.94,9.3,HoltWinters,8.998,12.296,ml,HoltWinters,,,,8.998
+3723,0.0,0.28,0.72,17.62,SARIMAX,9.003,,ml,SARIMAX,,,,9.003
+2223,0.19,0.34,0.47,12.53,SARIMAX,9.007,11.237,ml,SARIMAX,,,,9.007
+134012,0.16,0.07,0.77,11.07,RandomForest,9.01,,ml,RandomForest,,,,9.01
+3230,0.05,0.4,0.55,13.89,SARIMAX,9.023,11.856,ml,SARIMAX,,,,9.023
+155038,0.19,0.16,0.65,14.17,RandomForest,9.025,,ml,RandomForest,,,,9.025
+133294,0.0,0.24,0.76,12.84,HoltWinters,9.034,12.338,ml,HoltWinters,,,,9.034
+133449,0.0,0.91,0.09,23.8,SARIMAX,9.043,19.349,ml,SARIMAX,,,,9.043
+1887,0.0,0.0,1.0,19.02,HoltWinters,9.043,,ml,HoltWinters,,,,9.043
+3156,0.0,0.3,0.7,14.07,HoltWinters,9.044,15.348,ml,HoltWinters,,,,9.044
+5046,0.2,0.01,0.79,9.71,RandomForest,9.044,,ml,RandomForest,,,,9.044
+134058,0.07,0.02,0.91,9.09,RandomForest,9.057,10.661,ml,RandomForest,,,,9.057
+125666,0.31,0.44,0.25,16.72,HoltWinters,9.077,,ml,HoltWinters,,,,9.077
+155051,0.08,0.08,0.84,10.44,HoltWinters,9.081,11.701,ml,HoltWinters,,,,9.081
+133526,0.44,0.31,0.25,14.32,RandomForest,9.083,10.681,ml,RandomForest,,,,9.083
+3743,0.33,0.0,0.67,10.91,RandomForest,9.084,11.737,ml,RandomForest,,,,9.084
+5089,0.0,0.35,0.65,13.73,RandomForest,9.093,12.611,ml,RandomForest,,,,9.093
+133333,0.17,0.0,0.83,11.39,SARIMAX,9.104,,ml,SARIMAX,,,,9.104
+1805,0.31,0.69,0.0,58.5,RandomForest,9.111,,ml,RandomForest,,,,9.111
+134068,0.33,0.21,0.46,9.7,SARIMAX,9.113,11.667,ml,SARIMAX,,,,9.113
+4168,0.11,0.29,0.6,10.47,SARIMAX,9.116,10.985,ml,SARIMAX,,,,9.116
+3341,0.08,0.09,0.83,10.44,HoltWinters,9.118,11.481,ml,HoltWinters,,,,9.118
+133453,0.0,0.0,1.0,9.95,HoltWinters,9.122,10.92,ml,HoltWinters,,,,9.122
+125660,0.69,0.29,0.02,12.65,SARIMAX,9.132,,ml,SARIMAX,,,,9.132
+133671,0.71,0.29,0.0,13.57,RandomForest,9.137,12.335,ml,RandomForest,,,,9.137
+134074,0.12,0.0,0.88,49.58,SARIMAX,9.14,20.768,ml,SARIMAX,,,,9.14
+3172,0.0,0.73,0.27,122.16,RandomForest,9.149,16.658,ml,RandomForest,,,,9.149
+133496,0.44,0.22,0.34,9.44,SARIMAX,9.152,10.757,ml,SARIMAX,,,,9.152
+133440,0.0,0.35,0.65,17.62,HoltWinters,9.155,14.639,ml,HoltWinters,,,,9.155
+133215,0.19,0.44,0.37,16.21,SARIMAX,9.164,15.397,ml,SARIMAX,,,,9.164
+3356,0.42,0.02,0.56,9.37,RandomForest,9.164,14.32,ml,RandomForest,,,,9.164
+133410,0.0,0.02,0.98,13.6,HoltWinters,9.165,15.097,ml,HoltWinters,,,,9.165
+133216,0.29,0.0,0.71,18.86,HoltWinters,9.167,,ml,HoltWinters,,,,9.167
+5080,,,,,HoltWinters,9.167,,ml,HoltWinters,,,,9.167
+92406,0.0,0.55,0.45,11.76,RandomForest,9.177,,ml,RandomForest,,,,9.177
+155011,0.87,0.01,0.12,18.59,RandomForest,9.178,16.343,ml,RandomForest,,,,9.178
+134122,0.0,0.19,0.81,14.45,SARIMAX,9.195,12.698,ml,SARIMAX,,,,9.195
+133442,0.0,0.4,0.6,12.81,HoltWinters,9.204,19.435,ml,HoltWinters,,,,9.204
+155057,0.0,0.0,1.0,14.1,SARIMAX,9.206,,ml,SARIMAX,,,,9.206
+2902,0.0,0.06,0.94,13.87,HoltWinters,9.209,13.544,ml,HoltWinters,,,,9.209
+133408,0.09,0.0,0.91,10.01,RandomForest,9.211,,ml,RandomForest,,,,9.211
+134125,0.04,0.19,0.77,12.1,HoltWinters,9.216,12.052,ml,HoltWinters,,,,9.216
+3064,0.08,0.22,0.7,13.75,HoltWinters,9.23,11.321,ml,HoltWinters,,,,9.23
+133472,0.66,0.17,0.17,11.11,RandomForest,9.231,10.376,ml,RandomForest,,,,9.231
+134151,0.62,0.38,0.0,12.61,HoltWinters,9.235,10.18,ml,HoltWinters,,,,9.235
+2610,0.0,0.4,0.6,10.51,HoltWinters,9.237,10.927,ml,HoltWinters,,,,9.237
+3730,0.2,0.04,0.76,10.48,RandomForest,9.244,13.701,ml,RandomForest,,,,9.244
+127003,0.56,0.44,-0.0,19.48,RandomForest,9.249,18.271,ml,RandomForest,,,,9.249
+1261,0.17,0.06,0.77,10.38,HoltWinters,9.251,10.338,ml,HoltWinters,,,,9.251
+133475,0.0,0.39,0.61,14.52,RandomForest,9.253,11.017,ml,RandomForest,,,,9.253
+2982,0.07,0.69,0.24,26.27,RandomForest,9.286,16.014,ml,RandomForest,,,,9.286
+8874,0.0,0.69,0.31,25.07,HoltWinters,9.292,24.112,ml,HoltWinters,,,,9.292
+3023,0.16,0.0,0.84,29.44,RandomForest,9.32,23.41,ml,RandomForest,,,,9.32
+9354,0.52,0.11,0.37,12.2,RandomForest,9.327,10.528,ml,RandomForest,,,,9.327
+3360,0.09,0.76,0.15,20.86,RandomForest,9.328,15.495,ml,RandomForest,,,,9.328
+155096,0.19,0.01,0.8,12.8,SARIMAX,9.33,14.446,ml,SARIMAX,,,,9.33
+9309,0.07,0.14,0.79,11.44,RandomForest,9.334,15.646,ml,RandomForest,,,,9.334
+133575,0.69,0.0,0.31,10.43,RandomForest,9.338,11.382,ml,RandomForest,,,,9.338
+133448,0.41,0.14,0.45,14.23,RandomForest,9.358,9.972,ml,RandomForest,,,,9.358
+133796,0.74,0.06,0.2,13.01,RandomForest,9.364,10.086,ml,RandomForest,,,,9.364
+134201,0.92,0.0,0.08,14.01,RandomForest,9.367,14.71,ml,RandomForest,,,,9.367
+133402,0.0,0.32,0.68,17.64,SARIMAX,9.371,17.48,ml,SARIMAX,,,,9.371
+134045,0.07,0.07,0.86,10.74,RandomForest,9.377,12.152,ml,RandomForest,,,,9.377
+5028,0.0,0.46,0.54,65.79,HoltWinters,9.381,28.621,ml,HoltWinters,,,,9.381
+133752,0.27,0.25,0.48,15.39,SARIMAX,9.383,13.673,ml,SARIMAX,,,,9.383
+3759,0.0,0.37,0.63,21.36,SARIMAX,9.384,41.107,ml,SARIMAX,,,,9.384
+91802,0.02,0.98,0.0,63.12,HoltWinters,9.386,42.691,ml,HoltWinters,,,,9.386
+9753,0.55,0.26,0.19,12.56,SARIMAX,9.386,12.448,ml,SARIMAX,,,,9.386
+133238,0.03,0.05,0.92,17.89,HoltWinters,9.387,21.417,ml,HoltWinters,,,,9.387
+3425,0.11,0.17,0.72,13.11,RandomForest,9.388,15.096,ml,RandomForest,,,,9.388
+7609,0.59,0.26,0.15,12.12,RandomForest,9.395,11.173,ml,RandomForest,,,,9.395
+129004,0.11,0.59,0.3,10.64,HoltWinters,9.403,13.113,ml,HoltWinters,,,,9.403
+3133,0.0,0.44,0.56,19.89,RandomForest,9.415,20.066,ml,RandomForest,,,,9.415
+3343,0.32,0.36,0.32,20.74,RandomForest,9.439,21.224,ml,RandomForest,,,,9.439
+8935,0.54,0.05,0.41,12.28,RandomForest,9.453,12.242,ml,RandomForest,,,,9.453
+134041,0.0,0.15,0.85,16.13,RandomForest,9.454,18.844,ml,RandomForest,,,,9.454
+133254,,,,,RandomForest,9.458,,ml,RandomForest,,,,9.458
+3454,0.31,0.29,0.4,14.14,HoltWinters,9.473,17.651,ml,HoltWinters,,,,9.473
+155077,0.57,0.38,0.05,13.39,RandomForest,9.474,14.102,ml,RandomForest,,,,9.474
+1863,0.72,0.22,0.06,17.59,HoltWinters,9.475,19.347,ml,HoltWinters,,,,9.475
+133793,0.22,0.18,0.6,11.12,RandomForest,9.477,11.68,ml,RandomForest,,,,9.477
+4171,0.12,0.06,0.82,10.6,HoltWinters,9.479,12.877,ml,HoltWinters,,,,9.479
+133479,0.29,0.15,0.56,12.12,RandomForest,9.482,55.762,ml,RandomForest,,,,9.482
+3210,,,,,HoltWinters,9.488,,ml,HoltWinters,,,,9.488
+1752,0.4,0.19,0.41,10.31,SARIMAX,9.494,10.713,ml,SARIMAX,,,,9.494
+1898,0.0,0.06,0.94,19.46,HoltWinters,9.503,17.898,ml,HoltWinters,,,,9.503
+155062,0.18,0.08,0.74,17.13,RandomForest,9.504,,ml,RandomForest,,,,9.504
+1765,0.78,0.06,0.16,13.62,RandomForest,9.513,,ml,RandomForest,,,,9.513
+3449,0.39,0.45,0.16,26.23,RandomForest,9.521,12.079,ml,RandomForest,,,,9.521
+133375,0.0,0.91,0.09,26.04,RandomForest,9.524,,ml,RandomForest,,,,9.524
+133280,0.19,0.01,0.8,13.75,SARIMAX,9.526,,ml,SARIMAX,,,,9.526
+155024,0.0,0.34,0.66,15.79,RandomForest,9.531,19.803,ml,RandomForest,,,,9.531
+125651,0.08,0.19,0.73,10.45,RandomForest,9.532,,ml,RandomForest,,,,9.532
+5040,0.04,0.11,0.85,12.72,RandomForest,9.537,12.367,ml,RandomForest,,,,9.537
+3496,0.0,0.08,0.92,15.0,RandomForest,9.557,,ml,RandomForest,,,,9.557
+133780,0.24,0.35,0.41,17.07,HoltWinters,9.565,11.799,ml,HoltWinters,,,,9.565
+155020,0.74,0.07,0.19,13.27,RandomForest,9.579,10.338,ml,RandomForest,,,,9.579
+1975,0.0,0.59,0.41,18.61,HoltWinters,9.585,,ml,HoltWinters,,,,9.585
+134032,0.4,0.39,0.21,18.51,HoltWinters,9.588,,ml,HoltWinters,,,,9.588
+137001,0.06,0.08,0.86,9.6,RandomForest,9.591,14.298,ml,RandomForest,,,,9.591
+1791,0.17,0.83,0.0,70.56,RandomForest,9.591,,ml,RandomForest,,,,9.591
+125665,0.2,0.47,0.33,14.23,SARIMAX,9.592,,ml,SARIMAX,,,,9.592
+6422,0.21,0.06,0.73,13.53,HoltWinters,9.594,13.864,ml,HoltWinters,,,,9.594
+2907,0.0,0.55,0.45,16.37,HoltWinters,9.6,11.851,ml,HoltWinters,,,,9.6
+134048,0.04,0.05,0.91,14.51,HoltWinters,9.602,17.509,ml,HoltWinters,,,,9.602
+133260,0.39,0.2,0.41,17.22,SARIMAX,9.603,12.153,ml,SARIMAX,,,,9.603
+1256,0.01,0.9,0.09,48.81,RandomForest,9.606,25.516,ml,RandomForest,,,,9.606
+1252,0.01,0.53,0.46,14.54,HoltWinters,9.617,17.226,ml,HoltWinters,,,,9.617
+134064,1.0,0.0,0.0,244.41,HoltWinters,9.619,10.776,ml,HoltWinters,,,,9.619
+2326,0.27,0.73,0.0,13.02,RandomForest,9.625,11.204,ml,RandomForest,,,,9.625
+135031,0.57,0.33,0.1,12.62,RandomForest,9.638,15.439,ml,RandomForest,,,,9.638
+155113,0.21,0.61,0.18,18.93,RandomForest,9.659,,ml,RandomForest,,,,9.659
+135015,0.18,0.18,0.64,17.2,RandomForest,9.677,9.965,ml,RandomForest,,,,9.677
+136941,0.0,0.54,0.46,11.83,RandomForest,9.69,14.007,ml,RandomForest,,,,9.69
+3437,0.0,0.51,0.49,18.34,RandomForest,9.694,,ml,RandomForest,,,,9.694
+6443,0.14,0.33,0.53,15.94,RandomForest,9.695,18.244,ml,RandomForest,,,,9.695
+155012,0.9,0.04,0.06,14.18,RandomForest,9.704,12.824,ml,RandomForest,,,,9.704
+3811,0.01,0.11,0.88,10.34,RandomForest,9.704,12.283,ml,RandomForest,,,,9.704
+3444,0.21,0.2,0.59,20.33,SARIMAX,9.709,,ml,SARIMAX,,,,9.709
+3314,0.07,0.15,0.78,9.86,SARIMAX,9.717,11.846,ml,SARIMAX,,,,9.717
+133528,0.72,0.11,0.17,12.65,RandomForest,9.721,11.839,ml,RandomForest,,,,9.721
+7145,0.42,0.38,0.2,19.11,RandomForest,9.733,,ml,RandomForest,,,,9.733
+163406,0.5,0.23,0.27,17.9,RandomForest,9.742,40.262,ml,RandomForest,,,,9.742
+3452,0.0,0.38,0.62,12.66,SARIMAX,9.749,12.138,ml,SARIMAX,,,,9.749
+1067,0.04,0.12,0.84,13.41,RandomForest,9.767,15.453,ml,RandomForest,,,,9.767
+3447,0.13,0.43,0.44,12.82,HoltWinters,9.772,13.646,ml,HoltWinters,,,,9.772
+9041,0.72,0.12,0.16,15.1,RandomForest,9.773,11.961,ml,RandomForest,,,,9.773
+1063,0.01,0.01,0.98,10.83,SARIMAX,9.777,12.758,ml,SARIMAX,,,,9.777
+155032,0.71,0.02,0.27,15.14,RandomForest,9.796,12.003,ml,RandomForest,,,,9.796
+2880,0.02,0.17,0.81,15.68,RandomForest,9.801,11.072,ml,RandomForest,,,,9.801
+135020,0.66,0.34,-0.0,13.74,HoltWinters,9.805,13.72,ml,HoltWinters,,,,9.805
+160022,0.05,0.09,0.86,10.54,SARIMAX,9.821,12.898,ml,SARIMAX,,,,9.821
+134156,0.6,0.17,0.23,13.85,RandomForest,9.823,14.225,ml,RandomForest,,,,9.823
+4161,0.47,0.17,0.36,11.98,HoltWinters,9.827,12.684,ml,HoltWinters,,,,9.827
+133566,0.01,0.04,0.95,18.32,SARIMAX,9.829,,ml,SARIMAX,,,,9.829
+3142,0.21,0.79,0.0,19.97,HoltWinters,9.833,23.339,ml,HoltWinters,,,,9.833
+133593,0.82,0.14,0.04,11.78,HoltWinters,9.847,,ml,HoltWinters,,,,9.847
+2267,0.43,0.24,0.33,15.46,SARIMAX,9.876,,ml,SARIMAX,,,,9.876
+2312,0.02,0.34,0.64,10.64,SARIMAX,9.877,,ml,SARIMAX,,,,9.877
+133370,0.5,0.08,0.42,13.6,HoltWinters,9.879,13.962,ml,HoltWinters,,,,9.879
+6435,0.28,0.6,0.12,19.89,HoltWinters,9.881,17.697,ml,HoltWinters,,,,9.881
+163410,0.32,0.32,0.36,14.55,RandomForest,9.893,74.307,ml,RandomForest,,,,9.893
+114401,0.13,0.23,0.64,12.17,SARIMAX,9.898,16.164,ml,SARIMAX,,,,9.898
+136806,0.15,0.76,0.09,24.46,RandomForest,9.901,19.837,ml,RandomForest,,,,9.901
+133559,0.05,0.17,0.78,10.26,SARIMAX,9.907,,ml,SARIMAX,,,,9.907
+133315,0.17,0.07,0.76,10.01,RandomForest,9.913,,ml,RandomForest,,,,9.913
+172816,0.0,1.0,0.0,56.8,HoltWinters,9.918,,ml,HoltWinters,,,,9.918
+134124,0.0,0.37,0.63,17.29,HoltWinters,9.934,26.357,ml,HoltWinters,,,,9.934
+155104,0.0,0.0,1.0,265.43,RandomForest,9.942,884.221,ml,RandomForest,,,,9.942
+3854,0.0,0.05,0.95,14.01,RandomForest,9.953,,ml,RandomForest,,,,9.953
+133627,0.32,0.21,0.47,14.21,RandomForest,9.98,12.601,ml,RandomForest,,,,9.98
+89601,0.0,0.13,0.87,16.39,HoltWinters,9.984,21.238,ml,HoltWinters,,,,9.984
+133578,0.16,0.0,0.84,55.08,HoltWinters,9.988,,ml,HoltWinters,,,,9.988
+133517,0.39,0.61,0.0,17.05,SARIMAX,10.002,13.141,ml,SARIMAX,,,,10.002
+133345,0.47,0.25,0.28,15.42,HoltWinters,10.008,14.678,ml,HoltWinters,,,,10.008
+135026,0.19,0.22,0.59,17.67,HoltWinters,10.008,20.775,ml,HoltWinters,,,,10.008
+1262,0.25,0.33,0.42,17.8,RandomForest,10.012,19.548,ml,RandomForest,,,,10.012
+133641,0.26,0.04,0.7,11.41,RandomForest,10.026,10.389,ml,RandomForest,,,,10.026
+3451,0.42,0.2,0.38,16.84,RandomForest,10.033,11.973,ml,RandomForest,,,,10.033
+3169,0.03,0.11,0.86,13.4,RandomForest,10.035,,ml,RandomForest,,,,10.035
+9325,0.3,0.0,0.7,21.16,RandomForest,10.066,13.349,ml,RandomForest,,,,10.066
+3985,0.0,0.02,0.98,19.34,HoltWinters,10.07,18.321,ml,HoltWinters,,,,10.07
+133288,0.27,0.14,0.59,16.27,RandomForest,10.077,15.952,ml,RandomForest,,,,10.077
+133206,0.43,0.36,0.21,17.31,RandomForest,10.082,16.011,ml,RandomForest,,,,10.082
+3372,0.66,0.11,0.23,12.42,RandomForest,10.084,12.656,ml,RandomForest,,,,10.084
+2909,0.34,0.33,0.33,15.6,RandomForest,10.107,14.36,ml,RandomForest,,,,10.107
+135010,0.28,0.53,0.19,57.59,HoltWinters,10.12,22.41,ml,HoltWinters,,,,10.12
+133258,,,,,HoltWinters,10.132,,ml,HoltWinters,,,,10.132
+134003,0.24,0.14,0.62,14.63,RandomForest,10.139,15.915,ml,RandomForest,,,,10.139
+143001,0.0,0.17,0.83,20.04,RandomForest,10.146,20.103,ml,RandomForest,,,,10.146
+5057,0.04,0.01,0.95,13.03,SARIMAX,10.147,13.762,ml,SARIMAX,,,,10.147
+136902,0.03,0.06,0.91,10.32,RandomForest,10.173,13.26,ml,RandomForest,,,,10.173
+133337,0.33,0.22,0.45,17.54,HoltWinters,10.175,19.978,ml,HoltWinters,,,,10.175
+3495,0.0,0.78,0.22,22.91,SARIMAX,10.178,18.75,ml,SARIMAX,,,,10.178
+7172,0.05,0.95,0.0,53.71,HoltWinters,10.178,41.093,ml,HoltWinters,,,,10.178
+133434,0.38,0.6,0.02,22.46,RandomForest,10.186,15.854,ml,RandomForest,,,,10.186
+125647,0.35,0.4,0.25,10.62,SARIMAX,10.187,11.891,ml,SARIMAX,,,,10.187
+160046,0.0,0.28,0.72,14.71,HoltWinters,10.188,24.999,ml,HoltWinters,,,,10.188
+8698,0.0,0.0,1.0,11.33,RandomForest,10.188,14.446,ml,RandomForest,,,,10.188
+134142,0.24,0.2,0.56,13.74,RandomForest,10.2,19.897,ml,RandomForest,,,,10.2
+1108,0.45,0.08,0.47,15.9,HoltWinters,10.203,,ml,HoltWinters,,,,10.203
+1775,1.0,0.0,0.0,43.1,HoltWinters,10.204,,ml,HoltWinters,,,,10.204
+1974,0.0,0.36,0.64,21.97,HoltWinters,10.212,,ml,HoltWinters,,,,10.212
+5070,0.1,0.14,0.76,13.05,HoltWinters,10.212,13.386,ml,HoltWinters,,,,10.212
+2302,0.0,0.02,0.98,12.23,RandomForest,10.23,19.294,ml,RandomForest,,,,10.23
+155031,0.72,0.07,0.21,15.11,RandomForest,10.253,12.913,ml,RandomForest,,,,10.253
+170804,0.0,1.0,0.0,46.79,HoltWinters,10.259,,ml,HoltWinters,,,,10.259
+3411,0.35,0.14,0.51,11.88,RandomForest,10.273,11.205,ml,RandomForest,,,,10.273
+133264,0.13,0.29,0.58,12.45,HoltWinters,10.277,,ml,HoltWinters,,,,10.277
+133734,0.0,0.71,0.29,33.61,RandomForest,10.288,,ml,RandomForest,,,,10.288
+3208,0.02,0.32,0.66,13.44,RandomForest,10.296,11.903,ml,RandomForest,,,,10.296
+160068,0.03,0.03,0.94,13.96,RandomForest,10.301,15.517,ml,RandomForest,,,,10.301
+1881,0.3,0.1,0.6,15.81,SARIMAX,10.347,,ml,SARIMAX,,,,10.347
+6423,0.0,0.22,0.78,12.14,RandomForest,10.367,12.017,ml,RandomForest,,,,10.367
+6447,,,,,HoltWinters,10.367,,ml,HoltWinters,,,,10.367
+5061,0.0,0.26,0.74,14.22,RandomForest,10.376,11.9,ml,RandomForest,,,,10.376
+136936,0.78,0.22,-0.0,14.24,RandomForest,10.377,14.441,ml,RandomForest,,,,10.377
+133223,0.22,0.34,0.44,18.75,HoltWinters,10.382,16.172,ml,HoltWinters,,,,10.382
+9342,0.01,0.03,0.96,11.87,SARIMAX,10.387,14.301,ml,SARIMAX,,,,10.387
+8654,0.78,0.06,0.16,30.07,RandomForest,10.389,33.911,ml,RandomForest,,,,10.389
+134073,0.0,0.31,0.69,69.89,RandomForest,10.396,69.945,ml,RandomForest,,,,10.396
+133511,0.0,0.31,0.69,31.16,RandomForest,10.411,23.779,ml,RandomForest,,,,10.411
+155122,0.08,0.0,0.92,20.63,RandomForest,10.416,34.72,ml,RandomForest,,,,10.416
+9334,0.0,0.0,1.0,62.23,SARIMAX,10.44,14.03,ml,SARIMAX,,,,10.44
+2735,0.0,0.0,1.0,693.23,HoltWinters,10.459,12.491,ml,HoltWinters,,,,10.459
+2745,0.0,0.48,0.52,16.02,SARIMAX,10.46,,ml,SARIMAX,,,,10.46
+136931,0.0,0.79,0.21,19.38,RandomForest,10.461,13.326,ml,RandomForest,,,,10.461
+84601,0.0,0.14,0.86,14.0,RandomForest,10.492,,ml,RandomForest,,,,10.492
+3060,0.0,0.28,0.72,27.07,SARIMAX,10.502,18.953,ml,SARIMAX,,,,10.502
+133246,0.37,0.12,0.51,13.96,HoltWinters,10.526,14.141,ml,HoltWinters,,,,10.526
+134131,0.05,0.19,0.76,26.75,SARIMAX,10.527,32.071,ml,SARIMAX,,,,10.527
+1935,0.0,0.14,0.86,163.23,RandomForest,10.527,37.196,ml,RandomForest,,,,10.527
+2660,0.58,0.15,0.27,12.35,RandomForest,10.533,12.405,ml,RandomForest,,,,10.533
+133811,0.66,0.14,0.2,30.25,HoltWinters,10.534,44.437,ml,HoltWinters,,,,10.534
+155053,0.01,0.04,0.95,14.42,RandomForest,10.538,16.192,ml,RandomForest,,,,10.538
+60604,0.0,0.37,0.63,16.9,RandomForest,10.538,11.694,ml,RandomForest,,,,10.538
+1997,0.63,0.07,0.3,14.35,RandomForest,10.556,13.865,ml,RandomForest,,,,10.556
+133661,0.4,0.46,0.14,16.89,SARIMAX,10.57,,ml,SARIMAX,,,,10.57
+1876,0.94,0.0,0.06,20.84,RandomForest,10.586,11.478,ml,RandomForest,,,,10.586
+134144,0.0,0.39,0.61,88.89,RandomForest,10.591,147.955,ml,RandomForest,,,,10.591
+160023,0.06,0.16,0.78,13.83,HoltWinters,10.605,16.367,ml,HoltWinters,,,,10.605
+3764,0.0,0.47,0.53,28.26,RandomForest,10.607,,ml,RandomForest,,,,10.607
+2900,0.34,0.27,0.39,13.3,RandomForest,10.61,13.377,ml,RandomForest,,,,10.61
+133289,0.0,0.38,0.62,16.06,RandomForest,10.625,20.574,ml,RandomForest,,,,10.625
+163624,0.45,0.31,0.24,16.88,RandomForest,10.625,14.896,ml,RandomForest,,,,10.625
+133729,0.0,1.0,0.0,37.27,RandomForest,10.634,,ml,RandomForest,,,,10.634
+135011,0.0,0.33,0.67,82.97,SARIMAX,10.637,112.557,ml,SARIMAX,,,,10.637
+3214,0.14,0.1,0.76,15.7,RandomForest,10.638,,ml,RandomForest,,,,10.638
+155087,0.07,0.45,0.48,16.7,SARIMAX,10.64,14.654,ml,SARIMAX,,,,10.64
+6399,0.0,0.17,0.83,10.66,RandomForest,10.646,,ml,RandomForest,,,,10.646
+133265,0.63,0.0,0.37,14.11,RandomForest,10.67,12.182,ml,RandomForest,,,,10.67
+3275,0.0,0.46,0.54,19.68,HoltWinters,10.673,28.567,ml,HoltWinters,,,,10.673
+136807,0.29,0.16,0.55,13.77,HoltWinters,10.696,11.35,ml,HoltWinters,,,,10.696
+3605,0.26,0.15,0.59,24.51,RandomForest,10.699,16.747,ml,RandomForest,,,,10.699
+8740,0.67,0.25,0.08,34.85,RandomForest,10.726,57.147,ml,RandomForest,,,,10.726
+2147,0.12,0.35,0.53,14.0,RandomForest,10.734,13.765,ml,RandomForest,,,,10.734
+3542,0.54,0.05,0.41,16.13,RandomForest,10.734,,ml,RandomForest,,,,10.734
+133760,0.0,0.84,0.16,18.35,RandomForest,10.753,13.428,ml,RandomForest,,,,10.753
+2901,0.0,0.53,0.47,22.87,HoltWinters,10.761,26.631,ml,HoltWinters,,,,10.761
+160065,0.0,0.45,0.55,13.49,SARIMAX,10.78,21.69,ml,SARIMAX,,,,10.78
+2193,0.15,0.06,0.79,60.66,SARIMAX,10.783,90.901,ml,SARIMAX,,,,10.783
+134174,0.76,0.09,0.15,16.36,RandomForest,10.784,16.143,ml,RandomForest,,,,10.784
+133452,0.0,0.11,0.89,18.25,HoltWinters,10.787,13.325,ml,HoltWinters,,,,10.787
+5049,0.17,0.02,0.81,18.33,HoltWinters,10.798,,ml,HoltWinters,,,,10.798
+52803,0.12,0.0,0.88,27.15,RandomForest,10.798,,ml,RandomForest,,,,10.798
+8971,0.18,0.26,0.56,17.83,RandomForest,10.803,,ml,RandomForest,,,,10.803
+133341,0.45,0.3,0.25,12.62,HoltWinters,10.807,14.363,ml,HoltWinters,,,,10.807
+136922,0.0,0.0,1.0,378.23,RandomForest,10.807,21.183,ml,RandomForest,,,,10.807
+92402,0.1,0.34,0.56,22.36,SARIMAX,10.815,29.323,ml,SARIMAX,,,,10.815
+7146,0.03,0.14,0.83,13.3,HoltWinters,10.816,13.545,ml,HoltWinters,,,,10.816
+3317,0.12,0.0,0.88,14.07,HoltWinters,10.832,11.846,ml,HoltWinters,,,,10.832
+133230,0.02,0.0,0.98,15.62,HoltWinters,10.844,17.959,ml,HoltWinters,,,,10.844
+133439,0.37,0.19,0.44,13.5,RandomForest,10.846,21.04,ml,RandomForest,,,,10.846
+155128,0.18,0.46,0.36,16.41,RandomForest,10.847,15.021,ml,RandomForest,,,,10.847
+135051,0.0,0.55,0.45,20.93,HoltWinters,10.854,15.554,ml,HoltWinters,,,,10.854
+1828,0.67,0.3,0.03,22.8,HoltWinters,10.855,,ml,HoltWinters,,,,10.855
+76802,0.31,0.33,0.36,18.39,SARIMAX,10.884,17.257,ml,SARIMAX,,,,10.884
+1846,0.45,0.13,0.42,13.86,HoltWinters,10.887,13.694,ml,HoltWinters,,,,10.887
+2118,0.09,0.27,0.64,14.73,HoltWinters,10.891,14.677,ml,HoltWinters,,,,10.891
+2165,0.0,0.35,0.65,11.33,RandomForest,10.911,12.135,ml,RandomForest,,,,10.911
+133355,0.0,0.79,0.21,18.0,SARIMAX,10.915,,ml,SARIMAX,,,,10.915
+1882,0.0,0.25,0.75,16.53,RandomForest,10.919,24.2,ml,RandomForest,,,,10.919
+3658,0.0,0.11,0.89,12.26,RandomForest,10.928,14.089,ml,RandomForest,,,,10.928
+134183,0.45,0.1,0.45,11.25,SARIMAX,10.93,13.135,ml,SARIMAX,,,,10.93
+1811,0.52,0.06,0.42,19.96,RandomForest,10.937,26.034,ml,RandomForest,,,,10.937
+133403,0.0,0.14,0.86,13.13,HoltWinters,10.938,,ml,HoltWinters,,,,10.938
+1253,0.0,0.81,0.19,16.51,RandomForest,10.94,,ml,RandomForest,,,,10.94
+133211,0.15,0.08,0.77,15.66,SARIMAX,10.941,,ml,SARIMAX,,,,10.941
+7147,0.0,0.49,0.51,1037.39,RandomForest,10.947,22.151,ml,RandomForest,,,,10.947
+133377,0.0,0.14,0.86,13.71,RandomForest,10.953,15.758,ml,RandomForest,,,,10.953
+134017,0.04,0.14,0.82,17.25,SARIMAX,10.954,15.901,ml,SARIMAX,,,,10.954
+134180,0.23,0.43,0.34,16.7,SARIMAX,10.956,12.724,ml,SARIMAX,,,,10.956
+7287,0.0,0.0,1.0,36.02,SARIMAX,10.962,24.379,ml,SARIMAX,,,,10.962
+133709,0.36,0.09,0.55,16.01,RandomForest,10.966,22.898,ml,RandomForest,,,,10.966
+2889,0.0,0.32,0.68,17.42,RandomForest,10.966,22.246,ml,RandomForest,,,,10.966
+3065,0.0,0.14,0.86,14.02,HoltWinters,10.975,,ml,HoltWinters,,,,10.975
+134148,0.55,0.28,0.17,19.57,HoltWinters,10.983,16.199,ml,HoltWinters,,,,10.983
+134024,0.74,0.11,0.15,17.14,RandomForest,11.001,18.604,ml,RandomForest,,,,11.001
+125602,0.3,0.2,0.5,11.49,RandomForest,11.023,24.525,ml,RandomForest,,,,11.023
+4173,0.77,0.23,-0.0,48.87,HoltWinters,11.044,20.889,ml,HoltWinters,,,,11.044
+3986,0.0,0.0,1.0,16.88,RandomForest,11.052,17.918,ml,RandomForest,,,,11.052
+133308,0.0,0.31,0.69,16.63,RandomForest,11.066,20.428,ml,RandomForest,,,,11.066
+133695,0.0,0.0,1.0,860.46,SARIMAX,11.074,1966.257,ml,SARIMAX,,,,11.074
+133582,0.39,0.0,0.61,15.47,HoltWinters,11.078,16.983,ml,HoltWinters,,,,11.078
+155045,0.33,0.35,0.32,15.11,RandomForest,11.091,,ml,RandomForest,,,,11.091
+2875,0.17,0.06,0.77,13.8,SARIMAX,11.107,15.712,ml,SARIMAX,,,,11.107
+133490,0.0,0.53,0.47,49.94,SARIMAX,11.113,19.695,ml,SARIMAX,,,,11.113
+1069,0.59,0.07,0.34,11.83,SARIMAX,11.118,,ml,SARIMAX,,,,11.118
+133539,0.33,0.12,0.55,23.82,HoltWinters,11.125,20.442,ml,HoltWinters,,,,11.125
+155017,0.56,0.31,0.13,16.36,RandomForest,11.137,13.877,ml,RandomForest,,,,11.137
+133446,0.23,0.21,0.56,14.54,SARIMAX,11.144,,ml,SARIMAX,,,,11.144
+133281,0.23,0.0,0.77,13.48,RandomForest,11.148,,ml,RandomForest,,,,11.148
+155081,0.9,0.03,0.07,15.96,RandomForest,11.15,14.758,ml,RandomForest,,,,11.15
+133225,0.65,0.0,0.35,12.5,RandomForest,11.162,11.779,ml,RandomForest,,,,11.162
+5029,0.0,0.49,0.51,23.48,RandomForest,11.166,,ml,RandomForest,,,,11.166
+3738,0.69,0.01,0.3,12.28,RandomForest,11.167,,ml,RandomForest,,,,11.167
+3007,0.0,0.25,0.75,552.77,RandomForest,11.192,34.581,ml,RandomForest,,,,11.192
+1873,0.0,0.22,0.78,25.09,HoltWinters,11.213,18.175,ml,HoltWinters,,,,11.213
+133222,0.48,0.18,0.34,14.97,HoltWinters,11.234,14.378,ml,HoltWinters,,,,11.234
+133489,0.52,0.1,0.38,12.73,RandomForest,11.241,15.279,ml,RandomForest,,,,11.241
+5036,0.0,0.1,0.9,18.16,RandomForest,11.256,,ml,RandomForest,,,,11.256
+3766,0.0,0.12,0.88,22.68,HoltWinters,11.274,,ml,HoltWinters,,,,11.274
+3219,,,,,RandomForest,11.277,,ml,RandomForest,,,,11.277
+3050,0.74,0.09,0.17,22.05,RandomForest,11.282,15.274,ml,RandomForest,,,,11.282
+7065,,,,,RandomForest,11.29,,ml,RandomForest,,,,11.29
+155028,0.43,0.09,0.48,16.75,RandomForest,11.302,11.581,ml,RandomForest,,,,11.302
+133262,,,,,RandomForest,11.309,,ml,RandomForest,,,,11.309
+3852,0.0,0.92,0.08,26.69,SARIMAX,11.325,,ml,SARIMAX,,,,11.325
+3218,0.06,0.08,0.86,12.75,RandomForest,11.345,13.3,ml,RandomForest,,,,11.345
+1785,0.0,0.4,0.6,17.53,RandomForest,11.35,12.932,ml,RandomForest,,,,11.35
+136879,0.11,0.36,0.53,12.96,RandomForest,11.351,25.645,ml,RandomForest,,,,11.351
+133562,0.0,0.47,0.53,11.71,SARIMAX,11.367,,ml,SARIMAX,,,,11.367
+133263,,,,,SARIMAX,11.376,,ml,SARIMAX,,,,11.376
+133244,0.0,0.9,0.1,65.05,SARIMAX,11.385,47.457,ml,SARIMAX,,,,11.385
+133353,0.39,0.46,0.15,17.18,SARIMAX,11.419,14.765,ml,SARIMAX,,,,11.419
+2150,0.0,0.5,0.5,13.46,HoltWinters,11.423,14.462,ml,HoltWinters,,,,11.423
+8663,0.0,0.16,0.84,14.37,RandomForest,11.431,14.26,ml,RandomForest,,,,11.431
+155043,0.0,0.3,0.7,14.54,RandomForest,11.441,,ml,RandomForest,,,,11.441
+3456,0.19,0.03,0.78,18.77,HoltWinters,11.465,30.438,ml,HoltWinters,,,,11.465
+125615,0.0,0.44,0.56,16.11,HoltWinters,11.471,13.259,ml,HoltWinters,,,,11.471
+8731,0.44,0.02,0.54,28.46,SARIMAX,11.475,48.136,ml,SARIMAX,,,,11.475
+133503,0.09,0.05,0.86,14.28,SARIMAX,11.507,,ml,SARIMAX,,,,11.507
+136919,,,,,RandomForest,11.526,,ml,RandomForest,,,,11.526
+3431,0.48,0.52,0.0,19.77,HoltWinters,11.53,24.397,ml,HoltWinters,,,,11.53
+5062,0.09,0.02,0.89,15.21,RandomForest,11.533,,ml,RandomForest,,,,11.533
+133451,0.46,0.24,0.3,11.55,HoltWinters,11.535,12.736,ml,HoltWinters,,,,11.535
+135068,0.09,0.3,0.61,15.71,RandomForest,11.556,13.036,ml,RandomForest,,,,11.556
+133606,0.12,0.09,0.79,13.86,RandomForest,11.573,14.386,ml,RandomForest,,,,11.573
+6450,0.01,0.21,0.78,94.89,RandomForest,11.599,41.143,ml,RandomForest,,,,11.599
+7061,0.16,0.84,0.0,86.28,RandomForest,11.602,30.726,ml,RandomForest,,,,11.602
+133476,0.0,0.12,0.88,17.9,SARIMAX,11.605,16.007,ml,SARIMAX,,,,11.605
+1900,0.0,0.31,0.69,11.78,SARIMAX,11.605,14.749,ml,SARIMAX,,,,11.605
+2447,0.26,0.36,0.38,15.49,RandomForest,11.633,15.1,ml,RandomForest,,,,11.633
+1915,0.0,1.0,0.0,28.35,HoltWinters,11.698,29.613,ml,HoltWinters,,,,11.698
+5048,0.14,0.0,0.86,48.73,HoltWinters,11.711,,ml,HoltWinters,,,,11.711
+5973,0.0,0.23,0.77,13.6,RandomForest,11.742,,ml,RandomForest,,,,11.742
+133716,0.71,0.29,0.0,18.16,HoltWinters,11.744,15.874,ml,HoltWinters,,,,11.744
+2743,0.55,0.0,0.45,12.9,HoltWinters,11.745,,ml,HoltWinters,,,,11.745
+134166,0.0,0.51,0.49,18.67,RandomForest,11.757,,ml,RandomForest,,,,11.757
+3779,0.0,0.02,0.98,28.44,SARIMAX,11.785,,ml,SARIMAX,,,,11.785
+4085,0.08,0.2,0.72,15.85,RandomForest,11.786,,ml,RandomForest,,,,11.786
+3189,0.0,0.48,0.52,312.35,RandomForest,11.787,22.455,ml,RandomForest,,,,11.787
+163212,0.0,0.12,0.88,15.43,RandomForest,11.815,,ml,RandomForest,,,,11.815
+155116,0.05,0.49,0.46,19.63,SARIMAX,11.827,,ml,SARIMAX,,,,11.827
+1263,0.61,0.05,0.34,14.57,RandomForest,11.833,15.242,ml,RandomForest,,,,11.833
+39606,0.0,0.29,0.71,47.44,RandomForest,11.847,82.716,ml,RandomForest,,,,11.847
+160058,0.05,0.05,0.9,12.84,SARIMAX,11.853,13.233,ml,SARIMAX,,,,11.853
+3125,0.0,0.43,0.57,107.64,SARIMAX,11.899,34.787,ml,SARIMAX,,,,11.899
+9746,0.41,0.29,0.3,17.39,SARIMAX,11.916,15.826,ml,SARIMAX,,,,11.916
+134011,0.64,0.22,0.14,17.2,HoltWinters,11.928,13.179,ml,HoltWinters,,,,11.928
+7144,0.0,0.04,0.96,744.54,RandomForest,11.929,24.913,ml,RandomForest,,,,11.929
+6420,0.44,0.12,0.44,15.59,RandomForest,11.931,14.558,ml,RandomForest,,,,11.931
+2995,0.0,0.03,0.97,27.29,SARIMAX,11.936,19.597,ml,SARIMAX,,,,11.936
+8697,0.0,0.0,1.0,34.37,SARIMAX,11.936,14.459,ml,SARIMAX,,,,11.936
+3324,0.17,0.0,0.83,12.29,RandomForest,11.956,,ml,RandomForest,,,,11.956
+3216,0.01,0.05,0.94,12.79,SARIMAX,11.968,16.308,ml,SARIMAX,,,,11.968
+133540,0.64,0.24,0.12,16.29,RandomForest,11.979,13.961,ml,RandomForest,,,,11.979
+158201,0.25,0.04,0.71,13.52,SARIMAX,11.993,23.2,ml,SARIMAX,,,,11.993
+133625,0.74,0.13,0.13,15.14,RandomForest,12.045,14.811,ml,RandomForest,,,,12.045
+133286,0.03,0.16,0.81,19.18,RandomForest,12.072,28.236,ml,RandomForest,,,,12.072
+125631,0.73,0.27,0.0,22.65,RandomForest,12.085,19.143,ml,RandomForest,,,,12.085
+133328,0.0,0.0,1.0,19.17,HoltWinters,12.097,44.963,ml,HoltWinters,,,,12.097
+133208,0.27,0.23,0.5,13.45,HoltWinters,12.116,16.38,ml,HoltWinters,,,,12.116
+155059,0.14,0.03,0.83,14.88,HoltWinters,12.126,18.123,ml,HoltWinters,,,,12.126
+155098,0.05,0.51,0.44,22.42,SARIMAX,12.126,,ml,SARIMAX,,,,12.126
+39602,0.54,0.17,0.29,16.41,RandomForest,12.161,23.213,ml,RandomForest,,,,12.161
+2906,0.09,0.32,0.59,19.72,SARIMAX,12.175,15.891,ml,SARIMAX,,,,12.175
+170006,0.0,0.55,0.45,35.35,RandomForest,12.185,,ml,RandomForest,,,,12.185
+3309,0.0,0.29,0.71,26.66,HoltWinters,12.22,23.666,ml,HoltWinters,,,,12.22
+8159,0.0,0.13,0.87,14.41,SARIMAX,12.225,18.306,ml,SARIMAX,,,,12.225
+2185,,,,,RandomForest,12.233,,ml,RandomForest,,,,12.233
+9040,0.62,0.02,0.36,13.89,RandomForest,12.272,14.406,ml,RandomForest,,,,12.272
+125616,0.47,0.53,0.0,200.52,RandomForest,12.328,18.473,ml,RandomForest,,,,12.328
+2992,1.0,0.0,0.0,157.22,SARIMAX,12.337,1329.77,ml,SARIMAX,,,,12.337
+143602,0.6,0.4,0.0,17.56,HoltWinters,12.341,16.705,ml,HoltWinters,,,,12.341
+133804,0.0,0.35,0.65,13.09,HoltWinters,12.348,15.135,ml,HoltWinters,,,,12.348
+2648,0.78,0.0,0.22,116.39,SARIMAX,12.35,56.846,ml,SARIMAX,,,,12.35
+5534,0.0,0.51,0.49,23.26,HoltWinters,12.352,,ml,HoltWinters,,,,12.352
+135034,0.0,0.71,0.29,22.02,RandomForest,12.354,26.809,ml,RandomForest,,,,12.354
+3349,0.0,0.28,0.72,13.46,RandomForest,12.358,17.016,ml,RandomForest,,,,12.358
+165212,0.0,0.55,0.45,54.83,HoltWinters,12.387,210.666,ml,HoltWinters,,,,12.387
+125801,0.0,0.3,0.7,13.21,RandomForest,12.39,,ml,RandomForest,,,,12.39
+155035,0.08,0.28,0.64,15.59,SARIMAX,12.398,,ml,SARIMAX,,,,12.398
+160015,0.0,0.29,0.71,25.19,SARIMAX,12.415,,ml,SARIMAX,,,,12.415
+133707,0.16,0.23,0.61,14.15,SARIMAX,12.42,16.538,ml,SARIMAX,,,,12.42
+1079,1.0,0.0,0.0,95.27,HoltWinters,12.423,37.881,ml,HoltWinters,,,,12.423
+171008,0.0,0.97,0.03,49.23,RandomForest,12.44,,ml,RandomForest,,,,12.44
+134065,0.31,0.66,0.03,17.6,SARIMAX,12.494,17.85,ml,SARIMAX,,,,12.494
+3741,0.43,0.11,0.46,15.45,RandomForest,12.512,13.29,ml,RandomForest,,,,12.512
+9467,0.29,0.03,0.68,13.0,HoltWinters,12.512,,ml,HoltWinters,,,,12.512
+155119,0.32,0.21,0.47,15.61,SARIMAX,12.545,16.475,ml,SARIMAX,,,,12.545
+133792,0.05,0.46,0.49,12.95,HoltWinters,12.556,16.458,ml,HoltWinters,,,,12.556
+160034,0.0,0.12,0.88,14.15,SARIMAX,12.56,19.835,ml,SARIMAX,,,,12.56
+36001,0.03,0.58,0.39,13.55,RandomForest,12.576,16.389,ml,RandomForest,,,,12.576
+3354,0.74,0.13,0.13,13.16,RandomForest,12.591,12.845,ml,RandomForest,,,,12.591
+1783,0.93,0.0,0.07,16.77,RandomForest,12.593,13.305,ml,RandomForest,,,,12.593
+1115,0.0,0.49,0.51,18.54,RandomForest,12.594,21.983,ml,RandomForest,,,,12.594
+6449,,,,,SARIMAX,12.605,,ml,SARIMAX,,,,12.605
+57601,0.14,0.33,0.53,13.69,HoltWinters,12.611,14.089,ml,HoltWinters,,,,12.611
+159203,0.54,0.36,0.1,17.99,HoltWinters,12.635,15.817,ml,HoltWinters,,,,12.635
+5082,0.0,0.62,0.38,18.94,HoltWinters,12.67,21.345,ml,HoltWinters,,,,12.67
+155050,0.57,0.0,0.43,12.95,RandomForest,12.687,16.742,ml,RandomForest,,,,12.687
+134062,0.06,0.34,0.6,19.62,RandomForest,12.689,20.187,ml,RandomForest,,,,12.689
+4169,0.16,0.39,0.45,17.96,HoltWinters,12.701,15.665,ml,HoltWinters,,,,12.701
+133777,0.74,0.26,0.0,17.47,RandomForest,12.707,16.249,ml,RandomForest,,,,12.707
+1780,0.0,0.1,0.9,12.96,SARIMAX,12.735,15.447,ml,SARIMAX,,,,12.735
+133739,0.24,0.61,0.15,19.72,RandomForest,12.787,17.502,ml,RandomForest,,,,12.787
+163211,0.89,0.11,-0.0,23.49,RandomForest,12.807,,ml,RandomForest,,,,12.807
+133324,0.0,0.48,0.52,22.64,RandomForest,12.81,25.312,ml,RandomForest,,,,12.81
+2211,0.76,0.24,0.0,30.42,HoltWinters,12.813,16.879,ml,HoltWinters,,,,12.813
+1770,0.86,0.07,0.07,14.0,RandomForest,12.835,,ml,RandomForest,,,,12.835
+160070,0.0,0.27,0.73,32.65,HoltWinters,12.839,36.253,ml,HoltWinters,,,,12.839
+8787,1.0,0.0,0.0,296.0,SARIMAX,12.848,25.141,ml,SARIMAX,,,,12.848
+134136,0.06,0.11,0.83,59.22,SARIMAX,12.865,,ml,SARIMAX,,,,12.865
+133248,0.06,0.1,0.84,14.02,SARIMAX,12.872,16.929,ml,SARIMAX,,,,12.872
+1812,,,,,HoltWinters,12.886,,ml,HoltWinters,,,,12.886
+136945,0.1,0.79,0.11,21.95,SARIMAX,12.897,,ml,SARIMAX,,,,12.897
+133735,0.0,0.3,0.7,14.65,RandomForest,12.932,17.116,ml,RandomForest,,,,12.932
+134044,0.0,0.12,0.88,18.52,RandomForest,12.943,17.477,ml,RandomForest,,,,12.943
+133464,0.0,0.76,0.24,52.83,SARIMAX,12.955,30.759,ml,SARIMAX,,,,12.955
+133514,0.3,0.33,0.37,17.85,HoltWinters,12.957,15.557,ml,HoltWinters,,,,12.957
+125611,0.0,0.37,0.63,15.05,RandomForest,12.966,13.545,ml,RandomForest,,,,12.966
+140402,0.0,0.34,0.66,15.81,RandomForest,12.968,,ml,RandomForest,,,,12.968
+133463,0.45,0.43,0.12,79.57,SARIMAX,12.991,33.833,ml,SARIMAX,,,,12.991
+3067,0.35,0.26,0.39,18.08,RandomForest,12.993,,ml,RandomForest,,,,12.993
+9314,1.0,0.0,0.0,905.13,SARIMAX,13.009,29.891,ml,SARIMAX,,,,13.009
+125657,0.0,0.14,0.86,13.31,RandomForest,13.025,30.866,ml,RandomForest,,,,13.025
+133279,0.04,0.0,0.96,13.66,SARIMAX,13.064,,ml,SARIMAX,,,,13.064
+2606,0.0,0.0,1.0,52.05,HoltWinters,13.107,61.539,ml,HoltWinters,,,,13.107
+160020,0.0,0.31,0.69,14.88,SARIMAX,13.119,17.151,ml,SARIMAX,,,,13.119
+133336,0.15,0.63,0.22,14.68,RandomForest,13.123,16.69,ml,RandomForest,,,,13.123
+6421,0.39,0.09,0.52,17.38,RandomForest,13.129,14.855,ml,RandomForest,,,,13.129
+136907,0.0,0.43,0.57,13.29,RandomForest,13.133,14.374,ml,RandomForest,,,,13.133
+175001,0.0,0.75,0.25,68.46,SARIMAX,13.193,,ml,SARIMAX,,,,13.193
+3762,0.21,0.26,0.53,21.22,RandomForest,13.203,,ml,RandomForest,,,,13.203
+133437,0.0,0.37,0.63,19.39,RandomForest,13.209,17.665,ml,RandomForest,,,,13.209
+134150,0.0,0.59,0.41,14.16,RandomForest,13.209,13.848,ml,RandomForest,,,,13.209
+133554,0.2,0.19,0.61,15.11,HoltWinters,13.217,14.146,ml,HoltWinters,,,,13.217
+171803,0.0,0.87,0.13,42.52,HoltWinters,13.222,,ml,HoltWinters,,,,13.222
+2322,0.08,0.07,0.85,13.54,RandomForest,13.226,17.697,ml,RandomForest,,,,13.226
+5044,0.0,0.15,0.85,209.93,SARIMAX,13.271,18.214,ml,SARIMAX,,,,13.271
+39603,0.1,0.06,0.84,15.39,SARIMAX,13.283,,ml,SARIMAX,,,,13.283
+133316,0.06,0.5,0.44,17.81,HoltWinters,13.29,18.138,ml,HoltWinters,,,,13.29
+155041,0.0,0.17,0.83,27.08,HoltWinters,13.292,23.28,ml,HoltWinters,,,,13.292
+133395,0.0,0.0,1.0,13.49,HoltWinters,13.296,,ml,HoltWinters,,,,13.296
+2740,0.58,0.05,0.37,15.77,RandomForest,13.306,,ml,RandomForest,,,,13.306
+9749,0.0,0.06,0.94,15.8,HoltWinters,13.338,,ml,HoltWinters,,,,13.338
+136927,0.0,0.88,0.12,25.71,SARIMAX,13.347,22.12,ml,SARIMAX,,,,13.347
+3504,0.0,0.69,0.31,23.75,RandomForest,13.371,22.657,ml,RandomForest,,,,13.371
+133639,0.0,0.0,1.0,55.59,RandomForest,13.38,18.768,ml,RandomForest,,,,13.38
+155091,0.0,0.67,0.33,21.36,RandomForest,13.398,24.887,ml,RandomForest,,,,13.398
+173402,0.0,1.0,0.0,73.44,HoltWinters,13.404,,ml,HoltWinters,,,,13.404
+2452,0.02,0.06,0.92,19.12,HoltWinters,13.434,24.212,ml,HoltWinters,,,,13.434
+1893,0.0,0.21,0.79,15.23,HoltWinters,13.51,15.133,ml,HoltWinters,,,,13.51
+133226,0.27,0.25,0.48,17.61,HoltWinters,13.512,,ml,HoltWinters,,,,13.512
+134126,0.49,0.0,0.51,13.57,RandomForest,13.538,17.671,ml,RandomForest,,,,13.538
+2892,0.0,0.45,0.55,16.91,RandomForest,13.562,14.454,ml,RandomForest,,,,13.562
+134020,0.2,0.45,0.35,14.25,RandomForest,13.609,23.763,ml,RandomForest,,,,13.609
+133330,0.0,0.19,0.81,28.37,RandomForest,13.617,,ml,RandomForest,,,,13.617
+133807,0.31,0.07,0.62,15.14,RandomForest,13.627,16.006,ml,RandomForest,,,,13.627
+5021,0.21,0.44,0.35,31.38,SARIMAX,13.663,,ml,SARIMAX,,,,13.663
+133233,,,,,RandomForest,13.679,,ml,RandomForest,,,,13.679
+155117,0.0,0.76,0.24,32.04,RandomForest,13.725,,ml,RandomForest,,,,13.725
+135003,0.0,0.55,0.45,21.7,RandomForest,13.726,25.773,ml,RandomForest,,,,13.726
+155008,0.17,0.58,0.25,18.96,RandomForest,13.726,21.443,ml,RandomForest,,,,13.726
+1992,0.68,0.05,0.27,15.8,RandomForest,13.736,15.638,ml,RandomForest,,,,13.736
+155131,0.0,0.46,0.54,14.37,SARIMAX,13.749,,ml,SARIMAX,,,,13.749
+134130,0.0,0.58,0.42,17.91,RandomForest,13.795,,ml,RandomForest,,,,13.795
+1911,0.33,0.28,0.39,20.07,RandomForest,13.846,20.308,ml,RandomForest,,,,13.846
+1278,0.72,0.0,0.28,15.72,RandomForest,13.884,28.579,ml,RandomForest,,,,13.884
+36002,0.0,0.45,0.55,23.12,RandomForest,13.892,23.406,ml,RandomForest,,,,13.892
+42601,0.0,0.55,0.45,16.68,SARIMAX,13.918,14.357,ml,SARIMAX,,,,13.918
+3831,0.85,0.09,0.06,17.75,RandomForest,13.938,14.476,ml,RandomForest,,,,13.938
+134186,0.06,0.61,0.33,15.13,RandomForest,13.956,,ml,RandomForest,,,,13.956
+125656,0.0,0.04,0.96,16.15,SARIMAX,13.974,31.03,ml,SARIMAX,,,,13.974
+83603,0.0,0.37,0.63,35.92,HoltWinters,13.976,28.671,ml,HoltWinters,,,,13.976
+155107,0.0,0.0,1.0,80.81,RandomForest,13.986,23.501,ml,RandomForest,,,,13.986
+133726,0.2,0.8,0.0,32.07,RandomForest,13.992,39.289,ml,RandomForest,,,,13.992
+160014,1.0,0.0,0.0,548.67,SARIMAX,14.03,1024.183,ml,SARIMAX,,,,14.03
+134025,0.68,0.32,-0.0,25.65,RandomForest,14.052,,ml,RandomForest,,,,14.052
+134155,0.44,0.1,0.46,14.67,RandomForest,14.095,44.827,ml,RandomForest,,,,14.095
+4999,0.1,0.13,0.77,16.03,HoltWinters,14.103,,ml,HoltWinters,,,,14.103
+134168,0.42,0.27,0.31,16.23,HoltWinters,14.107,,ml,HoltWinters,,,,14.107
+134040,0.35,0.04,0.61,199.21,RandomForest,14.13,35.136,ml,RandomForest,,,,14.13
+133668,0.0,0.55,0.45,14.89,SARIMAX,14.153,14.604,ml,SARIMAX,,,,14.153
+125619,0.45,0.35,0.2,19.75,RandomForest,14.158,14.369,ml,RandomForest,,,,14.158
+3344,0.19,0.23,0.58,21.09,RandomForest,14.167,,ml,RandomForest,,,,14.167
+3170,0.0,0.72,0.28,24.65,HoltWinters,14.258,,ml,HoltWinters,,,,14.258
+2899,0.16,0.46,0.38,31.39,HoltWinters,14.259,36.575,ml,HoltWinters,,,,14.259
+89402,0.07,0.3,0.63,15.6,RandomForest,14.293,16.736,ml,RandomForest,,,,14.293
+133285,0.36,0.15,0.49,16.09,SARIMAX,14.296,15.741,ml,SARIMAX,,,,14.296
+133733,0.68,0.28,0.04,21.19,RandomForest,14.338,15.144,ml,RandomForest,,,,14.338
+136905,0.0,0.53,0.47,16.82,RandomForest,14.349,18.22,ml,RandomForest,,,,14.349
+133522,0.0,0.84,0.16,51.28,HoltWinters,14.356,63.579,ml,HoltWinters,,,,14.356
+155115,0.47,0.37,0.16,19.36,HoltWinters,14.372,,ml,HoltWinters,,,,14.372
+2273,0.0,0.21,0.79,16.57,RandomForest,14.391,,ml,RandomForest,,,,14.391
+5022,0.0,1.0,0.0,52.41,SARIMAX,14.399,,ml,SARIMAX,,,,14.399
+170009,0.03,0.0,0.97,39.0,RandomForest,14.521,,ml,RandomForest,,,,14.521
+163207,0.43,0.15,0.42,15.3,RandomForest,14.522,,ml,RandomForest,,,,14.522
+167601,0.0,0.72,0.28,49.05,RandomForest,14.567,31.981,ml,RandomForest,,,,14.567
+150402,0.0,0.65,0.35,22.11,SARIMAX,14.6,23.195,ml,SARIMAX,,,,14.6
+133758,0.24,0.12,0.64,15.43,SARIMAX,14.604,18.864,ml,SARIMAX,,,,14.604
+133491,0.02,0.0,0.98,67.18,HoltWinters,14.632,,ml,HoltWinters,,,,14.632
+5075,0.0,0.09,0.91,77.9,HoltWinters,14.68,65.368,ml,HoltWinters,,,,14.68
+2266,0.21,0.27,0.52,18.8,SARIMAX,14.781,17.438,ml,SARIMAX,,,,14.781
+155040,0.0,0.17,0.83,16.57,RandomForest,14.837,,ml,RandomForest,,,,14.837
+3392,0.0,0.47,0.53,15.17,RandomForest,14.852,,ml,RandomForest,,,,14.852
+155132,0.49,0.12,0.39,18.07,RandomForest,14.855,,ml,RandomForest,,,,14.855
+5078,0.09,0.0,0.91,17.23,SARIMAX,14.898,17.58,ml,SARIMAX,,,,14.898
+171012,0.0,0.0,1.0,37.0,RandomForest,14.948,,ml,RandomForest,,,,14.948
+125635,0.91,0.09,-0.0,28.27,HoltWinters,14.967,,ml,HoltWinters,,,,14.967
+45204,0.0,0.6,0.4,21.22,HoltWinters,15.076,16.841,ml,HoltWinters,,,,15.076
+134069,0.36,0.64,0.0,18.3,SARIMAX,15.113,15.429,ml,SARIMAX,,,,15.113
+92403,0.22,0.32,0.46,21.62,RandomForest,15.127,15.228,ml,RandomForest,,,,15.127
+174801,0.0,0.06,0.94,58.07,RandomForest,15.129,,ml,RandomForest,,,,15.129
+134181,0.21,0.44,0.35,20.38,HoltWinters,15.163,,ml,HoltWinters,,,,15.163
+125636,0.06,0.42,0.52,18.3,HoltWinters,15.171,17.253,ml,HoltWinters,,,,15.171
+133694,0.0,0.19,0.81,27.01,SARIMAX,15.177,,ml,SARIMAX,,,,15.177
+5086,0.01,0.33,0.66,49.1,SARIMAX,15.183,,ml,SARIMAX,,,,15.183
+134042,0.0,0.5,0.5,16.71,HoltWinters,15.2,18.606,ml,HoltWinters,,,,15.2
+155127,0.0,0.67,0.33,89.55,RandomForest,15.303,54.491,ml,RandomForest,,,,15.303
+5020,0.05,0.3,0.65,18.37,HoltWinters,15.368,21.418,ml,HoltWinters,,,,15.368
+3371,0.0,0.08,0.92,16.45,SARIMAX,15.395,,ml,SARIMAX,,,,15.395
+170005,0.0,0.69,0.31,46.94,RandomForest,15.396,,ml,RandomForest,,,,15.396
+133775,0.16,0.43,0.41,17.77,HoltWinters,15.414,,ml,HoltWinters,,,,15.414
+84401,0.16,0.13,0.71,15.55,RandomForest,15.525,,ml,RandomForest,,,,15.525
+133746,0.0,0.92,0.08,24.74,HoltWinters,15.576,,ml,HoltWinters,,,,15.576
+160042,0.0,0.37,0.63,21.11,SARIMAX,15.661,40.887,ml,SARIMAX,,,,15.661
+155071,0.0,0.19,0.81,15.7,SARIMAX,15.664,,ml,SARIMAX,,,,15.664
+133684,0.38,0.1,0.52,20.3,RandomForest,15.682,,ml,RandomForest,,,,15.682
+155026,0.49,0.31,0.2,23.15,RandomForest,15.908,18.638,ml,RandomForest,,,,15.908
+1275,0.45,0.12,0.43,17.44,RandomForest,15.913,17.244,ml,RandomForest,,,,15.913
+160026,0.0,0.08,0.92,16.29,HoltWinters,15.994,,ml,HoltWinters,,,,15.994
+160017,0.0,0.76,0.24,78.23,HoltWinters,16.052,,ml,HoltWinters,,,,16.052
+160049,0.0,0.36,0.64,17.05,RandomForest,16.057,47.858,ml,RandomForest,,,,16.057
+2287,0.29,0.0,0.71,66.73,HoltWinters,16.077,96.407,ml,HoltWinters,,,,16.077
+171805,0.0,0.68,0.32,41.69,RandomForest,16.084,,ml,RandomForest,,,,16.084
+7071,0.0,0.31,0.69,16.95,RandomForest,16.15,,ml,RandomForest,,,,16.15
+133351,0.12,0.45,0.43,16.73,SARIMAX,16.202,16.516,ml,SARIMAX,,,,16.202
+155106,0.0,0.79,0.21,79.64,SARIMAX,16.245,,ml,SARIMAX,,,,16.245
+133628,0.93,0.07,-0.0,16.47,HoltWinters,16.257,,ml,HoltWinters,,,,16.257
+89802,0.0,0.37,0.63,28.56,RandomForest,16.257,16.296,ml,RandomForest,,,,16.257
+127801,0.96,0.0,0.04,21.28,RandomForest,16.309,19.054,ml,RandomForest,,,,16.309
+3842,0.27,0.02,0.71,16.74,RandomForest,16.412,24.554,ml,RandomForest,,,,16.412
+160018,0.2,0.8,0.0,189.29,RandomForest,16.474,,ml,RandomForest,,,,16.474
+3758,0.0,0.64,0.36,34.99,RandomForest,16.506,,ml,RandomForest,,,,16.506
+160043,0.0,0.46,0.54,24.44,HoltWinters,16.513,40.206,ml,HoltWinters,,,,16.513
+134187,0.0,0.71,0.29,19.23,RandomForest,16.571,,ml,RandomForest,,,,16.571
+134015,0.0,0.52,0.48,55.97,SARIMAX,16.607,86.425,ml,SARIMAX,,,,16.607
+160010,0.25,0.27,0.48,20.3,RandomForest,16.611,27.412,ml,RandomForest,,,,16.611
+155069,0.0,1.0,0.0,131.67,RandomForest,16.62,,ml,RandomForest,,,,16.62
+5010,0.11,0.48,0.41,52.38,HoltWinters,16.68,,ml,HoltWinters,,,,16.68
+2458,0.39,0.61,0.0,17.33,SARIMAX,16.719,,ml,SARIMAX,,,,16.719
+133542,0.0,0.46,0.54,22.3,RandomForest,16.724,23.513,ml,RandomForest,,,,16.724
+133327,0.16,0.42,0.42,18.42,RandomForest,16.757,17.81,ml,RandomForest,,,,16.757
+160048,0.0,0.59,0.41,18.94,SARIMAX,16.816,22.771,ml,SARIMAX,,,,16.816
+3209,0.0,0.84,0.16,76.7,RandomForest,16.864,,ml,RandomForest,,,,16.864
+1810,0.33,0.45,0.22,21.71,RandomForest,16.923,19.861,ml,RandomForest,,,,16.923
+134185,0.0,0.5,0.5,19.46,SARIMAX,17.079,25.904,ml,SARIMAX,,,,17.079
+133779,0.0,0.44,0.56,21.93,RandomForest,17.209,20.483,ml,RandomForest,,,,17.209
+3359,0.39,0.42,0.19,20.92,SARIMAX,17.255,19.547,ml,SARIMAX,,,,17.255
+5033,0.0,1.0,0.0,50.46,RandomForest,17.278,,ml,RandomForest,,,,17.278
+133741,0.0,0.92,0.08,26.04,RandomForest,17.323,,ml,RandomForest,,,,17.323
+62405,0.0,0.52,0.48,30.9,HoltWinters,17.509,24.633,ml,HoltWinters,,,,17.509
+133484,0.36,0.12,0.52,32.66,RandomForest,17.534,19.417,ml,RandomForest,,,,17.534
+3211,0.25,0.13,0.62,21.7,RandomForest,17.564,,ml,RandomForest,,,,17.564
+163408,0.56,0.0,0.44,39.79,RandomForest,17.596,43.391,ml,RandomForest,,,,17.596
+3983,0.0,0.04,0.96,45.43,HoltWinters,17.799,,ml,HoltWinters,,,,17.799
+135007,0.06,0.27,0.67,18.89,SARIMAX,17.806,24.276,ml,SARIMAX,,,,17.806
+3634,0.09,0.85,0.06,25.82,RandomForest,17.825,19.336,ml,RandomForest,,,,17.825
+133766,0.14,0.04,0.82,24.43,RandomForest,17.868,,ml,RandomForest,,,,17.868
+2893,0.0,0.49,0.51,32.73,HoltWinters,17.966,122.688,ml,HoltWinters,,,,17.966
+133810,0.0,0.33,0.67,22.13,HoltWinters,18.01,33.016,ml,HoltWinters,,,,18.01
+1943,0.0,0.73,0.27,26.36,RandomForest,18.031,20.165,ml,RandomForest,,,,18.031
+134066,0.1,0.72,0.18,25.25,HoltWinters,18.051,,ml,HoltWinters,,,,18.051
+8966,0.0,0.0,1.0,22.88,RandomForest,18.056,,ml,RandomForest,,,,18.056
+133769,0.0,1.0,0.0,30.83,SARIMAX,18.079,28.747,ml,SARIMAX,,,,18.079
+1265,0.0,0.41,0.59,36.18,RandomForest,18.17,58.408,ml,RandomForest,,,,18.17
+2190,0.18,0.0,0.82,26.51,RandomForest,18.24,34.886,ml,RandomForest,,,,18.24
+135024,0.0,0.35,0.65,49.73,RandomForest,18.41,47.79,ml,RandomForest,,,,18.41
+137606,,,,,RandomForest,18.651,,ml,RandomForest,,,,18.651
+1822,0.0,0.73,0.27,50.61,RandomForest,18.733,,ml,RandomForest,,,,18.733
+160006,0.16,0.27,0.57,251.89,RandomForest,18.914,28.135,ml,RandomForest,,,,18.914
+3807,0.0,0.25,0.75,19.07,RandomForest,19.004,22.742,ml,RandomForest,,,,19.004
+3321,0.23,0.26,0.51,21.03,HoltWinters,19.196,29.244,ml,HoltWinters,,,,19.196
+135046,0.0,0.91,0.09,66.81,HoltWinters,19.233,19.694,ml,HoltWinters,,,,19.233
+133312,0.0,0.5,0.5,20.45,HoltWinters,19.324,,ml,HoltWinters,,,,19.324
+6434,0.17,0.39,0.44,21.68,HoltWinters,19.35,,ml,HoltWinters,,,,19.35
+6458,0.0,0.15,0.85,48.85,SARIMAX,19.351,72.512,ml,SARIMAX,,,,19.351
+60002,0.0,0.39,0.61,29.03,RandomForest,19.461,26.46,ml,RandomForest,,,,19.461
+125661,0.0,0.13,0.87,20.28,SARIMAX,19.5,,ml,SARIMAX,,,,19.5
+125626,,,,,SARIMAX,19.582,,ml,SARIMAX,,,,19.582
+155072,0.0,0.36,0.64,120.02,SARIMAX,19.658,,ml,SARIMAX,,,,19.658
+37401,0.0,0.84,0.16,24.93,RandomForest,19.783,,ml,RandomForest,,,,19.783
+160053,0.0,0.89,0.11,121.85,RandomForest,19.806,,ml,RandomForest,,,,19.806
+163806,0.35,0.42,0.23,26.74,RandomForest,19.853,27.338,ml,RandomForest,,,,19.853
+135056,0.29,0.71,0.0,28.69,HoltWinters,20.063,36.383,ml,HoltWinters,,,,20.063
+155067,0.0,0.5,0.5,23.71,RandomForest,20.123,,ml,RandomForest,,,,20.123
+133380,0.13,0.77,0.1,27.37,RandomForest,20.59,24.908,ml,RandomForest,,,,20.59
+133538,,,,,HoltWinters,20.647,,ml,HoltWinters,,,,20.647
+8738,0.21,0.52,0.27,23.35,HoltWinters,20.875,23.33,ml,HoltWinters,,,,20.875
+160052,0.0,0.7,0.3,53.59,HoltWinters,20.913,74.793,ml,HoltWinters,,,,20.913
+170030,0.0,0.78,0.22,31.68,HoltWinters,21.307,,ml,HoltWinters,,,,21.307
+170401,0.0,0.46,0.54,40.81,RandomForest,21.456,,ml,RandomForest,,,,21.456
+1273,0.34,0.0,0.66,165.24,RandomForest,21.462,217.393,ml,RandomForest,,,,21.462
+6453,0.0,0.0,1.0,100.0,RandomForest,21.513,,ml,RandomForest,,,,21.513
+160019,0.0,0.45,0.55,33.78,SARIMAX,21.765,52.468,ml,SARIMAX,,,,21.765
+160040,0.0,0.56,0.44,27.35,RandomForest,22.017,32.439,ml,RandomForest,,,,22.017
+163209,,,,,RandomForest,22.151,,ml,RandomForest,,,,22.151
+133772,0.0,0.72,0.28,24.15,SARIMAX,22.514,,ml,SARIMAX,,,,22.514
+133253,0.0,0.44,0.56,46.49,HoltWinters,22.591,60.799,ml,HoltWinters,,,,22.591
+3375,0.77,0.12,0.11,25.81,SARIMAX,22.633,26.332,ml,SARIMAX,,,,22.633
+3865,0.0,0.59,0.41,26.93,HoltWinters,23.252,35.348,ml,HoltWinters,,,,23.252
+2905,0.0,0.65,0.35,28.27,HoltWinters,23.292,24.928,ml,HoltWinters,,,,23.292
+170003,0.0,0.71,0.29,45.34,RandomForest,23.433,28.273,ml,RandomForest,,,,23.433
+135012,0.0,0.96,0.04,116.66,RandomForest,23.646,147.424,ml,RandomForest,,,,23.646
+6427,1.0,0.0,0.0,561.51,RandomForest,23.987,,ml,RandomForest,,,,23.987
+62201,0.0,0.08,0.92,179.94,HoltWinters,23.994,158.712,ml,HoltWinters,,,,23.994
+1979,0.03,0.0,0.97,129.46,RandomForest,24.064,,ml,RandomForest,,,,24.064
+125621,1.0,0.0,0.0,364.49,RandomForest,24.35,4405.129,ml,RandomForest,,,,24.35
+140610,,,,,RandomForest,24.473,,ml,RandomForest,,,,24.473
+1994,,,,,HoltWinters,25.06,,ml,HoltWinters,,,,25.06
+133722,0.0,1.0,0.0,396.17,HoltWinters,25.347,,ml,HoltWinters,,,,25.347
+155126,0.0,0.34,0.66,41.97,RandomForest,25.374,94.795,ml,RandomForest,,,,25.374
+133326,1.0,0.0,0.0,182.31,RandomForest,25.557,,ml,RandomForest,,,,25.557
+133259,0.0,0.61,0.39,26.14,RandomForest,25.78,,ml,RandomForest,,,,25.78
+133813,0.02,0.55,0.43,30.05,RandomForest,26.071,33.039,ml,RandomForest,,,,26.071
+134039,0.0,0.89,0.11,80.12,HoltWinters,26.466,63.847,ml,HoltWinters,,,,26.466
+3055,0.0,1.0,0.0,310.7,RandomForest,28.227,,ml,RandomForest,,,,28.227
+133572,0.0,0.55,0.45,30.12,RandomForest,29.338,42.912,ml,RandomForest,,,,29.338
+6398,0.0,1.0,0.0,43.6,RandomForest,29.779,,ml,RandomForest,,,,29.779
+140612,,,,,RandomForest,29.88,,ml,RandomForest,,,,29.88
+3448,0.0,0.71,0.29,78.71,HoltWinters,29.971,,ml,HoltWinters,,,,29.971
+5025,0.0,0.87,0.13,84.59,HoltWinters,30.268,,ml,HoltWinters,,,,30.268
+2546,0.0,1.0,0.0,80.67,RandomForest,30.287,63.433,ml,RandomForest,,,,30.287
+140611,,,,,RandomForest,30.435,,ml,RandomForest,,,,30.435
+155009,0.87,0.13,0.0,303.8,RandomForest,30.608,47.341,ml,RandomForest,,,,30.608
+5059,0.0,1.0,0.0,207.58,RandomForest,30.743,210.382,ml,RandomForest,,,,30.743
+172823,0.0,0.12,0.88,61.56,RandomForest,30.927,,ml,RandomForest,,,,30.927
+5060,0.0,0.76,0.24,39.13,RandomForest,31.4,,ml,RandomForest,,,,31.4
+133283,0.0,0.89,0.11,37.51,RandomForest,31.495,,ml,RandomForest,,,,31.495
+1771,,,,,SARIMAX,32.21,,ml,SARIMAX,,,,32.21
+160076,0.0,0.99,0.01,154.83,SARIMAX,32.248,,ml,SARIMAX,,,,32.248
+134200,0.0,1.0,0.0,159.83,RandomForest,32.344,,ml,RandomForest,,,,32.344
+160038,,,,,SARIMAX,33.077,,ml,SARIMAX,,,,33.077
+133761,0.0,0.19,0.81,38.55,HoltWinters,34.739,375.704,ml,HoltWinters,,,,34.739
+133231,,,,,SARIMAX,35.212,,ml,SARIMAX,,,,35.212
+135042,0.0,0.94,0.06,69.94,HoltWinters,36.352,88.044,ml,HoltWinters,,,,36.352
+160029,0.0,0.78,0.22,49.32,SARIMAX,37.143,,ml,SARIMAX,,,,37.143
+9341,0.0,0.97,0.03,105.57,HoltWinters,39.713,,ml,HoltWinters,,,,39.713
+133482,0.0,0.85,0.15,93.3,HoltWinters,39.813,77.238,ml,HoltWinters,,,,39.813
+134001,0.91,0.09,-0.0,124.98,RandomForest,41.848,185.74,ml,RandomForest,,,,41.848
+3161,0.0,1.0,0.0,10885.03,SARIMAX,42.501,374.709,ml,SARIMAX,,,,42.501
+170007,0.0,1.0,0.0,85.09,RandomForest,45.964,,ml,RandomForest,,,,45.964
+134070,0.0,0.36,0.64,61.64,RandomForest,48.88,,ml,RandomForest,,,,48.88
+170002,0.0,1.0,0.0,64.22,SARIMAX,52.307,,ml,SARIMAX,,,,52.307
+174404,0.05,0.0,0.95,121.83,RandomForest,52.868,,ml,RandomForest,,,,52.868
+159002,0.0,1.0,0.0,83.83,RandomForest,52.909,,ml,RandomForest,,,,52.909
+170001,0.0,0.0,1.0,78.98,RandomForest,53.263,,ml,RandomForest,,,,53.263
+125614,1.0,0.0,0.0,101.49,RandomForest,54.245,177.854,ml,RandomForest,,,,54.245
+160063,0.23,0.77,0.0,105.89,RandomForest,72.117,,ml,RandomForest,,,,72.117
+165210,0.09,0.31,0.6,133.4,HoltWinters,73.868,,ml,HoltWinters,,,,73.868
+135004,0.0,1.0,0.0,405.16,RandomForest,74.137,,ml,RandomForest,,,,74.137
+135019,0.0,1.0,0.0,266.04,RandomForest,77.916,,ml,RandomForest,,,,77.916
+125622,1.0,0.0,0.0,366.52,HoltWinters,87.329,766.182,ml,HoltWinters,,,,87.329
+151801,0.74,0.0,0.26,194.19,RandomForest,91.357,,ml,RandomForest,,,,91.357
+134049,0.0,0.0,1.0,976.05,HoltWinters,108.354,2103.352,ml,HoltWinters,,,,108.354
+157202,0.0,1.0,0.0,10410.25,RandomForest,127.091,,ml,RandomForest,,,,127.091
+3160,0.0,1.0,0.0,8105.57,RandomForest,131.892,15644.115,ml,RandomForest,,,,131.892
+7066,0.0,0.52,0.48,637.49,RandomForest,177.175,1417.872,ml,RandomForest,,,,177.175
+160016,,,,,HoltWinters,198.29,,ml,HoltWinters,,,,198.29
+165211,0.02,0.01,0.97,267.74,SARIMAX,219.664,,ml,SARIMAX,,,,219.664
+160075,,,,,RandomForest,478.068,,ml,RandomForest,,,,478.068
+3809,0.24,0.15,0.61,6.27,HoltWinters,7.619,7.574,weights,Весовая комбинация,0.24,0.15,0.61,6.27
+3348,0.35,0.08,0.57,6.36,HoltWinters,7.265,9.128,weights,Весовая комбинация,0.35,0.08,0.57,6.36
+3319,0.02,0.0,0.98,6.42,HoltWinters,8.208,12.608,weights,Весовая комбинация,0.02,0.0,0.98,6.42
+3954,0.01,0.05,0.94,6.46,HoltWinters,6.674,9.373,weights,Весовая комбинация,0.01,0.05,0.94,6.46
+133597,0.15,0.12,0.73,7.07,RandomForest,7.644,7.529,weights,Весовая комбинация,0.15,0.12,0.73,7.07
+3325,0.24,0.02,0.74,7.19,SARIMAX,11.175,10.068,weights,Весовая комбинация,0.24,0.02,0.74,7.19
+132802,0.18,0.01,0.81,7.23,SARIMAX,7.332,,weights,Весовая комбинация,0.18,0.01,0.81,7.23
+65401,0.18,0.0,0.82,7.24,HoltWinters,7.257,,weights,Весовая комбинация,0.18,0.0,0.82,7.24
+133727,0.0,0.18,0.82,7.3,HoltWinters,7.879,9.616,weights,Весовая комбинация,0.0,0.18,0.82,7.3
+7080,0.17,0.01,0.82,7.39,RandomForest,7.849,,weights,Весовая комбинация,0.17,0.01,0.82,7.39
+123002,0.05,0.11,0.84,7.47,HoltWinters,11.241,10.3,weights,Весовая комбинация,0.05,0.11,0.84,7.47
+3364,0.12,0.0,0.88,7.61,RandomForest,14.935,11.554,weights,Весовая комбинация,0.12,0.0,0.88,7.61
+7330,0.73,0.0,0.27,7.69,RandomForest,10.539,8.496,weights,Весовая комбинация,0.73,0.0,0.27,7.69
+1084,0.11,0.0,0.89,7.75,HoltWinters,7.828,10.161,weights,Весовая комбинация,0.11,0.0,0.89,7.75
+65603,0.2,0.1,0.7,7.79,RandomForest,10.985,10.309,weights,Весовая комбинация,0.2,0.1,0.7,7.79
+133342,0.04,0.12,0.84,7.98,RandomForest,9.857,11.557,weights,Весовая комбинация,0.04,0.12,0.84,7.98
+133396,0.08,0.05,0.87,8.1,RandomForest,9.059,11.876,weights,Весовая комбинация,0.08,0.05,0.87,8.1
+3734,0.67,0.0,0.33,8.12,RandomForest,18.488,9.591,weights,Весовая комбинация,0.67,0.0,0.33,8.12
+7279,0.14,0.19,0.67,8.15,RandomForest,9.596,8.343,weights,Весовая комбинация,0.14,0.19,0.67,8.15
+3315,0.29,0.13,0.58,8.19,RandomForest,10.993,9.26,weights,Весовая комбинация,0.29,0.13,0.58,8.19
+155044,0.12,0.21,0.67,8.27,HoltWinters,10.761,10.809,weights,Весовая комбинация,0.12,0.21,0.67,8.27
+133801,0.3,0.21,0.49,8.41,HoltWinters,10.035,,weights,Весовая комбинация,0.3,0.21,0.49,8.41
+133738,0.07,0.07,0.86,8.57,RandomForest,11.393,10.928,weights,Весовая комбинация,0.07,0.07,0.86,8.57
+123401,0.0,0.06,0.94,8.63,HoltWinters,9.146,,weights,Весовая комбинация,0.0,0.06,0.94,8.63
+7315,0.57,0.0,0.43,8.64,RandomForest,18.311,9.43,weights,Весовая комбинация,0.57,0.0,0.43,8.64
+133393,0.02,0.08,0.9,8.65,HoltWinters,12.379,11.206,weights,Весовая комбинация,0.02,0.08,0.9,8.65
+136940,0.11,0.31,0.58,8.75,RandomForest,11.809,11.957,weights,Весовая комбинация,0.11,0.31,0.58,8.75
+133794,0.0,0.31,0.69,8.82,RandomForest,9.843,10.086,weights,Весовая комбинация,0.0,0.31,0.69,8.82
+135014,0.11,0.04,0.85,8.83,RandomForest,10.019,,weights,Весовая комбинация,0.11,0.04,0.85,8.83
+136897,0.0,0.14,0.86,8.83,RandomForest,10.113,13.756,weights,Весовая комбинация,0.0,0.14,0.86,8.83
+134057,0.1,0.06,0.84,8.84,RandomForest,9.899,13.577,weights,Весовая комбинация,0.1,0.06,0.84,8.84
+134060,0.08,0.06,0.86,8.9,RandomForest,10.063,10.933,weights,Весовая комбинация,0.08,0.06,0.86,8.9
+133425,0.01,0.07,0.92,8.94,RandomForest,9.479,11.12,weights,Весовая комбинация,0.01,0.07,0.92,8.94
+133771,0.0,0.28,0.72,8.96,SARIMAX,13.369,15.62,weights,Весовая комбинация,0.0,0.28,0.72,8.96
+133334,0.1,0.05,0.85,9.03,RandomForest,9.192,9.131,weights,Весовая комбинация,0.1,0.05,0.85,9.03
+2200,0.01,0.11,0.88,9.09,HoltWinters,10.207,13.339,weights,Весовая комбинация,0.01,0.11,0.88,9.09
+133404,0.02,0.03,0.95,9.15,SARIMAX,11.269,,weights,Весовая комбинация,0.02,0.03,0.95,9.15
+134021,0.11,0.35,0.54,9.19,HoltWinters,11.83,13.839,weights,Весовая комбинация,0.11,0.35,0.54,9.19
+3659,0.27,0.05,0.68,9.21,RandomForest,9.762,9.987,weights,Весовая комбинация,0.27,0.05,0.68,9.21
+133783,0.0,0.2,0.8,9.39,HoltWinters,14.209,11.186,weights,Весовая комбинация,0.0,0.2,0.8,9.39
+1259,0.13,0.02,0.85,9.43,RandomForest,12.744,14.102,weights,Весовая комбинация,0.13,0.02,0.85,9.43
+133785,0.18,0.45,0.37,9.51,SARIMAX,9.599,10.432,weights,Весовая комбинация,0.18,0.45,0.37,9.51
+133782,0.0,0.29,0.71,9.52,RandomForest,12.399,10.619,weights,Весовая комбинация,0.0,0.29,0.71,9.52
+133257,0.05,0.11,0.84,9.53,RandomForest,12.07,17.877,weights,Весовая комбинация,0.05,0.11,0.84,9.53
+133374,0.11,0.21,0.68,9.57,RandomForest,11.722,,weights,Весовая комбинация,0.11,0.21,0.68,9.57
+133703,0.04,0.08,0.88,9.57,RandomForest,12.748,12.976,weights,Весовая комбинация,0.04,0.08,0.88,9.57
+133786,0.0,0.29,0.71,9.62,RandomForest,9.828,9.751,weights,Весовая комбинация,0.0,0.29,0.71,9.62
+134134,0.03,0.1,0.87,9.62,RandomForest,10.525,11.315,weights,Весовая комбинация,0.03,0.1,0.87,9.62
+133550,0.11,0.2,0.69,9.67,RandomForest,14.159,39.244,weights,Весовая комбинация,0.11,0.2,0.69,9.67
+155123,0.0,0.31,0.69,9.67,RandomForest,10.596,11.849,weights,Весовая комбинация,0.0,0.31,0.69,9.67
+9511,0.0,0.0,1.0,9.68,RandomForest,21.233,18.427,weights,Весовая комбинация,0.0,0.0,1.0,9.68
+133790,0.36,0.12,0.52,9.69,SARIMAX,14.947,10.277,weights,Весовая комбинация,0.36,0.12,0.52,9.69
+9516,0.3,0.25,0.45,9.73,HoltWinters,14.3,10.973,weights,Весовая комбинация,0.3,0.25,0.45,9.73
+133359,0.0,0.05,0.95,9.75,HoltWinters,14.994,13.112,weights,Весовая комбинация,0.0,0.05,0.95,9.75
+1068,0.16,0.19,0.65,9.76,SARIMAX,13.133,12.079,weights,Весовая комбинация,0.16,0.19,0.65,9.76
+9509,0.0,0.19,0.81,9.79,RandomForest,9.802,11.455,weights,Весовая комбинация,0.0,0.19,0.81,9.79
+134179,0.09,0.11,0.8,9.8,RandomForest,10.669,11.257,weights,Весовая комбинация,0.09,0.11,0.8,9.8
+3373,0.15,0.01,0.84,9.82,RandomForest,14.689,12.75,weights,Весовая комбинация,0.15,0.01,0.84,9.82
+39601,0.11,0.14,0.75,9.83,RandomForest,9.86,11.733,weights,Весовая комбинация,0.11,0.14,0.75,9.83
+133411,0.17,0.02,0.81,9.85,HoltWinters,15.046,10.92,weights,Весовая комбинация,0.17,0.02,0.81,9.85
+138001,0.0,0.17,0.83,9.89,SARIMAX,14.638,13.515,weights,Весовая комбинация,0.0,0.17,0.83,9.89
+136877,0.01,0.03,0.96,9.91,RandomForest,12.392,18.85,weights,Весовая комбинация,0.01,0.03,0.96,9.91
+133332,0.24,0.07,0.69,9.93,SARIMAX,11.767,11.054,weights,Весовая комбинация,0.24,0.07,0.69,9.93
+9245,0.13,0.12,0.75,9.93,SARIMAX,10.891,12.453,weights,Весовая комбинация,0.13,0.12,0.75,9.93
+155108,0.03,0.11,0.86,9.95,HoltWinters,12.798,12.606,weights,Весовая комбинация,0.03,0.11,0.86,9.95
+155076,0.29,0.01,0.7,9.97,RandomForest,11.739,15.603,weights,Весовая комбинация,0.29,0.01,0.7,9.97
+6419,0.11,0.12,0.77,9.98,RandomForest,10.036,15.984,weights,Весовая комбинация,0.11,0.12,0.77,9.98
+133748,0.1,0.24,0.66,10.07,HoltWinters,16.207,11.408,weights,Весовая комбинация,0.1,0.24,0.66,10.07
+134176,0.0,0.26,0.74,10.1,SARIMAX,12.274,13.333,weights,Весовая комбинация,0.0,0.26,0.74,10.1
+1274,0.67,0.05,0.28,10.13,RandomForest,11.67,11.84,weights,Весовая комбинация,0.67,0.05,0.28,10.13
+1083,0.02,0.0,0.98,10.15,SARIMAX,12.824,13.085,weights,Весовая комбинация,0.02,0.0,0.98,10.15
+133718,0.72,0.16,0.12,10.24,RandomForest,10.858,11.925,weights,Весовая комбинация,0.72,0.16,0.12,10.24
+133706,0.39,0.25,0.36,10.27,HoltWinters,22.734,10.562,weights,Весовая комбинация,0.39,0.25,0.36,10.27
+133338,0.0,0.26,0.74,10.3,RandomForest,14.407,12.393,weights,Весовая комбинация,0.0,0.26,0.74,10.3
+3337,0.0,0.02,0.98,10.3,SARIMAX,11.23,13.509,weights,Весовая комбинация,0.0,0.02,0.98,10.3
+134173,0.5,0.12,0.38,10.35,HoltWinters,12.081,18.305,weights,Весовая комбинация,0.5,0.12,0.38,10.35
+133742,0.0,0.24,0.76,10.38,RandomForest,13.093,,weights,Весовая комбинация,0.0,0.24,0.76,10.38
+136909,0.02,0.2,0.78,10.4,HoltWinters,18.579,15.426,weights,Весовая комбинация,0.02,0.2,0.78,10.4
+9748,0.46,0.13,0.41,10.41,RandomForest,12.012,11.136,weights,Весовая комбинация,0.46,0.13,0.41,10.41
+134059,0.08,0.03,0.89,10.43,HoltWinters,14.05,14.272,weights,Весовая комбинация,0.08,0.03,0.89,10.43
+133521,0.04,0.0,0.96,10.46,RandomForest,11.878,,weights,Весовая комбинация,0.04,0.0,0.96,10.46
+133637,0.0,0.17,0.83,10.48,RandomForest,12.072,12.993,weights,Весовая комбинация,0.0,0.17,0.83,10.48
+64404,0.61,0.0,0.39,10.58,RandomForest,17.134,11.67,weights,Весовая комбинация,0.61,0.0,0.39,10.58
+133548,0.0,0.25,0.75,10.6,RandomForest,37.346,17.284,weights,Весовая комбинация,0.0,0.25,0.75,10.6
+133385,0.07,0.0,0.93,10.63,HoltWinters,20.863,50.3,weights,Весовая комбинация,0.07,0.0,0.93,10.63
+155082,0.68,0.0,0.32,10.65,RandomForest,21.185,12.739,weights,Весовая комбинация,0.68,0.0,0.32,10.65
+2602,0.06,0.16,0.78,10.65,RandomForest,13.526,12.063,weights,Весовая комбинация,0.06,0.16,0.78,10.65
+133373,0.08,0.06,0.86,10.68,RandomForest,11.268,,weights,Весовая комбинация,0.08,0.06,0.86,10.68
+133791,0.0,0.18,0.82,10.77,HoltWinters,12.9,12.173,weights,Весовая комбинация,0.0,0.18,0.82,10.77
+3814,0.26,0.07,0.67,10.78,HoltWinters,11.599,,weights,Весовая комбинация,0.26,0.07,0.67,10.78
+8752,0.23,0.01,0.76,10.81,RandomForest,15.728,,weights,Весовая комбинация,0.23,0.01,0.76,10.81
+163004,0.38,0.05,0.57,10.84,RandomForest,13.257,,weights,Весовая комбинация,0.38,0.05,0.57,10.84
+5002,0.28,0.08,0.64,10.89,RandomForest,13.775,11.173,weights,Весовая комбинация,0.28,0.08,0.64,10.89
+135054,0.09,0.03,0.88,10.91,HoltWinters,11.351,13.397,weights,Весовая комбинация,0.09,0.03,0.88,10.91
+141002,0.03,0.03,0.94,10.93,SARIMAX,19.658,,weights,Весовая комбинация,0.03,0.03,0.94,10.93
+133276,0.62,0.16,0.22,10.94,HoltWinters,13.239,12.375,weights,Весовая комбинация,0.62,0.16,0.22,10.94
+133721,0.0,0.19,0.81,11.02,RandomForest,15.298,12.977,weights,Весовая комбинация,0.0,0.19,0.81,11.02
+3400,0.5,0.1,0.4,11.02,RandomForest,12.99,13.215,weights,Весовая комбинация,0.5,0.1,0.4,11.02
+132001,0.19,0.17,0.64,11.09,SARIMAX,20.268,,weights,Весовая комбинация,0.19,0.17,0.64,11.09
+3839,0.16,0.14,0.7,11.14,RandomForest,13.498,11.195,weights,Весовая комбинация,0.16,0.14,0.7,11.14
+9086,0.65,0.0,0.35,11.14,RandomForest,11.588,11.568,weights,Весовая комбинация,0.65,0.0,0.35,11.14
+134008,0.01,0.11,0.88,11.22,RandomForest,15.621,,weights,Весовая комбинация,0.01,0.11,0.88,11.22
+3819,0.03,0.05,0.92,11.22,RandomForest,12.008,18.849,weights,Весовая комбинация,0.03,0.05,0.92,11.22
+3803,0.0,0.49,0.51,11.24,HoltWinters,12.336,12.86,weights,Весовая комбинация,0.0,0.49,0.51,11.24
+134043,0.04,0.06,0.9,11.28,RandomForest,12.131,13.346,weights,Весовая комбинация,0.04,0.06,0.9,11.28
+134188,0.62,0.12,0.26,11.31,HoltWinters,18.229,11.558,weights,Весовая комбинация,0.62,0.12,0.26,11.31
+133350,0.0,0.12,0.88,11.32,RandomForest,13.691,12.857,weights,Весовая комбинация,0.0,0.12,0.88,11.32
+133757,0.11,0.1,0.79,11.34,RandomForest,22.082,15.951,weights,Весовая комбинация,0.11,0.1,0.79,11.34
+2276,0.0,0.28,0.72,11.37,RandomForest,23.595,,weights,Весовая комбинация,0.0,0.28,0.72,11.37
+133803,0.0,0.51,0.49,11.38,HoltWinters,11.658,,weights,Весовая комбинация,0.0,0.51,0.49,11.38
+133594,0.19,0.01,0.8,11.41,RandomForest,12.792,,weights,Весовая комбинация,0.19,0.01,0.8,11.41
+163003,0.75,0.25,0.0,11.42,HoltWinters,19.989,,weights,Весовая комбинация,0.75,0.25,0.0,11.42
+2830,0.0,0.2,0.8,11.5,RandomForest,13.217,,weights,Весовая комбинация,0.0,0.2,0.8,11.5
+133607,0.32,0.27,0.41,11.52,SARIMAX,11.793,13.527,weights,Весовая комбинация,0.32,0.27,0.41,11.52
+3366,0.0,0.2,0.8,11.52,RandomForest,14.887,13.609,weights,Весовая комбинация,0.0,0.2,0.8,11.52
+133269,0.05,0.07,0.88,11.53,RandomForest,13.877,15.281,weights,Весовая комбинация,0.05,0.07,0.88,11.53
+133596,0.17,0.02,0.81,11.65,RandomForest,15.543,,weights,Весовая комбинация,0.17,0.02,0.81,11.65
+136876,0.0,0.22,0.78,11.65,RandomForest,13.462,13.952,weights,Весовая комбинация,0.0,0.22,0.78,11.65
+160037,0.1,0.08,0.82,11.67,SARIMAX,18.32,15.02,weights,Весовая комбинация,0.1,0.08,0.82,11.67
+1960,0.24,0.06,0.7,11.68,RandomForest,14.395,11.915,weights,Весовая комбинация,0.24,0.06,0.7,11.68
+160025,0.06,0.08,0.86,11.72,RandomForest,11.875,14.121,weights,Весовая комбинация,0.06,0.08,0.86,11.72
+2246,0.0,0.25,0.75,11.75,HoltWinters,20.311,15.079,weights,Весовая комбинация,0.0,0.25,0.75,11.75
+3152,0.16,0.08,0.76,11.75,RandomForest,12.201,14.904,weights,Весовая комбинация,0.16,0.08,0.76,11.75
+133433,0.0,0.1,0.9,11.79,RandomForest,13.855,13.114,weights,Весовая комбинация,0.0,0.1,0.9,11.79
+125659,0.04,0.22,0.74,11.83,RandomForest,15.256,,weights,Весовая комбинация,0.04,0.22,0.74,11.83
+155124,0.0,0.65,0.35,11.88,RandomForest,12.498,,weights,Весовая комбинация,0.0,0.65,0.35,11.88
+1070,0.0,0.06,0.94,11.89,RandomForest,12.49,,weights,Весовая комбинация,0.0,0.06,0.94,11.89
+9379,0.1,0.26,0.64,11.9,RandomForest,15.598,13.193,weights,Весовая комбинация,0.1,0.26,0.64,11.9
+136910,0.0,0.38,0.62,11.93,RandomForest,15.036,12.984,weights,Весовая комбинация,0.0,0.38,0.62,11.93
+3313,0.68,0.14,0.18,11.96,RandomForest,16.669,13.079,weights,Весовая комбинация,0.68,0.14,0.18,11.96
+2248,0.01,0.0,0.99,12.05,HoltWinters,17.525,18.718,weights,Весовая комбинация,0.01,0.0,0.99,12.05
+133302,0.14,0.13,0.73,12.06,RandomForest,12.648,,weights,Весовая комбинация,0.14,0.13,0.73,12.06
+134014,0.48,0.31,0.21,12.07,SARIMAX,15.207,12.794,weights,Весовая комбинация,0.48,0.31,0.21,12.07
+135022,0.09,0.06,0.85,12.09,RandomForest,18.117,14.697,weights,Весовая комбинация,0.09,0.06,0.85,12.09
+2614,0.44,0.09,0.47,12.24,SARIMAX,14.73,14.069,weights,Весовая комбинация,0.44,0.09,0.47,12.24
+133209,0.04,0.12,0.84,12.27,HoltWinters,14.562,16.186,weights,Весовая комбинация,0.04,0.12,0.84,12.27
+155102,0.13,0.06,0.81,12.29,SARIMAX,12.307,20.058,weights,Весовая комбинация,0.13,0.06,0.81,12.29
+3847,0.5,0.09,0.41,12.31,RandomForest,16.436,12.642,weights,Весовая комбинация,0.5,0.09,0.41,12.31
+133383,0.0,0.06,0.94,12.33,RandomForest,13.292,13.229,weights,Весовая комбинация,0.0,0.06,0.94,12.33
+1837,0.16,0.09,0.75,12.36,RandomForest,16.533,13.581,weights,Весовая комбинация,0.16,0.09,0.75,12.36
+2153,0.22,0.16,0.62,12.36,SARIMAX,12.823,14.223,weights,Весовая комбинация,0.22,0.16,0.62,12.36
+3747,0.1,0.23,0.67,12.41,RandomForest,23.639,,weights,Весовая комбинация,0.1,0.23,0.67,12.41
+133213,0.36,0.4,0.24,12.43,SARIMAX,13.138,15.528,weights,Весовая комбинация,0.36,0.4,0.24,12.43
+3311,0.38,0.28,0.34,12.43,RandomForest,15.32,43.522,weights,Весовая комбинация,0.38,0.28,0.34,12.43
+133774,0.22,0.29,0.49,12.48,HoltWinters,25.436,17.246,weights,Весовая комбинация,0.22,0.29,0.49,12.48
+135002,0.25,0.2,0.55,12.49,SARIMAX,16.216,13.567,weights,Весовая комбинация,0.25,0.2,0.55,12.49
+3596,0.57,0.04,0.39,12.51,SARIMAX,13.488,13.005,weights,Весовая комбинация,0.57,0.04,0.39,12.51
+133615,0.93,0.07,-0.0,12.54,RandomForest,48.098,13.927,weights,Весовая комбинация,0.93,0.07,-0.0,12.54
+133770,0.0,0.33,0.67,12.54,HoltWinters,20.673,14.798,weights,Весовая комбинация,0.0,0.33,0.67,12.54
+1875,0.13,0.02,0.85,12.54,HoltWinters,13.079,14.994,weights,Весовая комбинация,0.13,0.02,0.85,12.54
+133576,0.0,0.26,0.74,12.56,RandomForest,12.89,,weights,Весовая комбинация,0.0,0.26,0.74,12.56
+133560,0.21,0.21,0.58,12.57,RandomForest,13.505,,weights,Весовая комбинация,0.21,0.21,0.58,12.57
+155019,0.08,0.1,0.82,12.58,SARIMAX,13.12,14.546,weights,Весовая комбинация,0.08,0.1,0.82,12.58
+1867,0.63,0.01,0.36,12.59,HoltWinters,18.629,16.877,weights,Весовая комбинация,0.63,0.01,0.36,12.59
+1087,0.34,0.17,0.49,12.62,SARIMAX,15.461,17.56,weights,Весовая комбинация,0.34,0.17,0.49,12.62
+133744,0.02,0.06,0.92,12.63,HoltWinters,12.724,16.727,weights,Весовая комбинация,0.02,0.06,0.92,12.63
+133764,0.0,0.4,0.6,12.63,RandomForest,15.92,14.099,weights,Весовая комбинация,0.0,0.4,0.6,12.63
+3355,0.64,0.02,0.34,12.67,RandomForest,27.432,14.188,weights,Весовая комбинация,0.64,0.02,0.34,12.67
+155085,0.0,0.01,0.99,12.77,SARIMAX,18.074,17.064,weights,Весовая комбинация,0.0,0.01,0.99,12.77
+133290,0.03,0.18,0.79,12.8,RandomForest,12.941,,weights,Весовая комбинация,0.03,0.18,0.79,12.8
+1954,0.03,0.22,0.75,12.81,HoltWinters,13.033,13.886,weights,Весовая комбинация,0.03,0.22,0.75,12.81
+9750,0.08,0.03,0.89,12.94,SARIMAX,15.912,,weights,Весовая комбинация,0.08,0.03,0.89,12.94
+133598,0.0,0.31,0.69,12.99,RandomForest,18.913,,weights,Весовая комбинация,0.0,0.31,0.69,12.99
+64601,0.0,0.12,0.88,13.0,SARIMAX,16.004,20.897,weights,Весовая комбинация,0.0,0.12,0.88,13.0
+133406,0.0,0.06,0.94,13.02,RandomForest,13.573,38.241,weights,Весовая комбинация,0.0,0.06,0.94,13.02
+133677,0.03,0.42,0.55,13.02,SARIMAX,15.164,,weights,Весовая комбинация,0.03,0.42,0.55,13.02
+3804,0.4,0.0,0.6,13.13,RandomForest,18.325,103.786,weights,Весовая комбинация,0.4,0.0,0.6,13.13
+155073,0.11,0.0,0.89,13.19,RandomForest,27.977,17.831,weights,Весовая комбинация,0.11,0.0,0.89,13.19
+133409,0.05,0.6,0.35,13.2,SARIMAX,20.271,,weights,Весовая комбинация,0.05,0.6,0.35,13.2
+125655,0.0,0.6,0.4,13.25,RandomForest,20.374,13.573,weights,Весовая комбинация,0.0,0.6,0.4,13.25
+133618,0.87,0.08,0.05,13.28,RandomForest,14.808,14.495,weights,Весовая комбинация,0.87,0.08,0.05,13.28
+133495,0.2,0.29,0.51,13.32,HoltWinters,17.806,17.447,weights,Весовая комбинация,0.2,0.29,0.51,13.32
+1830,0.25,0.0,0.75,13.35,RandomForest,14.721,,weights,Весовая комбинация,0.25,0.0,0.75,13.35
+1964,0.71,0.05,0.24,13.36,RandomForest,51.75,19.381,weights,Весовая комбинация,0.71,0.05,0.24,13.36
+8782,0.34,0.26,0.4,13.37,SARIMAX,13.838,14.261,weights,Весовая комбинация,0.34,0.26,0.4,13.37
+133401,0.0,0.12,0.88,13.4,RandomForest,14.967,15.141,weights,Весовая комбинация,0.0,0.12,0.88,13.4
+3154,0.03,0.08,0.89,13.41,RandomForest,15.376,15.425,weights,Весовая комбинация,0.03,0.08,0.89,13.41
+155074,0.32,0.3,0.38,13.45,SARIMAX,17.585,16.279,weights,Весовая комбинация,0.32,0.3,0.38,13.45
+136875,0.0,0.27,0.73,13.48,RandomForest,19.168,14.75,weights,Весовая комбинация,0.0,0.27,0.73,13.48
+3843,0.14,0.01,0.85,13.5,HoltWinters,28.941,16.814,weights,Весовая комбинация,0.14,0.01,0.85,13.5
+163224,0.41,0.03,0.56,13.56,RandomForest,15.165,15.879,weights,Весовая комбинация,0.41,0.03,0.56,13.56
+3848,0.13,0.09,0.78,13.56,RandomForest,23.201,18.088,weights,Весовая комбинация,0.13,0.09,0.78,13.56
+8907,0.12,0.17,0.71,13.59,HoltWinters,14.289,24.02,weights,Весовая комбинация,0.12,0.17,0.71,13.59
+2309,0.19,0.39,0.42,13.66,SARIMAX,16.38,,weights,Весовая комбинация,0.19,0.39,0.42,13.66
+133759,0.0,0.15,0.85,13.69,RandomForest,24.07,16.674,weights,Весовая комбинация,0.0,0.15,0.85,13.69
+155064,0.09,0.02,0.89,13.72,SARIMAX,33.942,,weights,Весовая комбинация,0.09,0.02,0.89,13.72
+2263,0.29,0.35,0.36,13.72,RandomForest,20.39,16.744,weights,Весовая комбинация,0.29,0.35,0.36,13.72
+3827,0.06,0.47,0.47,13.85,HoltWinters,14.305,14.954,weights,Весовая комбинация,0.06,0.47,0.47,13.85
+134018,0.21,0.11,0.68,13.92,RandomForest,33.334,,weights,Весовая комбинация,0.21,0.11,0.68,13.92
+133349,0.08,0.4,0.52,13.94,SARIMAX,15.716,16.94,weights,Весовая комбинация,0.08,0.4,0.52,13.94
+135053,0.0,0.48,0.52,13.96,SARIMAX,17.771,14.452,weights,Весовая комбинация,0.0,0.48,0.52,13.96
+133812,0.1,0.66,0.24,14.02,RandomForest,15.855,14.062,weights,Весовая комбинация,0.1,0.66,0.24,14.02
+2883,0.0,0.58,0.42,14.03,RandomForest,15.55,15.468,weights,Весовая комбинация,0.0,0.58,0.42,14.03
+135013,0.0,0.16,0.84,14.04,SARIMAX,16.875,,weights,Весовая комбинация,0.0,0.16,0.84,14.04
+133346,0.09,0.28,0.63,14.05,SARIMAX,15.787,14.999,weights,Весовая комбинация,0.09,0.28,0.63,14.05
+133524,0.04,0.08,0.88,14.05,HoltWinters,17.321,,weights,Весовая комбинация,0.04,0.08,0.88,14.05
+133711,0.74,0.06,0.2,14.12,RandomForest,21.179,15.608,weights,Весовая комбинация,0.74,0.06,0.2,14.12
+134030,0.2,0.33,0.47,14.14,HoltWinters,19.641,,weights,Весовая комбинация,0.2,0.33,0.47,14.14
+135035,0.68,0.06,0.26,14.14,HoltWinters,24.629,,weights,Весовая комбинация,0.68,0.06,0.26,14.14
+5065,0.1,0.02,0.88,14.16,RandomForest,18.737,15.417,weights,Весовая комбинация,0.1,0.02,0.88,14.16
+134002,0.0,0.48,0.52,14.21,SARIMAX,18.151,15.03,weights,Весовая комбинация,0.0,0.48,0.52,14.21
+133325,0.0,0.31,0.69,14.24,SARIMAX,17.866,,weights,Весовая комбинация,0.0,0.31,0.69,14.24
+57401,0.32,0.44,0.24,14.24,SARIMAX,15.869,16.745,weights,Весовая комбинация,0.32,0.44,0.24,14.24
+133725,0.84,0.08,0.08,14.27,RandomForest,49.083,14.702,weights,Весовая комбинация,0.84,0.08,0.08,14.27
+133399,0.0,0.2,0.8,14.34,RandomForest,16.285,14.867,weights,Весовая комбинация,0.0,0.2,0.8,14.34
+2243,0.0,0.12,0.88,14.4,HoltWinters,18.57,19.243,weights,Весовая комбинация,0.0,0.12,0.88,14.4
+125648,0.11,0.17,0.72,14.41,HoltWinters,26.357,,weights,Весовая комбинация,0.11,0.17,0.72,14.41
+133335,0.76,0.0,0.24,14.49,RandomForest,20.382,14.934,weights,Весовая комбинация,0.76,0.0,0.24,14.49
+136901,0.0,0.09,0.91,14.5,RandomForest,17.176,17.006,weights,Весовая комбинация,0.0,0.09,0.91,14.5
+1113,0.0,0.0,1.0,14.52,HoltWinters,18.084,,weights,Весовая комбинация,0.0,0.0,1.0,14.52
+36401,0.0,0.09,0.91,14.54,RandomForest,17.8,,weights,Весовая комбинация,0.0,0.09,0.91,14.54
+125663,0.67,0.1,0.23,14.55,RandomForest,28.988,,weights,Весовая комбинация,0.67,0.1,0.23,14.55
+2603,0.0,0.11,0.89,14.55,RandomForest,31.618,18.405,weights,Весовая комбинация,0.0,0.11,0.89,14.55
+133331,0.0,0.16,0.84,14.6,SARIMAX,17.828,21.4,weights,Весовая комбинация,0.0,0.16,0.84,14.6
+3389,0.0,0.28,0.72,14.68,RandomForest,16.493,40.905,weights,Весовая комбинация,0.0,0.28,0.72,14.68
+125644,0.0,0.39,0.61,14.71,HoltWinters,17.198,20.596,weights,Весовая комбинация,0.0,0.39,0.61,14.71
+3840,0.48,0.22,0.3,14.73,SARIMAX,16.097,,weights,Весовая комбинация,0.48,0.22,0.3,14.73
+134194,0.0,0.15,0.85,14.74,RandomForest,19.536,15.994,weights,Весовая комбинация,0.0,0.15,0.85,14.74
+133497,0.47,0.09,0.44,14.75,SARIMAX,17.47,,weights,Весовая комбинация,0.47,0.09,0.44,14.75
+133730,0.08,0.03,0.89,14.93,RandomForest,15.214,,weights,Весовая комбинация,0.08,0.03,0.89,14.93
+3841,0.17,0.09,0.74,14.95,RandomForest,26.598,20.946,weights,Весовая комбинация,0.17,0.09,0.74,14.95
+155066,0.0,0.05,0.95,14.96,SARIMAX,23.776,18.408,weights,Весовая комбинация,0.0,0.05,0.95,14.96
+125645,0.0,0.5,0.5,14.97,HoltWinters,34.333,,weights,Весовая комбинация,0.0,0.5,0.5,14.97
+125668,0.12,0.49,0.39,15.0,RandomForest,20.351,16.91,weights,Весовая комбинация,0.12,0.49,0.39,15.0
+133800,0.15,0.02,0.83,15.01,SARIMAX,30.813,,weights,Весовая комбинация,0.15,0.02,0.83,15.01
+1872,0.39,0.04,0.57,15.02,SARIMAX,17.803,,weights,Весовая комбинация,0.39,0.04,0.57,15.02
+3379,0.0,0.16,0.84,15.02,HoltWinters,18.424,15.614,weights,Весовая комбинация,0.0,0.16,0.84,15.02
+133469,0.6,0.0,0.4,15.03,HoltWinters,36.289,28.931,weights,Весовая комбинация,0.6,0.0,0.4,15.03
+125643,0.0,0.37,0.63,15.16,RandomForest,30.794,,weights,Весовая комбинация,0.0,0.37,0.63,15.16
+133600,0.0,0.55,0.45,15.17,SARIMAX,21.496,17.841,weights,Весовая комбинация,0.0,0.55,0.45,15.17
+5223,0.01,0.4,0.59,15.18,HoltWinters,29.74,,weights,Весовая комбинация,0.01,0.4,0.59,15.18
+133697,0.0,0.22,0.78,15.27,RandomForest,23.162,18.444,weights,Весовая комбинация,0.0,0.22,0.78,15.27
+4170,0.25,0.24,0.51,15.28,RandomForest,18.349,,weights,Весовая комбинация,0.25,0.24,0.51,15.28
+133762,0.01,0.2,0.79,15.3,RandomForest,19.518,,weights,Весовая комбинация,0.01,0.2,0.79,15.3
+80001,0.07,0.15,0.78,15.41,SARIMAX,32.967,,weights,Весовая комбинация,0.07,0.15,0.78,15.41
+9466,0.38,0.03,0.59,15.42,HoltWinters,17.481,,weights,Весовая комбинация,0.38,0.03,0.59,15.42
+135032,0.4,0.3,0.3,15.54,HoltWinters,20.327,17.205,weights,Весовая комбинация,0.4,0.3,0.3,15.54
+133646,0.1,0.27,0.63,15.55,SARIMAX,20.037,,weights,Весовая комбинация,0.1,0.27,0.63,15.55
+2874,0.0,0.43,0.57,15.55,RandomForest,17.488,19.068,weights,Весовая комбинация,0.0,0.43,0.57,15.55
+133207,0.0,0.25,0.75,15.58,HoltWinters,19.301,18.801,weights,Весовая комбинация,0.0,0.25,0.75,15.58
+155092,0.0,0.15,0.85,15.61,RandomForest,30.824,,weights,Весовая комбинация,0.0,0.15,0.85,15.61
+155029,0.19,0.14,0.67,15.71,HoltWinters,15.806,,weights,Весовая комбинация,0.19,0.14,0.67,15.71
+133621,0.95,0.05,0.0,15.74,RandomForest,21.151,18.221,weights,Весовая комбинация,0.95,0.05,0.0,15.74
+136810,0.89,0.05,0.06,15.79,RandomForest,64.108,15.836,weights,Весовая комбинация,0.89,0.05,0.06,15.79
+135008,0.61,0.25,0.14,15.83,SARIMAX,17.129,17.575,weights,Весовая комбинация,0.61,0.25,0.14,15.83
+133765,0.0,0.74,0.26,16.0,SARIMAX,16.773,23.066,weights,Весовая комбинация,0.0,0.74,0.26,16.0
+163206,0.06,0.37,0.57,16.03,SARIMAX,25.007,,weights,Весовая комбинация,0.06,0.37,0.57,16.03
+133368,0.02,0.14,0.84,16.09,RandomForest,37.792,22.756,weights,Весовая комбинация,0.02,0.14,0.84,16.09
+155086,0.0,0.01,0.99,16.13,HoltWinters,28.913,23.425,weights,Весовая комбинация,0.0,0.01,0.99,16.13
+160073,0.12,0.08,0.8,16.19,HoltWinters,23.485,,weights,Весовая комбинация,0.12,0.08,0.8,16.19
+133360,0.29,0.32,0.39,16.22,RandomForest,17.555,,weights,Весовая комбинация,0.29,0.32,0.39,16.22
+134013,0.36,0.39,0.25,16.25,SARIMAX,16.34,,weights,Весовая комбинация,0.36,0.39,0.25,16.25
+134067,0.13,0.46,0.41,16.28,RandomForest,29.806,16.381,weights,Весовая комбинация,0.13,0.46,0.41,16.28
+2988,0.0,0.14,0.86,16.45,RandomForest,16.542,21.617,weights,Весовая комбинация,0.0,0.14,0.86,16.45
+125642,0.0,0.74,0.26,16.47,HoltWinters,18.339,,weights,Весовая комбинация,0.0,0.74,0.26,16.47
+9751,0.0,0.03,0.97,16.57,RandomForest,20.36,,weights,Весовая комбинация,0.0,0.03,0.97,16.57
+160035,0.01,0.13,0.86,16.83,RandomForest,19.863,21.152,weights,Весовая комбинация,0.01,0.13,0.86,16.83
+133773,0.0,0.48,0.52,16.97,RandomForest,17.207,,weights,Весовая комбинация,0.0,0.48,0.52,16.97
+3322,0.18,0.67,0.15,17.07,SARIMAX,27.724,17.97,weights,Весовая комбинация,0.18,0.67,0.15,17.07
+7608,0.33,0.4,0.27,17.09,RandomForest,17.328,21.874,weights,Весовая комбинация,0.33,0.4,0.27,17.09
+3849,0.08,0.01,0.91,17.1,RandomForest,21.842,19.336,weights,Весовая комбинация,0.08,0.01,0.91,17.1
+155125,0.33,0.45,0.22,17.11,SARIMAX,17.546,,weights,Весовая комбинация,0.33,0.45,0.22,17.11
+133649,0.31,0.53,0.16,17.12,RandomForest,28.16,18.454,weights,Весовая комбинация,0.31,0.53,0.16,17.12
+139202,0.8,0.03,0.17,17.16,RandomForest,29.243,17.222,weights,Весовая комбинация,0.8,0.03,0.17,17.16
+3323,0.02,0.19,0.79,17.17,HoltWinters,31.799,25.753,weights,Весовая комбинация,0.02,0.19,0.79,17.17
+125654,0.16,0.62,0.22,17.42,SARIMAX,19.794,,weights,Весовая комбинация,0.16,0.62,0.22,17.42
+134016,0.04,0.18,0.78,17.48,RandomForest,18.136,,weights,Весовая комбинация,0.04,0.18,0.78,17.48
+134172,0.0,0.17,0.83,17.49,RandomForest,31.707,,weights,Весовая комбинация,0.0,0.17,0.83,17.49
+162601,0.51,0.1,0.39,17.52,HoltWinters,21.08,,weights,Весовая комбинация,0.51,0.1,0.39,17.52
+133543,0.67,0.0,0.33,17.53,RandomForest,30.089,25.041,weights,Весовая комбинация,0.67,0.0,0.33,17.53
+133778,0.13,0.63,0.24,17.59,SARIMAX,33.661,17.63,weights,Весовая комбинация,0.13,0.63,0.24,17.59
+133485,0.48,0.11,0.41,17.61,HoltWinters,684.331,19.942,weights,Весовая комбинация,0.48,0.11,0.41,17.61
+162622,0.54,0.12,0.34,17.69,RandomForest,18.297,18.292,weights,Весовая комбинация,0.54,0.12,0.34,17.69
+133745,0.0,0.44,0.56,17.71,RandomForest,20.233,,weights,Весовая комбинация,0.0,0.44,0.56,17.71
+133688,0.51,0.2,0.29,17.79,SARIMAX,20.46,,weights,Весовая комбинация,0.51,0.2,0.29,17.79
+125601,0.0,0.41,0.59,18.03,SARIMAX,18.348,,weights,Весовая комбинация,0.0,0.41,0.59,18.03
+133532,0.0,0.39,0.61,18.2,RandomForest,30.218,,weights,Весовая комбинация,0.0,0.39,0.61,18.2
+133612,0.57,0.0,0.43,18.2,RandomForest,26.998,18.463,weights,Весовая комбинация,0.57,0.0,0.43,18.2
+153810,0.72,0.06,0.22,18.29,RandomForest,36.86,18.352,weights,Весовая комбинация,0.72,0.06,0.22,18.29
+133518,0.0,0.29,0.71,18.43,HoltWinters,23.412,21.196,weights,Весовая комбинация,0.0,0.29,0.71,18.43
+160414,0.0,0.58,0.42,18.5,RandomForest,25.595,21.262,weights,Весовая комбинация,0.0,0.58,0.42,18.5
+134023,0.0,0.47,0.53,18.63,SARIMAX,23.064,,weights,Весовая комбинация,0.0,0.47,0.53,18.63
+133669,0.0,0.12,0.88,18.66,SARIMAX,27.978,,weights,Весовая комбинация,0.0,0.12,0.88,18.66
+163201,0.16,0.1,0.74,18.7,RandomForest,35.993,,weights,Весовая комбинация,0.16,0.1,0.74,18.7
+1269,0.96,0.0,0.04,18.72,RandomForest,87.434,19.96,weights,Весовая комбинация,0.96,0.0,0.04,18.72
+134190,0.0,0.24,0.76,18.72,RandomForest,23.283,20.928,weights,Весовая комбинация,0.0,0.24,0.76,18.72
+3430,0.07,0.32,0.61,18.75,SARIMAX,41.009,19.933,weights,Весовая комбинация,0.07,0.32,0.61,18.75
+163210,0.53,0.04,0.43,18.97,HoltWinters,35.705,,weights,Весовая комбинация,0.53,0.04,0.43,18.97
+135005,0.0,0.69,0.31,19.0,SARIMAX,27.896,,weights,Весовая комбинация,0.0,0.69,0.31,19.0
+125646,0.0,0.58,0.42,19.1,HoltWinters,45.136,,weights,Весовая комбинация,0.0,0.58,0.42,19.1
+7439,0.77,0.0,0.23,19.26,RandomForest,56.421,22.266,weights,Весовая комбинация,0.77,0.0,0.23,19.26
+165003,0.52,0.07,0.41,19.28,RandomForest,26.697,29.758,weights,Весовая комбинация,0.52,0.07,0.41,19.28
+2304,0.6,0.01,0.39,19.54,HoltWinters,23.723,,weights,Весовая комбинация,0.6,0.01,0.39,19.54
+136908,0.0,0.16,0.84,19.84,RandomForest,34.623,22.633,weights,Весовая комбинация,0.0,0.16,0.84,19.84
+6439,0.53,0.22,0.25,19.86,HoltWinters,21.954,,weights,Весовая комбинация,0.53,0.22,0.25,19.86
+160064,0.0,0.22,0.78,19.92,SARIMAX,23.027,22.866,weights,Весовая комбинация,0.0,0.22,0.78,19.92
+3140,0.69,0.0,0.31,19.92,RandomForest,51.653,20.943,weights,Весовая комбинация,0.69,0.0,0.31,19.92
+9075,0.37,0.38,0.25,19.98,RandomForest,21.272,32.769,weights,Весовая комбинация,0.37,0.38,0.25,19.98
+160069,0.0,0.24,0.76,20.0,SARIMAX,30.97,29.202,weights,Весовая комбинация,0.0,0.24,0.76,20.0
+133347,0.0,0.67,0.33,20.01,SARIMAX,24.778,,weights,Весовая комбинация,0.0,0.67,0.33,20.01
+136878,0.0,0.39,0.61,20.07,SARIMAX,34.943,30.651,weights,Весовая комбинация,0.0,0.39,0.61,20.07
+133806,0.84,0.0,0.16,20.08,RandomForest,37.466,20.172,weights,Весовая комбинация,0.84,0.0,0.16,20.08
+5224,0.67,0.07,0.26,20.18,SARIMAX,40.222,23.223,weights,Весовая комбинация,0.67,0.07,0.26,20.18
+155134,0.0,0.99,0.01,20.4,RandomForest,46.306,,weights,Весовая комбинация,0.0,0.99,0.01,20.4
+163213,0.07,0.26,0.67,20.41,SARIMAX,46.653,,weights,Весовая комбинация,0.07,0.26,0.67,20.41
+160024,0.0,0.12,0.88,20.6,HoltWinters,43.695,,weights,Весовая комбинация,0.0,0.12,0.88,20.6
+1948,0.64,0.0,0.36,20.81,RandomForest,43.845,21.147,weights,Весовая комбинация,0.64,0.0,0.36,20.81
+160051,0.0,0.28,0.72,20.83,RandomForest,21.96,21.644,weights,Весовая комбинация,0.0,0.28,0.72,20.83
+161802,0.58,0.05,0.37,21.06,RandomForest,36.042,23.319,weights,Весовая комбинация,0.58,0.05,0.37,21.06
+1803,0.08,0.31,0.61,21.14,RandomForest,23.53,,weights,Весовая комбинация,0.08,0.31,0.61,21.14
+155121,0.29,0.33,0.38,21.16,RandomForest,31.776,34.251,weights,Весовая комбинация,0.29,0.33,0.38,21.16
+139201,0.82,0.03,0.15,21.21,RandomForest,21.551,21.493,weights,Весовая комбинация,0.82,0.03,0.15,21.21
+1959,0.3,0.33,0.37,21.26,SARIMAX,36.929,,weights,Весовая комбинация,0.3,0.33,0.37,21.26
+9756,0.0,0.42,0.58,21.31,RandomForest,28.725,,weights,Весовая комбинация,0.0,0.42,0.58,21.31
+133776,0.5,0.31,0.19,21.41,RandomForest,38.277,,weights,Весовая комбинация,0.5,0.31,0.19,21.41
+163202,0.11,0.38,0.51,21.57,RandomForest,36.859,,weights,Весовая комбинация,0.11,0.38,0.51,21.57
+134158,0.0,0.44,0.56,21.61,HoltWinters,37.422,,weights,Весовая комбинация,0.0,0.44,0.56,21.61
+1120,0.08,0.16,0.76,21.62,HoltWinters,39.884,26.68,weights,Весовая комбинация,0.08,0.16,0.76,21.62
+134152,0.0,0.54,0.46,22.4,HoltWinters,69.973,26.841,weights,Весовая комбинация,0.0,0.54,0.46,22.4
+134019,0.09,0.6,0.31,22.57,SARIMAX,27.809,,weights,Весовая комбинация,0.09,0.6,0.31,22.57
+135001,0.0,0.0,1.0,22.66,RandomForest,27.565,,weights,Весовая комбинация,0.0,0.0,1.0,22.66
+2195,0.0,0.01,0.99,22.72,SARIMAX,60.827,42.19,weights,Весовая комбинация,0.0,0.01,0.99,22.72
+2230,0.0,0.78,0.22,22.9,SARIMAX,26.929,26.496,weights,Весовая комбинация,0.0,0.78,0.22,22.9
+9307,0.0,0.25,0.75,23.21,SARIMAX,35.346,,weights,Весовая комбинация,0.0,0.25,0.75,23.21
+9754,0.0,0.24,0.76,23.7,RandomForest,30.045,,weights,Весовая комбинация,0.0,0.24,0.76,23.7
+133493,0.0,0.8,0.2,24.41,SARIMAX,34.237,28.297,weights,Весовая комбинация,0.0,0.8,0.2,24.41
+133583,0.29,0.05,0.66,25.12,RandomForest,61.895,27.959,weights,Весовая комбинация,0.29,0.05,0.66,25.12
+3441,0.65,0.0,0.35,25.18,RandomForest,25.93,48.565,weights,Весовая комбинация,0.65,0.0,0.35,25.18
+135041,0.12,0.01,0.87,25.21,SARIMAX,46.99,39.871,weights,Весовая комбинация,0.12,0.01,0.87,25.21
+125664,0.0,0.35,0.65,25.78,RandomForest,62.178,,weights,Весовая комбинация,0.0,0.35,0.65,25.78
+134175,0.08,0.65,0.27,26.51,SARIMAX,33.352,,weights,Весовая комбинация,0.08,0.65,0.27,26.51
+125640,0.68,0.0,0.32,26.76,RandomForest,27.459,,weights,Весовая комбинация,0.68,0.0,0.32,26.76
+5012,0.43,0.0,0.57,28.1,HoltWinters,44.379,,weights,Весовая комбинация,0.43,0.0,0.57,28.1
+134161,0.0,0.75,0.25,28.55,RandomForest,38.247,,weights,Весовая комбинация,0.0,0.75,0.25,28.55
+165004,0.64,0.36,0.0,28.83,RandomForest,47.633,30.775,weights,Весовая комбинация,0.64,0.36,0.0,28.83
+163208,0.11,0.29,0.6,29.0,HoltWinters,84.077,,weights,Весовая комбинация,0.11,0.29,0.6,29.0
+133287,0.08,0.0,0.92,29.44,HoltWinters,139.441,41.704,weights,Весовая комбинация,0.08,0.0,0.92,29.44
+133724,0.16,0.0,0.84,29.55,RandomForest,30.47,43.736,weights,Весовая комбинация,0.16,0.0,0.84,29.55
+1845,0.33,0.42,0.25,29.58,SARIMAX,115.521,39.667,weights,Весовая комбинация,0.33,0.42,0.25,29.58
+2662,0.62,0.0,0.38,29.7,RandomForest,111.997,38.676,weights,Весовая комбинация,0.62,0.0,0.38,29.7
+3153,0.0,0.36,0.64,30.39,HoltWinters,71.886,,weights,Весовая комбинация,0.0,0.36,0.64,30.39
+3442,0.26,0.24,0.5,30.48,RandomForest,130.994,40.789,weights,Весовая комбинация,0.26,0.24,0.5,30.48
+134006,0.3,0.0,0.7,32.52,HoltWinters,148.975,,weights,Весовая комбинация,0.3,0.0,0.7,32.52
+160060,0.0,0.62,0.38,33.47,HoltWinters,37.989,,weights,Весовая комбинация,0.0,0.62,0.38,33.47
+3816,0.62,0.17,0.21,33.51,RandomForest,72.207,,weights,Весовая комбинация,0.62,0.17,0.21,33.51
+135075,0.0,0.66,0.34,33.97,RandomForest,39.729,38.984,weights,Весовая комбинация,0.0,0.66,0.34,33.97
+5067,0.0,0.06,0.94,34.64,SARIMAX,79.37,,weights,Весовая комбинация,0.0,0.06,0.94,34.64
+155114,0.26,0.28,0.46,35.12,RandomForest,35.747,,weights,Весовая комбинация,0.26,0.28,0.46,35.12
+2669,0.0,0.25,0.75,35.83,HoltWinters,142.455,,weights,Весовая комбинация,0.0,0.25,0.75,35.83
+134061,0.0,0.41,0.59,35.95,RandomForest,41.454,56.745,weights,Весовая комбинация,0.0,0.41,0.59,35.95
+133447,0.0,1.0,0.0,36.23,RandomForest,133.635,117.518,weights,Весовая комбинация,0.0,1.0,0.0,36.23
+133501,0.1,0.09,0.81,37.16,RandomForest,189.378,51.718,weights,Весовая комбинация,0.1,0.09,0.81,37.16
+3511,0.0,0.17,0.83,37.84,HoltWinters,133.745,64.381,weights,Весовая комбинация,0.0,0.17,0.83,37.84
+160056,0.0,0.45,0.55,38.54,RandomForest,51.806,67.236,weights,Весовая комбинация,0.0,0.45,0.55,38.54
+133364,0.0,0.56,0.44,40.4,RandomForest,54.784,64.182,weights,Весовая комбинация,0.0,0.56,0.44,40.4
+135801,0.02,0.17,0.81,40.59,RandomForest,45.145,67.278,weights,Весовая комбинация,0.02,0.17,0.81,40.59
+162620,0.0,0.28,0.72,42.55,RandomForest,89.908,,weights,Весовая комбинация,0.0,0.28,0.72,42.55
+133369,0.03,0.11,0.86,42.64,RandomForest,204.088,,weights,Весовая комбинация,0.03,0.11,0.86,42.64
+2285,0.29,0.35,0.36,43.74,RandomForest,200.488,52.58,weights,Весовая комбинация,0.29,0.35,0.36,43.74
+8741,0.62,0.0,0.38,43.8,RandomForest,146.117,46.715,weights,Весовая комбинация,0.62,0.0,0.38,43.8
+1833,0.35,0.09,0.56,45.09,HoltWinters,48.17,,weights,Весовая комбинация,0.35,0.09,0.56,45.09
+160044,0.0,0.42,0.58,45.53,RandomForest,166.31,,weights,Весовая комбинация,0.0,0.42,0.58,45.53
+1271,0.86,0.0,0.14,45.94,RandomForest,104.48,88.373,weights,Весовая комбинация,0.86,0.0,0.14,45.94
+134007,0.0,0.0,1.0,46.78,SARIMAX,263.02,71.718,weights,Весовая комбинация,0.0,0.0,1.0,46.78
+133363,0.36,0.0,0.64,51.01,HoltWinters,315.15,91.123,weights,Весовая комбинация,0.36,0.0,0.64,51.01
+133388,0.02,0.0,0.98,51.27,RandomForest,237.052,77.977,weights,Весовая комбинация,0.02,0.0,0.98,51.27
+133387,0.0,0.31,0.69,53.65,HoltWinters,173.253,66.171,weights,Весовая комбинация,0.0,0.31,0.69,53.65
+133520,0.25,0.0,0.75,58.65,RandomForest,121.304,183.583,weights,Весовая комбинация,0.25,0.0,0.75,58.65
+168202,0.0,0.28,0.72,65.47,RandomForest,67.373,91.811,weights,Весовая комбинация,0.0,0.28,0.72,65.47
+134160,0.0,0.25,0.75,68.88,HoltWinters,256.357,76.7,weights,Весовая комбинация,0.0,0.25,0.75,68.88
+171806,0.0,0.0,1.0,71.07,RandomForest,119.682,,weights,Весовая комбинация,0.0,0.0,1.0,71.07
+133361,1.0,0.0,0.0,73.27,RandomForest,494.682,117.967,weights,Весовая комбинация,1.0,0.0,0.0,73.27
+62403,0.0,0.29,0.71,74.7,SARIMAX,449.194,213.426,weights,Весовая комбинация,0.0,0.29,0.71,74.7
+133740,0.0,0.86,0.14,75.85,HoltWinters,161.814,97.964,weights,Весовая комбинация,0.0,0.86,0.14,75.85
+133371,0.0,0.01,0.99,76.87,SARIMAX,359.111,,weights,Весовая комбинация,0.0,0.01,0.99,76.87
+133736,0.58,0.0,0.42,77.55,RandomForest,1999.19,203.517,weights,Весовая комбинация,0.58,0.0,0.42,77.55
+171601,0.04,0.0,0.96,78.84,RandomForest,216.38,,weights,Весовая комбинация,0.04,0.0,0.96,78.84
+3821,0.0,0.81,0.19,87.88,SARIMAX,341.946,168.946,weights,Весовая комбинация,0.0,0.81,0.19,87.88
+5023,0.65,0.0,0.35,91.63,RandomForest,507.964,125.948,weights,Весовая комбинация,0.65,0.0,0.35,91.63
+133284,0.6,0.1,0.3,91.75,RandomForest,547.617,115.64,weights,Весовая комбинация,0.6,0.1,0.3,91.75
+1856,0.0,0.0,1.0,98.21,HoltWinters,226.098,277.882,weights,Весовая комбинация,0.0,0.0,1.0,98.21
+170010,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+170032,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+170033,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+175603,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+175604,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+175801,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+3432,0.0,0.0,1.0,100.0,nan,,,weights,Весовая комбинация,0.0,0.0,1.0,100.0
+151802,0.94,0.06,0.0,100.5,RandomForest,116.813,,weights,Весовая комбинация,0.94,0.06,0.0,100.5
+171602,0.0,0.0,1.0,102.55,RandomForest,298.326,,weights,Весовая комбинация,0.0,0.0,1.0,102.55
+175401,0.0,1.0,0.0,111.08,nan,,,weights,Весовая комбинация,0.0,1.0,0.0,111.08
+145801,0.0,0.0,1.0,118.49,RandomForest,136.703,,weights,Весовая комбинация,0.0,0.0,1.0,118.49
+3824,1.0,0.0,0.0,124.44,SARIMAX,664.083,846.806,weights,Весовая комбинация,1.0,0.0,0.0,124.44
+171011,0.0,0.0,1.0,128.99,RandomForest,439.672,,weights,Весовая комбинация,0.0,0.0,1.0,128.99
+155089,0.06,0.06,0.88,142.99,RandomForest,649.877,241.595,weights,Весовая комбинация,0.06,0.06,0.88,142.99
+135802,0.0,0.75,0.25,149.23,HoltWinters,607.033,195.196,weights,Весовая комбинация,0.0,0.75,0.25,149.23
+160041,0.0,1.0,0.0,163.45,HoltWinters,624.925,260.859,weights,Весовая комбинация,0.0,1.0,0.0,163.45
+2306,0.0,0.58,0.42,168.44,HoltWinters,1122.322,,weights,Весовая комбинация,0.0,0.58,0.42,168.44
+134052,0.0,1.0,0.0,168.85,SARIMAX,579.301,,weights,Весовая комбинация,0.0,1.0,0.0,168.85
+133549,0.0,1.0,0.0,184.41,HoltWinters,1030.303,292.207,weights,Весовая комбинация,0.0,1.0,0.0,184.41
+134154,0.0,0.0,1.0,185.33,RandomForest,890.794,327.243,weights,Весовая комбинация,0.0,0.0,1.0,185.33
+2167,0.0,0.0,1.0,202.61,HoltWinters,1305.943,,weights,Весовая комбинация,0.0,0.0,1.0,202.61
+134133,0.0,0.0,1.0,222.61,SARIMAX,1241.895,334.086,weights,Весовая комбинация,0.0,0.0,1.0,222.61
+162624,1.0,0.0,0.0,234.4,RandomForest,866.364,,weights,Весовая комбинация,1.0,0.0,0.0,234.4
+169801,0.0,0.0,1.0,242.02,SARIMAX,1418.965,,weights,Весовая комбинация,0.0,0.0,1.0,242.02
+160059,0.0,1.0,0.0,246.12,HoltWinters,637.961,10166.235,weights,Весовая комбинация,0.0,1.0,0.0,246.12
+135044,0.0,1.0,0.0,249.68,SARIMAX,1444.958,,weights,Весовая комбинация,0.0,1.0,0.0,249.68
+6433,0.0,1.0,0.0,253.93,SARIMAX,1088.251,321.713,weights,Весовая комбинация,0.0,1.0,0.0,253.93
+155136,0.0,1.0,0.0,268.84,SARIMAX,1394.773,470.88,weights,Весовая комбинация,0.0,1.0,0.0,268.84
+125627,1.0,0.0,0.0,306.07,RandomForest,2274.902,993.172,weights,Весовая комбинация,1.0,0.0,0.0,306.07
+160067,1.0,0.0,0.0,341.68,HoltWinters,1997.621,612.362,weights,Весовая комбинация,1.0,0.0,0.0,341.68
+125628,0.11,0.0,0.89,395.3,HoltWinters,2799.067,717.125,weights,Весовая комбинация,0.11,0.0,0.89,395.3
+133426,0.0,1.0,0.0,508.12,HoltWinters,2986.286,756.524,weights,Весовая комбинация,0.0,1.0,0.0,508.12
+160033,0.0,1.0,0.0,550.89,HoltWinters,3045.757,1031.942,weights,Весовая комбинация,0.0,1.0,0.0,550.89
+136942,0.0,0.0,1.0,652.82,RandomForest,5475.365,,weights,Весовая комбинация,0.0,0.0,1.0,652.82
+6418,0.0,1.0,0.0,1190.42,SARIMAX,6806.406,1640.249,weights,Весовая комбинация,0.0,1.0,0.0,1190.42
+9530,0.0,0.0,1.0,1196.61,HoltWinters,3716.666,,weights,Весовая комбинация,0.0,0.0,1.0,1196.61
+9339,0.0,1.0,0.0,1342.85,SARIMAX,10341.638,2173.372,weights,Весовая комбинация,0.0,1.0,0.0,1342.85
+125624,,,,,nan,,,,,,,,
+125633,,,,,nan,,,,,,,,
+134033,,,,,nan,,,,,,,,
+134038,,,,,nan,,,,,,,,
+134051,,,,,nan,,,,,,,,
+137605,,,,,nan,,,,,,,,
+153401,,,,,nan,,,,,,,,
+160003,,,,,nan,,,,,,,,
+160047,,,,,nan,,,,,,,,
+160055,,,,,nan,,,,,,,,
+160079,,,,,nan,,,,,,,,
+164201,,,,,nan,,,,,,,,
+3128,,,,,nan,,,,,,,,
+52401,,,,,nan,,,,,,,,
+52402,,,,,nan,,,,,,,,
+52406,,,,,nan,,,,,,,,
+52407,,,,,nan,,,,,,,,
+52408,,,,,nan,,,,,,,,
+52409,,,,,nan,,,,,,,,
+52411,,,,,nan,,,,,,,,
+52414,,,,,nan,,,,,,,,
