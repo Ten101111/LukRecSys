@@ -378,28 +378,34 @@ class DatePickerPopup(tk.Toplevel):
         self.destroy()
 
 
-def main() -> None:
+def main(root: tk.Tk | None = None, parent: tk.Frame | None = None, *, embedded: bool = False) -> tk.Tk:
     calendar.setfirstweekday(calendar.MONDAY)
     _apply_theme(_detect_dark_mode())
 
-    root = tk.Tk()
-    root.title("Платформа прогнозирования чеков")
-    root.configure(bg=COLOR_BG)
-    _set_icon(root)
+    own_root = root is None
+    if root is None:
+        root = tk.Tk()
 
-    screen_width = root.winfo_screenwidth()
-    screen_height = root.winfo_screenheight()
-    win_width = int(screen_width * 0.65)
-    win_height = int(screen_height * 0.55)
-    pos_x = (screen_width - win_width) // 2
-    pos_y = (screen_height - win_height) // 3
-    root.geometry(f"{win_width}x{win_height}+{pos_x}+{pos_y}")
-    root.minsize(860, 420)
+    if not embedded:
+        root.title("Платформа прогнозирования чеков")
+        root.configure(bg=COLOR_BG)
+        _set_icon(root)
+
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+        win_width = int(screen_width * 0.65)
+        win_height = int(screen_height * 0.55)
+        pos_x = (screen_width - win_width) // 2
+        pos_y = (screen_height - win_height) // 3
+        root.geometry(f"{win_width}x{win_height}+{pos_x}+{pos_y}")
+        root.minsize(860, 420)
+
+    container = parent if parent is not None else root
 
     status_var = tk.StringVar(value="Ожидание действий")
     progress_var = tk.StringVar(value="Прогресс: 0%")
 
-    header = tk.Frame(root, bg=COLOR_RED)
+    header = tk.Frame(container, bg=COLOR_RED)
     header.pack(fill="x", side="top")
 
     logo_img = _load_logo()
@@ -408,7 +414,7 @@ def main() -> None:
         logo_label.image = logo_img
         logo_label.pack(pady=8)
 
-    title_border = tk.Frame(root, bg=COLOR_RED)
+    title_border = tk.Frame(container, bg=COLOR_RED)
     title_border.pack(fill="x", padx=20, pady=(8, 4))
 
     title_bg = tk.Frame(title_border, bg=COLOR_BG)
@@ -423,7 +429,7 @@ def main() -> None:
     )
     title_label.pack(padx=10, pady=6)
 
-    main_frame = tk.Frame(root, bg=COLOR_BG, padx=18, pady=16)
+    main_frame = tk.Frame(container, bg=COLOR_BG, padx=18, pady=16)
     main_frame.pack(fill="both", expand=True)
 
     file_var = tk.StringVar()
@@ -1494,7 +1500,9 @@ def main() -> None:
 
     btn_open_results.pack(anchor="w", pady=(0, 0))
 
-    root.mainloop()
+    if own_root:
+        root.mainloop()
+    return root
 
 
 if __name__ == "__main__":

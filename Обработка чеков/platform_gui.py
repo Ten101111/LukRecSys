@@ -1,4 +1,6 @@
 import datetime as dt
+import subprocess
+import sys
 import traceback
 from pathlib import Path
 import tkinter as tk
@@ -11,6 +13,11 @@ from new_checks_add import update_by_day
 COLOR_RED = "#ed1b34"
 COLOR_BG = "#ffffff"
 COLOR_TEXT = "#000000"
+COLOR_ENTRY_BG = "#ffffff"
+COLOR_ENTRY_FG = "#000000"
+BUTTON_BG = "#ffffff"
+BUTTON_FG = "#000000"
+BUTTON_BORDER = "#000000"
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT_DIR = BASE_DIR / "Чеки"
@@ -64,6 +71,45 @@ def _load_logo() -> PhotoImage | None:
     return None
 
 
+def _detect_dark_mode() -> bool:
+    if sys.platform == "darwin":
+        try:
+            out = subprocess.check_output(
+                ["defaults", "read", "-g", "AppleInterfaceStyle"],
+                stderr=subprocess.STDOUT,
+            ).decode("utf-8", errors="ignore")
+            return "Dark" in out
+        except Exception:
+            return False
+    if sys.platform.startswith("win"):
+        try:
+            import winreg
+
+            with winreg.OpenKey(
+                winreg.HKEY_CURRENT_USER,
+                r"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize",
+            ) as key:
+                value, _ = winreg.QueryValueEx(key, "AppsUseLightTheme")
+                return value == 0
+        except Exception:
+            return False
+    return False
+
+
+def _apply_theme(dark: bool) -> None:
+    global COLOR_BG, COLOR_TEXT, COLOR_ENTRY_BG, COLOR_ENTRY_FG
+    if dark:
+        COLOR_BG = "#1f1f1f"
+        COLOR_TEXT = "#f2f2f2"
+        COLOR_ENTRY_BG = "#2b2b2b"
+        COLOR_ENTRY_FG = "#f2f2f2"
+    else:
+        COLOR_BG = "#ffffff"
+        COLOR_TEXT = "#000000"
+        COLOR_ENTRY_BG = "#ffffff"
+        COLOR_ENTRY_FG = "#000000"
+
+
 def _set_icon(root: tk.Tk) -> None:
     candidates = [
         BASE_DIR / "lukoil.ico",
@@ -80,24 +126,33 @@ def _set_icon(root: tk.Tk) -> None:
                 continue
 
 
-def main() -> None:
-    root = tk.Tk()
-    root.title("Платформа обработки чеков")
-    root.configure(bg=COLOR_BG)
-    _set_icon(root)
+def main(root: tk.Tk | None = None, parent: tk.Frame | None = None, *, embedded: bool = False) -> tk.Tk:
+    _apply_theme(_detect_dark_mode())
 
-    screen_width = root.winfo_screenwidth()
-    screen_height = root.winfo_screenheight()
-    win_width = int(screen_width * 0.7)
-    win_height = int(screen_height * 0.5)
-    pos_x = (screen_width - win_width) // 2
-    pos_y = (screen_height - win_height) // 3
-    root.geometry(f"{win_width}x{win_height}+{pos_x}+{pos_y}")
-    root.minsize(900, 450)
+    own_root = root is None
+    if root is None:
+        root = tk.Tk()
+
+    if not embedded:
+        root.title("Платформа обработки чеков")
+        root.configure(bg=COLOR_BG)
+        _set_icon(root)
+
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+        win_width = int(screen_width * 0.7)
+        win_height = int(screen_height * 0.5)
+        pos_x = (screen_width - win_width) // 2
+        pos_y = (screen_height - win_height) // 3
+        root.geometry(f"{win_width}x{win_height}+{pos_x}+{pos_y}")
+        root.minsize(900, 450)
+
+    container = parent if parent is not None else root
+    container.configure(bg=COLOR_BG)
 
     status_var = tk.StringVar(value="Ожидание действий")
 
-    header = tk.Frame(root, bg=COLOR_RED)
+    header = tk.Frame(container, bg=COLOR_RED)
     header.pack(fill="x", side="top")
 
     logo_img = _load_logo()
@@ -106,7 +161,7 @@ def main() -> None:
         logo_label.image = logo_img
         logo_label.pack(pady=8)
 
-    title_border = tk.Frame(root, bg=COLOR_RED)
+    title_border = tk.Frame(container, bg=COLOR_RED)
     title_border.pack(fill="x", padx=20, pady=(8, 4))
 
     title_bg = tk.Frame(title_border, bg=COLOR_BG)
@@ -121,7 +176,7 @@ def main() -> None:
     )
     title_label.pack(padx=10, pady=6)
 
-    main_frame = tk.Frame(root, bg=COLOR_BG, padx=15, pady=15)
+    main_frame = tk.Frame(container, bg=COLOR_BG, padx=15, pady=15)
     main_frame.pack(fill="both", expand=True)
 
     notebook = ttk.Notebook(main_frame)
@@ -156,6 +211,9 @@ def main() -> None:
             font=("Segoe UI", 10),
             relief="solid",
             bd=1,
+            bg=COLOR_ENTRY_BG,
+            fg=COLOR_ENTRY_FG,
+            insertbackground=COLOR_ENTRY_FG,
         )
         entry.pack(side="left", fill="x", expand=True, ipadx=4, ipady=3)
 
@@ -192,11 +250,15 @@ def main() -> None:
             frame,
             text="Обзор...",
             command=choose_files,
-            bg=COLOR_RED,
-            fg="white",
-            activebackground=COLOR_RED,
-            activeforeground="white",
-            relief="flat",
+            bg=BUTTON_BG,
+            fg=BUTTON_FG,
+            activebackground=BUTTON_BG,
+            activeforeground=BUTTON_FG,
+            relief="solid",
+            bd=1,
+            highlightbackground=BUTTON_BORDER,
+            highlightcolor=BUTTON_BORDER,
+            highlightthickness=1,
             font=("Segoe UI", 10, "bold"),
             padx=10,
             pady=3,
@@ -207,11 +269,15 @@ def main() -> None:
             frame,
             text="Папка...",
             command=choose_folder,
-            bg=COLOR_RED,
-            fg="white",
-            activebackground=COLOR_RED,
-            activeforeground="white",
-            relief="flat",
+            bg=BUTTON_BG,
+            fg=BUTTON_FG,
+            activebackground=BUTTON_BG,
+            activeforeground=BUTTON_FG,
+            relief="solid",
+            bd=1,
+            highlightbackground=BUTTON_BORDER,
+            highlightcolor=BUTTON_BORDER,
+            highlightthickness=1,
             font=("Segoe UI", 10, "bold"),
             padx=10,
             pady=3,
@@ -222,11 +288,15 @@ def main() -> None:
             frame,
             text="Очистить",
             command=clear_files,
-            bg=COLOR_RED,
-            fg="white",
-            activebackground=COLOR_RED,
-            activeforeground="white",
-            relief="flat",
+            bg=BUTTON_BG,
+            fg=BUTTON_FG,
+            activebackground=BUTTON_BG,
+            activeforeground=BUTTON_FG,
+            relief="solid",
+            bd=1,
+            highlightbackground=BUTTON_BORDER,
+            highlightcolor=BUTTON_BORDER,
+            highlightthickness=1,
             font=("Segoe UI", 10, "bold"),
             padx=10,
             pady=3,
@@ -266,6 +336,9 @@ def main() -> None:
             font=("Segoe UI", 10),
             relief="solid",
             bd=1,
+            bg=COLOR_ENTRY_BG,
+            fg=COLOR_ENTRY_FG,
+            insertbackground=COLOR_ENTRY_FG,
         )
         entry.pack(side="left", fill="x", expand=True, ipadx=4, ipady=3)
 
@@ -293,11 +366,15 @@ def main() -> None:
             frame,
             text="Обзор...",
             command=choose_file if file_mode else choose_folder,
-            bg=COLOR_RED,
-            fg="white",
-            activebackground=COLOR_RED,
-            activeforeground="white",
-            relief="flat",
+            bg=BUTTON_BG,
+            fg=BUTTON_FG,
+            activebackground=BUTTON_BG,
+            activeforeground=BUTTON_FG,
+            relief="solid",
+            bd=1,
+            highlightbackground=BUTTON_BORDER,
+            highlightcolor=BUTTON_BORDER,
+            highlightthickness=1,
             font=("Segoe UI", 10, "bold"),
             padx=10,
             pady=3,
@@ -309,11 +386,15 @@ def main() -> None:
                 frame,
                 text="Авто",
                 command=set_auto,
-                bg=COLOR_RED,
-                fg="white",
-                activebackground=COLOR_RED,
-                activeforeground="white",
-                relief="flat",
+                bg=BUTTON_BG,
+                fg=BUTTON_FG,
+                activebackground=BUTTON_BG,
+                activeforeground=BUTTON_FG,
+                relief="solid",
+                bd=1,
+                highlightbackground=BUTTON_BORDER,
+                highlightcolor=BUTTON_BORDER,
+                highlightthickness=1,
                 font=("Segoe UI", 10, "bold"),
                 padx=10,
                 pady=3,
@@ -360,6 +441,9 @@ def main() -> None:
         variable=write_master_day,
         bg=COLOR_BG,
         fg=COLOR_TEXT,
+        activebackground=COLOR_BG,
+        activeforeground=COLOR_TEXT,
+        selectcolor=COLOR_BG,
         font=("Segoe UI", 10),
     )
     chk_day.pack(anchor="w")
@@ -370,6 +454,9 @@ def main() -> None:
         variable=write_master_dn,
         bg=COLOR_BG,
         fg=COLOR_TEXT,
+        activebackground=COLOR_BG,
+        activeforeground=COLOR_TEXT,
+        selectcolor=COLOR_BG,
         font=("Segoe UI", 10),
     )
     chk_dn.pack(anchor="w")
@@ -451,11 +538,15 @@ def main() -> None:
         tab_update,
         text="4. Запустить обновление",
         command=run_update,
-        bg=COLOR_RED,
-        fg="white",
-        activebackground=COLOR_RED,
-        activeforeground="white",
-        relief="flat",
+        bg=BUTTON_BG,
+        fg=BUTTON_FG,
+        activebackground=BUTTON_BG,
+        activeforeground=BUTTON_FG,
+        relief="solid",
+        bd=1,
+        highlightbackground=BUTTON_BORDER,
+        highlightcolor=BUTTON_BORDER,
+        highlightthickness=1,
         font=("Segoe UI", 11, "bold"),
         padx=15,
         pady=6,
@@ -510,14 +601,18 @@ def main() -> None:
         tab_create,
         text="Заполнить мастер-файлы по умолчанию",
         command=set_create_defaults,
-        bg=COLOR_RED,
-        fg="white",
-        activebackground=COLOR_RED,
-        activeforeground="white",
-        relief="flat",
-        font=("Segoe UI", 10, "bold"),
-        padx=10,
-        pady=4,
+        bg=BUTTON_BG,
+        fg=BUTTON_FG,
+        activebackground=BUTTON_BG,
+        activeforeground=BUTTON_FG,
+        relief="solid",
+        bd=1,
+        highlightbackground=BUTTON_BORDER,
+        highlightcolor=BUTTON_BORDER,
+        highlightthickness=1,
+        font=("Segoe UI", 11, "bold"),
+        padx=15,
+        pady=6,
     )
     btn_defaults.pack(anchor="w", pady=(0, 10))
 
@@ -598,11 +693,15 @@ def main() -> None:
         tab_create,
         text="4. Сформировать мастер",
         command=run_create,
-        bg=COLOR_RED,
-        fg="white",
-        activebackground=COLOR_RED,
-        activeforeground="white",
-        relief="flat",
+        bg=BUTTON_BG,
+        fg=BUTTON_FG,
+        activebackground=BUTTON_BG,
+        activeforeground=BUTTON_FG,
+        relief="solid",
+        bd=1,
+        highlightbackground=BUTTON_BORDER,
+        highlightcolor=BUTTON_BORDER,
+        highlightthickness=1,
         font=("Segoe UI", 11, "bold"),
         padx=15,
         pady=6,
@@ -623,7 +722,7 @@ def main() -> None:
     )
     info_create.pack(anchor="w")
 
-    status_frame = tk.Frame(root, bg=COLOR_BG)
+    status_frame = tk.Frame(container, bg=COLOR_BG)
     status_frame.pack(fill="x", side="bottom", pady=(0, 8), padx=10)
 
     lbl_status_title = tk.Label(
@@ -644,7 +743,9 @@ def main() -> None:
     )
     lbl_status.pack(side="left", padx=(5, 0))
 
-    root.mainloop()
+    if own_root:
+        root.mainloop()
+    return root
 
 
 if __name__ == "__main__":
