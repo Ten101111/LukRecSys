@@ -525,7 +525,42 @@ def proportion_of_day_night_df(
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from sklearn.ensemble import RandomForestRegressor
-from functions_ml import train_nbeats_forecast, TORCH_AVAILABLE
+from functions_ml import (
+    train_nbeats_forecast,
+    train_ttm_global,
+    ttm_forecast_series,
+    TORCH_AVAILABLE,
+    TTM_CONFIG
+)
+
+TTM_EVAL_CACHE = None
+TTM_FULL_CACHE = None
+
+def ensure_ttm_full_cache():
+    global TTM_FULL_CACHE
+    if TTM_FULL_CACHE is None:
+        TTM_FULL_CACHE = train_ttm_global(
+            checks,
+            date_col=DATE_COL,
+            value_col=VALUE_COL,
+            ksss_col=NAME_OF_COLUMN_OF_KSSS,
+            config=TTM_CONFIG,
+            tail_exclude=0
+        )
+    return TTM_FULL_CACHE
+
+if TORCH_AVAILABLE:
+    try:
+        TTM_EVAL_CACHE = train_ttm_global(
+            checks,
+            date_col=DATE_COL,
+            value_col=VALUE_COL,
+            ksss_col=NAME_OF_COLUMN_OF_KSSS,
+            config=TTM_CONFIG,
+            tail_exclude=HORIZON
+        )
+    except Exception as exc:
+        print(f"TTM недоступен: {exc}")
 
 def hampel_filter(series, window_size=15, n_sigmas=3):
     x = series.astype(float).copy()
@@ -566,7 +601,9 @@ def make_supervised(df, target_col="Чеки", lags=(1,7,14), roll_windows=(7,14
 def evaluate_ml_models(series_df: pd.DataFrame,
                        date_col: str = DATE_COL,
                        value_col: str = VALUE_COL,
-                       horizon: int = HORIZON) -> Tuple[Optional[str], float, Dict[str, float]]:
+                       horizon: int = HORIZON,
+                       ksss: Optional[str] = None,
+                       ttm_cache=None) -> Tuple[Optional[str], float, Dict[str, float]]:
     df = series_df[[date_col, value_col]].copy()
     df[date_col] = pd.to_datetime(df[date_col], errors="coerce").dt.normalize()
     df[value_col] = pd.to_numeric(df[value_col], errors="coerce")
@@ -693,6 +730,19 @@ def evaluate_ml_models(series_df: pd.DataFrame,
     except Exception:
         results["RandomForest"] = np.nan
 
+    # TTM (global)
+    if ttm_cache is not None and ksss is not None:
+        try:
+            y_pred_ttm = ttm_forecast_series(
+                ttm_cache,
+                train_df["Чеки"].values,
+                ksss,
+                horizon=horizon
+            )
+            results["TTM"] = mape(y_test, y_pred_ttm)
+        except Exception:
+            results["TTM"] = np.nan
+
     # N-BEATS
     if TORCH_AVAILABLE:
         try:
@@ -719,7 +769,8 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
                           month_start: pd.Timestamp=None,
                           month_end: pd.Timestamp=None,
                           value_col: str=VALUE_COL,
-                          period_last_season_override: Optional[List[pd.Timestamp]] = None
+                          period_last_season_override: Optional[List[pd.Timestamp]] = None,
+                          ttm_cache=None
                           ) -> pd.DataFrame:
     """
     series_df: columns [date_col, value_col], sorted by date, daily grid (we'll ensure it)
@@ -820,6 +871,18 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
             seasonal_period=SEASONAL_PERIOD
         )
         future_pred = nb_res["forecast"]
+        future_dates = pd.date_range(start_pred, periods=horizon, freq="D")
+        df_fc = pd.DataFrame({"Дата": future_dates, "Прогноз": np.array(future_pred).astype(float)})
+
+    elif chosen_model == "TTM":
+        if ttm_cache is None:
+            raise ValueError("TTM модель не передана.")
+        future_pred = ttm_forecast_series(
+            ttm_cache,
+            base[value_col].values,
+            ksss,
+            horizon=horizon
+        )
         future_dates = pd.date_range(start_pred, periods=horizon, freq="D")
         df_fc = pd.DataFrame({"Дата": future_dates, "Прогноз": np.array(future_pred).astype(float)})
 
@@ -1067,6 +1130,46 @@ def append_to_csv(df: pd.DataFrame, path: str) -> None:
     header = not os.path.exists(path)
     df.to_csv(path, mode="a", index=False, header=header, encoding="utf-8")
 
+
+def print_mape_stats(path: str) -> None:
+    try:
+        df = pd.read_csv(path)
+    except Exception as exc:
+        print(f"Не удалось прочитать MAPE файл для статистики: {exc}")
+        return
+    if df.empty:
+        return
+
+    total = len(df)
+    print("\n--- Статистика по MAPE ---")
+    print(f"Всего строк: {total}")
+
+    if "ML_model" in df.columns:
+        ml_series = df["ML_model"].astype(str).str.strip()
+        ml_nonempty = ml_series != ""
+        ml_total = int(ml_nonempty.sum())
+        ttm_ml = int((ml_series == "TTM").sum())
+        if ml_total > 0:
+            print(f"TTM как лучшая ML-модель: {ttm_ml}/{ml_total} ({round(ttm_ml / ml_total * 100, 1)}%)")
+        else:
+            print("TTM как лучшая ML-модель: 0/0 (0%)")
+
+    if "Способ прогноза" in df.columns:
+        src_series = df["Способ прогноза"].astype(str).str.strip()
+        src_counts = src_series.replace("", "NA").value_counts()
+        src_info = ", ".join([f"{k}: {v}" for k, v in src_counts.items()])
+        print(f"Источники прогноза: {src_info}")
+
+    if "Способ прогноза" in df.columns and "Детали прогноза" in df.columns:
+        src_series = df["Способ прогноза"].astype(str).str.strip()
+        detail_series = df["Детали прогноза"].astype(str).str.strip()
+        ml_used = int((src_series == "МЛ").sum())
+        ttm_used = int(((src_series == "МЛ") & (detail_series == "TTM")).sum())
+        if ml_used > 0:
+            print(f"TTM как фактически выбранный прогноз: {ttm_used}/{ml_used} ({round(ttm_used / ml_used * 100, 1)}%)")
+        else:
+            print("TTM как фактически выбранный прогноз: 0/0 (0%)")
+
 def finalize_forecast_output(df: pd.DataFrame, hours_calc: "HoursCalculator") -> pd.DataFrame:
     df = df.copy()
     df = hours_calc.add_hours(df, output_day_col="Часы дневные", output_night_col="Часы ночные")
@@ -1181,7 +1284,14 @@ for index, k in enumerate(ksss_list):
             mape_weights = weight_info.get("weights_mape_pct", np.nan)
 
         mape_cur = current_mape_map.get(k_key, np.nan)
-        best_ml_model, mape_ml, _ = evaluate_ml_models(df_k, date_col=DATE_COL, value_col=VALUE_COL, horizon=HORIZON)
+        best_ml_model, mape_ml, _ = evaluate_ml_models(
+            df_k,
+            date_col=DATE_COL,
+            value_col=VALUE_COL,
+            horizon=HORIZON,
+            ksss=k,
+            ttm_cache=TTM_EVAL_CACHE
+        )
         periods_override = build_periods_for_range(df_k, target_month_start, target_month_end) if manual_period else None
 
         mape_candidates = {
@@ -1194,6 +1304,7 @@ for index, k in enumerate(ksss_list):
             mape_row = pd.DataFrame([{
                 "KSSS": k,
                 "MAPE_ML": round(mape_ml, 3) if pd.notna(mape_ml) else np.nan,
+                "ML_model": best_ml_model or "",
                 "MAPE_weights": round(mape_weights, 3) if pd.notna(mape_weights) else np.nan,
                 "MAPE_cur": round(mape_cur, 3) if pd.notna(mape_cur) else np.nan,
                 "Способ прогноза": "",
@@ -1230,13 +1341,17 @@ for index, k in enumerate(ksss_list):
             elif src == "ml":
                 if not best_ml_model:
                     continue
+                ttm_cache = None
+                if best_ml_model == "TTM":
+                    ttm_cache = ensure_ttm_full_cache()
                 fc_df = forecast_ml_for_month(
                     df_k,
                     best_ml_model,
                     target_month_start,
                     target_month_end,
                     value_col=VALUE_COL,
-                    period_last_season_override=period_of_month
+                    period_last_season_override=period_of_month,
+                    ttm_cache=ttm_cache
                 )
                 chosen_model = best_ml_model
             else:
@@ -1276,6 +1391,7 @@ for index, k in enumerate(ksss_list):
         mape_row = pd.DataFrame([{
             "KSSS": k,
             "MAPE_ML": round(mape_ml, 3) if pd.notna(mape_ml) else np.nan,
+            "ML_model": best_ml_model or "",
             "MAPE_weights": round(mape_weights, 3) if pd.notna(mape_weights) else np.nan,
             "MAPE_cur": round(mape_cur, 3) if pd.notna(mape_cur) else np.nan,
             "Способ прогноза": method_label,
@@ -1298,4 +1414,5 @@ else:
     print(f'--- Программа отработала! ---\n')
 print(f'Файл прогноза: {out_csv}')
 print(f'Файл MAPE: {mape_out_csv}')
+print_mape_stats(mape_out_csv)
 print(f'Для выполнения потребовалось {round(time.time() - start_all, 0)} сек.')

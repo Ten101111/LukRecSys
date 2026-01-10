@@ -183,6 +183,236 @@ def train_nbeats_forecast(series_train, horizon, seasonal_period, config=None):
         "device": device.type
     }
 
+
+# ===========================
+# Tiny Time Mixers (глобальная модель)
+# ===========================
+TTM_CONFIG = {
+    "input_size": 90,
+    "epochs": 10,
+    "batch_size": 256,
+    "hidden_size": 128,
+    "num_blocks": 4,
+    "lr": 1e-3,
+    "stride": 7,
+    "max_windows_per_series": 120,
+    "series_embed_dim": 8,
+    "seed": 42
+}
+
+_TTM_EVAL_CACHE = None
+_TTM_FULL_CACHE = None
+
+if TORCH_AVAILABLE:
+    class TTMBlock(nn.Module):
+        def __init__(self, time_len, feature_dim, hidden_size):
+            super().__init__()
+            self.time_norm = nn.LayerNorm(time_len)
+            self.time_mlp = nn.Sequential(
+                nn.Linear(time_len, hidden_size),
+                nn.GELU(),
+                nn.Linear(hidden_size, time_len)
+            )
+            self.channel_norm = nn.LayerNorm(feature_dim)
+            self.channel_mlp = nn.Sequential(
+                nn.Linear(feature_dim, hidden_size),
+                nn.GELU(),
+                nn.Linear(hidden_size, feature_dim)
+            )
+
+        def forward(self, x):
+            y = x.transpose(1, 2)
+            y = self.time_norm(y)
+            y = self.time_mlp(y)
+            x = x + y.transpose(1, 2)
+
+            z = self.channel_norm(x)
+            z = self.channel_mlp(z)
+            x = x + z
+            return x
+
+    class TinyTimeMixer(nn.Module):
+        def __init__(self, input_size, feature_dim, horizon, hidden_size, num_blocks, series_count, embed_dim):
+            super().__init__()
+            self.series_embed = nn.Embedding(series_count, embed_dim)
+            self.blocks = nn.ModuleList(
+                [TTMBlock(input_size, feature_dim, hidden_size) for _ in range(num_blocks)]
+            )
+            head_in = input_size * feature_dim
+            self.head = nn.Sequential(
+                nn.LayerNorm(head_in),
+                nn.Linear(head_in, hidden_size),
+                nn.ReLU(),
+                nn.Linear(hidden_size, horizon)
+            )
+
+        def forward(self, x, series_idx):
+            emb = self.series_embed(series_idx).unsqueeze(1).expand(-1, x.size(1), -1)
+            x = torch.cat([x, emb], dim=-1)
+            for block in self.blocks:
+                x = block(x)
+            x = x.reshape(x.size(0), -1)
+            return self.head(x)
+
+
+def _normalize_ksss_key(value) -> str:
+    s = str(value).strip()
+    if s.endswith(".0"):
+        s = s[:-2]
+    return s
+
+
+def _prepare_ttm_series(df_k, date_col, value_col):
+    df = df_k[[date_col, value_col]].copy()
+    df[date_col] = pd.to_datetime(df[date_col], errors="coerce").dt.normalize()
+    df[value_col] = pd.to_numeric(df[value_col], errors="coerce")
+    df = df.dropna(subset=[date_col, value_col]).sort_values(date_col)
+    if df.empty:
+        return np.array([], dtype=float)
+
+    full = pd.date_range(df[date_col].min(), df[date_col].max(), freq="D")
+    df = df.set_index(date_col).reindex(full).rename_axis("Дата").reset_index()
+    df = df.rename(columns={value_col: "Чеки"})
+    if df["Чеки"].isna().any():
+        df["Чеки"] = df["Чеки"].interpolate(method="linear").ffill().bfill()
+    df["Чеки"], _ = hampel_filter(df["Чеки"], window_size=15, n_sigmas=3)
+    return df["Чеки"].astype(float).values
+
+
+def _ttm_windows(series, input_size, horizon, stride, max_windows):
+    total = len(series)
+    last_start = total - input_size - horizon
+    if last_start < 0:
+        return None, None
+    indices = list(range(0, last_start + 1, stride))
+    if max_windows and len(indices) > max_windows:
+        pick = np.linspace(0, len(indices) - 1, max_windows).astype(int)
+        indices = [indices[i] for i in pick]
+    xs, ys = [], []
+    for i in indices:
+        xs.append(series[i:i + input_size])
+        ys.append(series[i + input_size:i + input_size + horizon])
+    return np.stack(xs), np.stack(ys)
+
+
+def train_ttm_global(df_all, date_col="Дата", value_col="Чеки", ksss_col=NAME_OF_COLUMN_OF_KSSS,
+                     config=None, tail_exclude=0):
+    if not TORCH_AVAILABLE:
+        raise RuntimeError(f"PyTorch недоступен: {TORCH_IMPORT_ERROR}")
+    if config is None:
+        config = TTM_CONFIG
+
+    input_size = int(config["input_size"])
+    horizon = HORIZON
+    stride = int(config["stride"])
+    max_windows = config.get("max_windows_per_series")
+    embed_dim = int(config["series_embed_dim"])
+
+    series_map = {}
+    series_stats = {}
+    x_list, y_list, sid_list = [], [], []
+
+    for ksss, df_k in df_all.groupby(ksss_col):
+        series = _prepare_ttm_series(df_k, date_col, value_col)
+        if tail_exclude and len(series) > tail_exclude:
+            series = series[:-tail_exclude]
+        if len(series) < input_size + horizon:
+            continue
+        key = _normalize_ksss_key(ksss)
+        if key not in series_map:
+            series_map[key] = len(series_map)
+        mean = float(series.mean())
+        std = float(series.std()) if float(series.std()) != 0.0 else 1.0
+        series_stats[key] = (mean, std)
+        scaled = (series - mean) / std
+
+        x_np, y_np = _ttm_windows(scaled, input_size, horizon, stride, max_windows)
+        if x_np is None:
+            continue
+        x_list.append(x_np.astype(np.float32))
+        y_list.append(y_np.astype(np.float32))
+        sid_list.append(np.full(len(x_np), series_map[key], dtype=np.int64))
+
+    if not x_list:
+        raise ValueError("Недостаточно данных для обучения TTM.")
+
+    x_all = np.concatenate(x_list, axis=0)
+    y_all = np.concatenate(y_list, axis=0)
+    s_all = np.concatenate(sid_list, axis=0)
+
+    dataset = TensorDataset(
+        torch.from_numpy(x_all).unsqueeze(-1),
+        torch.from_numpy(y_all),
+        torch.from_numpy(s_all)
+    )
+    loader = DataLoader(dataset, batch_size=int(config["batch_size"]), shuffle=True)
+
+    torch.manual_seed(int(config["seed"]))
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if device.type == "cuda":
+        torch.cuda.manual_seed_all(int(config["seed"]))
+
+    feature_dim = 1 + embed_dim
+    model = TinyTimeMixer(
+        input_size=input_size,
+        feature_dim=feature_dim,
+        horizon=horizon,
+        hidden_size=int(config["hidden_size"]),
+        num_blocks=int(config["num_blocks"]),
+        series_count=len(series_map),
+        embed_dim=embed_dim
+    ).to(device)
+
+    optimizer = torch.optim.Adam(model.parameters(), lr=float(config["lr"]))
+    loss_fn = nn.MSELoss()
+    model.train()
+    for _ in range(int(config["epochs"])):
+        for xb, yb, sb in loader:
+            xb = xb.to(device)
+            yb = yb.to(device)
+            sb = sb.to(device)
+            optimizer.zero_grad()
+            pred = model(xb, sb)
+            loss = loss_fn(pred, yb)
+            loss.backward()
+            nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+            optimizer.step()
+
+    return {
+        "model": model,
+        "input_size": input_size,
+        "horizon": horizon,
+        "series_map": series_map,
+        "series_stats": series_stats,
+        "device": device.type,
+        "config": config
+    }
+
+
+def ttm_forecast_series(ttm_cache, series_values, ksss, horizon=None):
+    if ttm_cache is None:
+        raise ValueError("TTM модель не обучена.")
+    key = _normalize_ksss_key(ksss)
+    if key not in ttm_cache["series_map"]:
+        raise ValueError("KSSS отсутствует в TTM модели.")
+    input_size = int(ttm_cache["input_size"])
+    horizon = int(horizon or ttm_cache["horizon"])
+    if len(series_values) < input_size:
+        raise ValueError("Недостаточно данных для TTM прогноза.")
+
+    mean, std = ttm_cache["series_stats"][key]
+    window = np.asarray(series_values[-input_size:], dtype=np.float32)
+    scaled = (window - mean) / std
+
+    device = torch.device(ttm_cache["device"])
+    model = ttm_cache["model"].to(device)
+    model.eval()
+    x = torch.from_numpy(scaled).unsqueeze(0).unsqueeze(-1).to(device)
+    s = torch.tensor([ttm_cache["series_map"][key]], dtype=torch.long, device=device)
+    with torch.no_grad():
+        pred_scaled = model(x, s).cpu().numpy().ravel()
+    return pred_scaled * std + mean
+
 # ===========================
 # 1 ЭТАП. ПОКАЗАТЕЛИ ТОЧНОСТИ
 # ===========================
@@ -265,7 +495,7 @@ def ksss_choice(df, ksss):
     df = df[df[NAME_OF_COLUMN_OF_KSSS] == ksss]
     return df
 
-def analysing_of_data(df_analyse):
+def analysing_of_data(df_analyse, ttm_cache=None):
     KSSS = df_analyse[NAME_OF_COLUMN_OF_KSSS].iloc[0]
     df_analyse = df_analyse.rename(columns={"Дата":"Дата", "Чеки":"Чеки"}).copy()
     df_analyse["Дата"] = pd.to_datetime(df_analyse["Дата"])
@@ -446,6 +676,30 @@ def analysing_of_data(df_analyse):
             results["NBEATS"] = {"error": str(e)}
     else:
         results["NBEATS"] = {"error": f"PyTorch недоступен: {TORCH_IMPORT_ERROR}"}
+
+    # ===========================
+    # 5) TTM (глобальная модель)
+    # ===========================
+    if ttm_cache is not None:
+        try:
+            y_pred_ttm = ttm_forecast_series(
+                ttm_cache,
+                train_df["Чеки"].values,
+                KSSS,
+                horizon=HORIZON
+            )
+            results["TTM"] = {
+                "pred": y_pred_ttm,
+                "MAPE": mape(y_test, y_pred_ttm),
+                "RMSE": rmse(y_test, y_pred_ttm),
+                "MAE": mae(y_test, y_pred_ttm),
+                "model": ttm_cache.get("model"),
+                "device": ttm_cache.get("device")
+            }
+        except Exception as e:
+            results["TTM"] = {"error": str(e)}
+    else:
+        results["TTM"] = {"error": "TTM не обучен"}
     # ===========================
     # Сравнение моделей
     # ===========================
@@ -478,6 +732,19 @@ def build_best_models_dataset(df_all):
     [АЗС, Лучшая модель, MAPE]
     перебирая все значения NAME_OF_COLUMN_OF_KSSS в df_all.
     """
+    ttm_cache = None
+    if TORCH_AVAILABLE:
+        try:
+            ttm_cache = train_ttm_global(
+                df_all,
+                date_col="Дата",
+                value_col="Чеки",
+                ksss_col=NAME_OF_COLUMN_OF_KSSS,
+                config=TTM_CONFIG,
+                tail_exclude=HORIZON
+            )
+        except Exception as e:
+            print(f"TTM не обучен: {e}")
     ksss_all = list(df_all[NAME_OF_COLUMN_OF_KSSS].unique())
     len_ksss_all = len(ksss_all)+1
     rows = []
@@ -487,7 +754,7 @@ def build_best_models_dataset(df_all):
         print('Обработка...\n')
         start = time.time()
         try:
-            best_model_name, best_mape, *_ = analysing_of_data(df_k)
+            best_model_name, best_mape, *_ = analysing_of_data(df_k, ttm_cache=ttm_cache)
             rows.append({
                 "АЗС": ksss,
                 "Лучшая модель": best_model_name,
@@ -512,7 +779,7 @@ def build_best_models_dataset(df_all):
     return summary_df
 
 
-def prediction_by_mlearning(best_model_name, df, results, KSSS, base_cols):
+def prediction_by_mlearning(best_model_name, df, results, KSSS, base_cols, ttm_cache=None):
     # ===========================
     # Финальная подгонка и прогноз на 45 дней вперёд
     # ===========================
@@ -547,6 +814,16 @@ def prediction_by_mlearning(best_model_name, df, results, KSSS, base_cols):
             seasonal_period=SEASONAL_PERIOD
         )
         future_pred = nb_res["forecast"]
+
+    elif best_model_name == "TTM":
+        if ttm_cache is None:
+            raise ValueError("TTM модель не передана для прогноза.")
+        future_pred = ttm_forecast_series(
+            ttm_cache,
+            df["Чеки"].values,
+            KSSS,
+            horizon=HORIZON
+        )
 
     else:  # RandomForest
         sup_full, feat_cols_full = make_supervised(df[base_cols].copy(), target_col="Чеки")
