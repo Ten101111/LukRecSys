@@ -33,6 +33,15 @@ FORECAST_SCRIPT = BASE_DIR / "Прогнозирование на основе �
 DEFAULT_CHECKS_ROOT = BASE_DIR.parent / "Обработка чеков" / "Объединение чеков"
 DEFAULT_AZS_FILE = BASE_DIR.parent / "АЗС для прогноза.xlsx"
 
+def _suppress_statsmodels_warnings() -> None:
+    try:
+        from statsmodels.tools.sm_exceptions import ConvergenceWarning
+    except Exception:
+        return
+    import warnings
+
+    warnings.filterwarnings("ignore", category=ConvergenceWarning)
+
 
 def _try_pick_latest_checks() -> Path | None:
     try:
@@ -1395,6 +1404,7 @@ def main(root: tk.Tk | None = None, parent: tk.Frame | None = None, *, embedded:
             error_text = None
             try:
                 root.after(0, lambda: status_var.set("Идёт прогнозирование..."))
+                _suppress_statsmodels_warnings()
 
                 os.environ["CHECKS_PATH_OVERRIDE"] = str(Path(path))
                 os.environ["FORECAST_START"] = _format_date(start_date)

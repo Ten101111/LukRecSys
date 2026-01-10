@@ -410,6 +410,14 @@ def mape(y_true, y_pred):
         return np.nan
     return float(np.mean(np.abs((y_true[nz] - y_pred[nz]) / y_true[nz])) * 100.0)
 
+def _sarimax_converged(model) -> bool:
+    if getattr(model, "converged", None) is False:
+        return False
+    mle_retvals = getattr(model, "mle_retvals", None)
+    if isinstance(mle_retvals, dict) and mle_retvals.get("converged") is False:
+        return False
+    return True
+
 def build_components_for_month(
     daily_df: pd.DataFrame,
     month_start,
@@ -517,6 +525,7 @@ def proportion_of_day_night_df(
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from sklearn.ensemble import RandomForestRegressor
+from functions_ml import train_nbeats_forecast, TORCH_AVAILABLE
 
 def hampel_filter(series, window_size=15, n_sigmas=3):
     x = series.astype(float).copy()
@@ -570,13 +579,20 @@ def evaluate_ml_models(series_df: pd.DataFrame,
     df = df.set_index(date_col).reindex(full).rename_axis("Дата").reset_index()
     df = df.rename(columns={value_col: "Чеки"})
     if df["Чеки"].isna().any():
-        df["Чеки"] = df["Чеки"].interpolate(method="linear")
+        df["Чеки"] = df["Чеки"].interpolate(method="linear").ffill().bfill()
     df["Чеки"] = hampel_filter(df["Чеки"], window_size=15, n_sigmas=3)
 
     df = add_calendar_features(df, date_col="Дата")
     train_df = df.iloc[:-horizon].copy()
     test_df = df.iloc[-horizon:].copy()
     y_test = test_df["Чеки"].values
+    train_series = train_df.set_index("Дата")["Чеки"].astype(float)
+    try:
+        train_series = train_series.asfreq("D")
+    except ValueError:
+        pass
+    if train_series.isna().any():
+        train_series = train_series.ffill().bfill()
 
     results = {}
 
@@ -593,10 +609,9 @@ def evaluate_ml_models(series_df: pd.DataFrame,
 
     # SARIMAX
     try:
-        best_model, best_aic = None, np.inf
+        best_model, best_score, best_aic, best_pred = None, np.inf, np.inf, None
         p_vals, d_vals, q_vals = [0, 1, 2], [0, 1], [0, 1, 2]
         P_vals, D_vals, Q_vals = [0, 1], [0, 1], [0, 1]
-        y = train_df["Чеки"].astype(float)
         for p in p_vals:
             for d in d_vals:
                 for q in q_vals:
@@ -605,18 +620,28 @@ def evaluate_ml_models(series_df: pd.DataFrame,
                             for Q in Q_vals:
                                 try:
                                     sar = SARIMAX(
-                                        y,
+                                        train_series,
                                         order=(p, d, q),
                                         seasonal_order=(P, D, Q, SEASONAL_PERIOD),
                                         enforce_stationarity=False,
                                         enforce_invertibility=False
                                     ).fit(disp=False)
-                                    if sar.aic < best_aic:
+                                    if not _sarimax_converged(sar):
+                                        continue
+                                    y_pred = sar.forecast(horizon).values
+                                    score = mape(y_test, y_pred)
+                                    if np.isfinite(score):
+                                        if score < best_score:
+                                            best_score = score
+                                            best_aic, best_model = sar.aic, sar
+                                            best_pred = y_pred
+                                    elif best_model is None and sar.aic < best_aic:
                                         best_aic, best_model = sar.aic, sar
+                                        best_pred = y_pred
                                 except Exception:
                                     pass
-        if best_model is not None:
-            y_pred_sar = best_model.forecast(horizon).values
+        if best_model is not None and best_pred is not None:
+            y_pred_sar = best_pred
             results["SARIMAX"] = mape(y_test, y_pred_sar)
         else:
             results["SARIMAX"] = np.nan
@@ -668,6 +693,21 @@ def evaluate_ml_models(series_df: pd.DataFrame,
     except Exception:
         results["RandomForest"] = np.nan
 
+    # N-BEATS
+    if TORCH_AVAILABLE:
+        try:
+            nb_res = train_nbeats_forecast(
+                series_train=train_df["Чеки"].values,
+                horizon=horizon,
+                seasonal_period=SEASONAL_PERIOD
+            )
+            y_pred_nb = nb_res["forecast"]
+            results["NBEATS"] = mape(y_test, y_pred_nb)
+        except Exception:
+            results["NBEATS"] = np.nan
+    else:
+        results["NBEATS"] = np.nan
+
     available = {k: v for k, v in results.items() if pd.notna(v)}
     if not available:
         return None, np.nan, results
@@ -693,7 +733,7 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
     df = df.set_index(DATE_COL).reindex(full).rename_axis(DATE_COL).reset_index()
     # interpolate
     if df[value_col].isna().any():
-        df[value_col] = df[value_col].interpolate(method="linear")
+        df[value_col] = df[value_col].interpolate(method="linear").ffill().bfill()
     # outliers -> Hampel
     df[value_col] = hampel_filter(df[value_col], window_size=15, n_sigmas=3)
     # build features
@@ -734,7 +774,13 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
         best_model, best_aic = None, np.inf
         p_vals, d_vals, q_vals = [0,1,2], [0,1], [0,1,2]
         P_vals, D_vals, Q_vals = [0,1], [0,1], [0,1]
-        y = base[value_col].astype(float)
+        y = base.set_index(DATE_COL)[value_col].astype(float)
+        try:
+            y = y.asfreq("D")
+        except ValueError:
+            pass
+        if y.isna().any():
+            y = y.ffill().bfill()
         for p in p_vals:
             for d in d_vals:
                 for q in q_vals:
@@ -749,6 +795,8 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
                                         enforce_stationarity=False,
                                         enforce_invertibility=False
                                     ).fit(disp=False)
+                                    if not _sarimax_converged(sar):
+                                        continue
                                     if sar.aic < best_aic:
                                         best_aic, best_model = sar.aic, sar
                                 except Exception:
@@ -762,6 +810,16 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
             future_pred = final.forecast(horizon)
         else:
             future_pred = best_model.forecast(horizon)
+        future_dates = pd.date_range(start_pred, periods=horizon, freq="D")
+        df_fc = pd.DataFrame({"Дата": future_dates, "Прогноз": np.array(future_pred).astype(float)})
+
+    elif chosen_model == "NBEATS":
+        nb_res = train_nbeats_forecast(
+            series_train=base[value_col].values,
+            horizon=horizon,
+            seasonal_period=SEASONAL_PERIOD
+        )
+        future_pred = nb_res["forecast"]
         future_dates = pd.date_range(start_pred, periods=horizon, freq="D")
         df_fc = pd.DataFrame({"Дата": future_dates, "Прогноз": np.array(future_pred).astype(float)})
 
