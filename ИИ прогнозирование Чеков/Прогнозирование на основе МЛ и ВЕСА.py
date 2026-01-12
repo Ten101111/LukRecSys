@@ -883,6 +883,15 @@ def forecast_ml_for_month(series_df: pd.DataFrame,
             ksss,
             horizon=horizon
         )
+        future_pred = np.asarray(future_pred, dtype=float)
+        if len(future_pred) < horizon:
+            final = ExponentialSmoothing(
+                base[value_col], trend="add", seasonal="mul",
+                seasonal_periods=SEASONAL_PERIOD, initialization_method="estimated"
+            ).fit(optimized=True, use_brute=True)
+            future_pred = np.asarray(final.forecast(horizon), dtype=float)
+        elif len(future_pred) > horizon:
+            future_pred = future_pred[:horizon]
         future_dates = pd.date_range(start_pred, periods=horizon, freq="D")
         df_fc = pd.DataFrame({"Дата": future_dates, "Прогноз": np.array(future_pred).astype(float)})
 
@@ -1247,7 +1256,7 @@ print(52*'-')
 
 
 start_all = time.time()
-in_work += (beginning_time - start_all)
+in_work += (start_all - beginning_time)
 forecasted_ksss = 0
 for index, k in enumerate(ksss_list):
     start = time.time()
