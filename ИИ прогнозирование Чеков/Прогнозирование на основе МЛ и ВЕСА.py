@@ -10,9 +10,12 @@ import datetime as dt
 from datetime import timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+from copy import copy
 
 import numpy as np
 import pandas as pd
+from openpyxl import load_workbook
+from openpyxl.drawing.spreadsheet_drawing import AnchorMarker, OneCellAnchor, XDRPositiveSize2D
 
 import warnings
 import importlib.util
@@ -62,7 +65,7 @@ from constants import (SRC_PATH, PATH_TO_DAY_NIGHT_FILE, LAST_FILE_FROM_PATH_WEI
                        LAST_FILE_FROM_PATH_CURRENT, OUTPUT_MODELS_COMPARISON,
                        NAME_OF_COLUMN_OF_KSSS, NAME_OF_COLUMN_OF_DATE,
                        NAME_OF_COLUMN_OF_SEGMENT, HORIZON, DAYS_UNTIL_SENDINGS, RESULT_PREDICTIONS,
-                       MONTH_NAMES, AZS_PRED_FILE, SEASONAL_PERIOD)
+                       MONTH_NAMES, AZS_PRED_FILE, SEASONAL_PERIOD, WEEKDAY)
 from constant_functions import last_date_indicator
 from current_forecast import periods_maker, indicator_adder, proportion_of_day_night
 
@@ -1140,6 +1143,409 @@ def append_to_csv(df: pd.DataFrame, path: str) -> None:
     df.to_csv(path, mode="a", index=False, header=header, encoding="utf-8")
 
 
+def _format_number(value):
+    if pd.isna(value):
+        return None
+    if isinstance(value, (int, np.integer)):
+        return int(value)
+    if isinstance(value, (float, np.floating)):
+        if float(value).is_integer():
+            return int(value)
+        return round(float(value), 1)
+    return value
+
+
+def build_recommendations_export(
+    forecast_path: str | Path,
+    month_start: pd.Timestamp,
+    month_end: pd.Timestamp,
+    now: dt.datetime,
+) -> Optional[Path]:
+    template_path = (
+        Path(__file__).resolve().parents[1]
+        / "Проверка чеков"
+        / "Анализ рассылок"
+        / "Рассылки по месяцам - все"
+        / "01.26 Январь 2026.xlsx"
+    )
+    if not template_path.exists():
+        print(f"Не найден шаблон рассылки: {template_path}")
+        return None
+    forecast_path = Path(forecast_path)
+    if not forecast_path.exists():
+        print(f"Не найден файл прогноза для рассылки: {forecast_path}")
+        return None
+    try:
+        forecast_df = pd.read_csv(forecast_path)
+    except Exception as exc:
+        print(f"Не удалось прочитать прогноз для рассылки: {exc}")
+        return None
+    if forecast_df.empty:
+        print("Прогноз пустой, рассылка не сформирована.")
+        return None
+
+    required_cols = {
+        "ORG_KSSS",
+        "date",
+        "Чеки дневные",
+        "Чеки ночные",
+        "Часы дневные",
+        "Часы ночные",
+        "Совокупное кол-во суточных чеков",
+        "Совокупное кол-во суточных часов",
+    }
+    missing = [col for col in required_cols if col not in forecast_df.columns]
+    if missing:
+        print(f"Не хватает колонок для рассылки: {missing}")
+        return None
+
+    forecast_df = forecast_df.copy()
+    forecast_df["ORG_KSSS"] = forecast_df["ORG_KSSS"].apply(normalize_ksss)
+    forecast_df["date"] = pd.to_datetime(forecast_df["date"], errors="coerce")
+    forecast_df = forecast_df.dropna(subset=["date"])
+    forecast_df = forecast_df[(forecast_df["date"] >= month_start) & (forecast_df["date"] <= month_end)]
+    if forecast_df.empty:
+        print("Нет данных прогноза в целевом месяце для рассылки.")
+        return None
+    forecast_df["day"] = forecast_df["date"].dt.day
+
+    cls_path = Path(__file__).resolve().parents[1] / "cls_2025_12_AZS.xlsx"
+    cls_cols = [
+        "КССС_union",
+        "НПО",
+        "ФИО_РУ",
+        "ФИО_ТМ_Агента",
+        "ФИО_менеджер_АЗС",
+        "Название_АЗС",
+    ]
+    meta_df = pd.DataFrame(columns=["KSSS_norm", "НПО", "РУ", "ТМ", "Менеджер АЗС", "Номер АЗС"])
+    if cls_path.exists():
+        try:
+            cls_df = pd.read_excel(cls_path, sheet_name="cls_AZS", usecols=cls_cols)
+        except ValueError:
+            cls_df = pd.read_excel(cls_path, sheet_name="cls_AZS")
+        missing_meta = [col for col in cls_cols if col not in cls_df.columns]
+        if missing_meta:
+            print(f"Не хватает колонок в cls_2025_12_AZS.xlsx: {missing_meta}")
+        else:
+            cls_df = cls_df[cls_cols].rename(columns={
+                "КССС_union": "KSSS_norm",
+                "ФИО_РУ": "РУ",
+                "ФИО_ТМ_Агента": "ТМ",
+                "ФИО_менеджер_АЗС": "Менеджер АЗС",
+                "Название_АЗС": "Номер АЗС",
+            })
+            cls_df["KSSS_norm"] = cls_df["KSSS_norm"].apply(normalize_ksss)
+            meta_df = cls_df.dropna(subset=["KSSS_norm"]).drop_duplicates("KSSS_norm")
+    else:
+        print(f"Не найден файл справочника АЗС: {cls_path}")
+
+    forecast_df = forecast_df.merge(meta_df, left_on="ORG_KSSS", right_on="KSSS_norm", how="left")
+
+    month_name = MONTH_NAMES.get(month_start.month, str(month_start.month))
+    header_title = (
+        "Рекомендации к планированию графиков сменности для сотрудников "
+        f"в должности 'Продавец', 'Старший продавец', 'Оператор АЗС' на {month_name} {month_start.year}"
+    )
+    wb = load_workbook(template_path)
+    ws = wb.active
+
+    days_in_month = month_len(month_start.year, month_start.month)
+    day_columns = []
+    for cell in ws[3]:
+        if isinstance(cell.value, int):
+            day_columns.append((int(cell.value), cell.column))
+    cols_to_delete = sorted([col for day, col in day_columns if day > days_in_month], reverse=True)
+    for col in cols_to_delete:
+        ws.delete_cols(col, 1)
+
+    ws["A1"].value = header_title
+
+    day_col_map = {}
+    for cell in ws[3]:
+        if isinstance(cell.value, int):
+            day_col_map[int(cell.value)] = cell.column
+
+    for day, col in day_col_map.items():
+        ws.cell(3, col).value = day
+        weekday = None
+        if day <= days_in_month:
+            weekday = WEEKDAY[dt.date(month_start.year, month_start.month, day).isoweekday()]
+        ws.cell(4, col).value = weekday
+
+    header_cells = {cell.value: cell.column for cell in ws[3] if cell.value is not None}
+    col_map = {
+        "НПО": header_cells.get("НПО"),
+        "РУ": header_cells.get("РУ"),
+        "ТМ": header_cells.get("ТМ"),
+        "Менеджер АЗС": header_cells.get("Менеджер АЗС"),
+        "Номер АЗС": header_cells.get("Номер АЗС"),
+        "КССС": header_cells.get("КССС"),
+        "Показатель": header_cells.get("Показатель"),
+        "Всего": header_cells.get("Всего"),
+        "Рекомендуемая численность": header_cells.get("Рекомендуемая численность"),
+    }
+    for key in ("Всего", "Рекомендуемая численность"):
+        col_idx = col_map.get(key)
+        if col_idx is None:
+            continue
+        in_merge = False
+        for merge_range in ws.merged_cells.ranges:
+            if merge_range.min_row <= 3 <= merge_range.max_row and merge_range.min_col <= col_idx <= merge_range.max_col:
+                in_merge = True
+                break
+        if not in_merge:
+            ws.merge_cells(start_row=3, end_row=4, start_column=col_idx, end_column=col_idx)
+
+    data_start_row = 5
+    max_col = ws.max_column
+    style_rows = []
+    row_heights = []
+    for idx in range(6):
+        src_row = data_start_row + idx
+        row_styles = []
+        for col in range(1, max_col + 1):
+            cell = ws.cell(src_row, col)
+            row_styles.append({
+                "font": copy(cell.font),
+                "fill": copy(cell.fill),
+                "border": copy(cell.border),
+                "alignment": copy(cell.alignment),
+                "number_format": cell.number_format,
+                "protection": copy(cell.protection),
+            })
+        style_rows.append(row_styles)
+        row_heights.append(ws.row_dimensions[src_row].height)
+
+    row_merges = [
+        r for r in ws.merged_cells.ranges
+        if r.min_row == data_start_row and r.max_row == data_start_row
+    ]
+    message_row = None
+    for row in ws.iter_rows(min_row=1, max_row=ws.max_row):
+        for cell in row:
+            if isinstance(cell.value, str) and "Просим заполнить анкету" in cell.value:
+                message_row = cell.row
+                break
+        if message_row:
+            break
+    if message_row is None:
+        message_row = ws.max_row + 1
+
+    if message_row > data_start_row:
+        ws.delete_rows(data_start_row, message_row - data_start_row)
+        message_row = data_start_row
+
+    indicator_map = [
+        ("Прогноз дневных чеков (дневная смена)", "Чеки дневные"),
+        ("Прогноз ночных чеков (ночная смена)", "Чеки ночные"),
+        ("Совокупная сумма часов для дневной смены", "Часы дневные"),
+        ("Совокупная сумма часов для ночной смены", "Часы ночные"),
+        ("Итого прогноз чеков на сутки", "Совокупное кол-во суточных чеков"),
+        ("Итого целевая сумма часов на сутки", "Совокупное кол-во суточных часов"),
+    ]
+
+    groups = list(forecast_df.groupby("ORG_KSSS", sort=True))
+    total_rows = len(groups) * len(indicator_map)
+    blank_rows = 1
+    if total_rows > 0:
+        ws.insert_rows(message_row, amount=total_rows + blank_rows)
+
+    data_end_row = data_start_row + total_rows - 1
+    if total_rows > 0:
+        for merge_range in list(ws.merged_cells.ranges):
+            if merge_range.max_row < data_start_row or merge_range.min_row > data_end_row:
+                continue
+            for row in range(merge_range.min_row, merge_range.max_row + 1):
+                for col in range(merge_range.min_col, merge_range.max_col + 1):
+                    ws.cell(row, col)
+            ws.unmerge_cells(str(merge_range))
+
+    for g_idx, (ksss, group) in enumerate(groups):
+        block_start = data_start_row + g_idx * len(indicator_map)
+        block_end = block_start + len(indicator_map) - 1
+        meta_row = group[["НПО", "РУ", "ТМ", "Менеджер АЗС", "Номер АЗС"]].iloc[0]
+        ksss_value = coerce_int(ksss)
+        if ksss_value is None:
+            try:
+                ksss_value = int(float(str(ksss).strip()))
+            except Exception:
+                ksss_value = ksss
+        for idx, (label, col_name) in enumerate(indicator_map):
+            row_idx = block_start + idx
+            for col in range(1, max_col + 1):
+                style = style_rows[idx][col - 1]
+                cell = ws.cell(row_idx, col)
+                cell.font = copy(style["font"])
+                cell.fill = copy(style["fill"])
+                cell.border = copy(style["border"])
+                cell.alignment = copy(style["alignment"])
+                cell.number_format = style["number_format"]
+                cell.protection = copy(style["protection"])
+            if row_heights[idx] is not None:
+                ws.row_dimensions[row_idx].height = row_heights[idx]
+
+            if col_map["Показатель"]:
+                ws.cell(row_idx, col_map["Показатель"]).value = label
+
+            day_series = pd.to_numeric(group.groupby("day", sort=True)[col_name].sum(), errors="coerce")
+            for day, col in day_col_map.items():
+                if day > days_in_month:
+                    ws.cell(row_idx, col).value = None
+                    continue
+                value = _format_number(day_series.get(day))
+                ws.cell(row_idx, col).value = value
+
+            if col_map["Всего"]:
+                total_value = _format_number(day_series.sum())
+                ws.cell(row_idx, col_map["Всего"]).value = total_value
+            if col_map["Рекомендуемая численность"]:
+                if idx == len(indicator_map) - 1:
+                    total_hours = day_series.sum()
+                    if pd.isna(total_hours):
+                        recommended = None
+                    else:
+                        recommended = int(math.floor(float(total_hours) / 164 + 0.5))
+                    ws.cell(row_idx, col_map["Рекомендуемая численность"]).value = recommended
+                else:
+                    ws.cell(row_idx, col_map["Рекомендуемая численность"]).value = None
+
+        for row_idx in range(block_start, block_end + 1):
+            if col_map["НПО"]:
+                ws.cell(row_idx, col_map["НПО"]).value = meta_row.get("НПО")
+            if col_map["РУ"]:
+                ws.cell(row_idx, col_map["РУ"]).value = meta_row.get("РУ")
+            if col_map["ТМ"]:
+                ws.cell(row_idx, col_map["ТМ"]).value = meta_row.get("ТМ")
+            if col_map["Менеджер АЗС"]:
+                ws.cell(row_idx, col_map["Менеджер АЗС"]).value = meta_row.get("Менеджер АЗС")
+            if col_map["Номер АЗС"]:
+                ws.cell(row_idx, col_map["Номер АЗС"]).value = meta_row.get("Номер АЗС")
+            if col_map["КССС"]:
+                ws.cell(row_idx, col_map["КССС"]).value = ksss_value
+
+    if total_rows > 0:
+        for row_idx in range(data_start_row, data_end_row + 1):
+            for merge_range in row_merges:
+                ws.merge_cells(
+                    start_row=row_idx,
+                    end_row=row_idx,
+                    start_column=merge_range.min_col,
+                    end_column=merge_range.max_col,
+                )
+
+        def _merge_identical(col_start: int, col_end: int) -> None:
+            if col_start is None or col_end is None:
+                return
+            current_value = None
+            current_start = data_start_row
+            for row_idx in range(data_start_row, data_end_row + 2):
+                if row_idx <= data_end_row:
+                    value = ws.cell(row_idx, col_start).value
+                    if isinstance(value, str) and not value.strip():
+                        value = None
+                else:
+                    value = None
+                if value != current_value:
+                    if current_value is not None and row_idx - current_start > 1:
+                        ws.merge_cells(
+                            start_row=current_start,
+                            end_row=row_idx - 1,
+                            start_column=col_start,
+                            end_column=col_end,
+                        )
+                    current_value = value
+                    current_start = row_idx
+
+        ru_col = col_map["РУ"]
+        ru_end_col = None
+        if ru_col is not None:
+            if ws.cell(3, ru_col + 1).value is None:
+                ru_end_col = ru_col + 1
+            else:
+                ru_end_col = ru_col
+
+        merge_targets = [
+            (col_map["НПО"], col_map["НПО"]),
+            (ru_col, ru_end_col),
+            (col_map["ТМ"], col_map["ТМ"]),
+            (col_map["Менеджер АЗС"], col_map["Менеджер АЗС"]),
+            (col_map["Номер АЗС"], col_map["Номер АЗС"]),
+            (col_map["КССС"], col_map["КССС"]),
+        ]
+        for col_start, col_end in merge_targets:
+            _merge_identical(col_start, col_end)
+
+    new_message_row = data_start_row + total_rows + blank_rows
+
+    if ws._images:
+        img = ws._images[0]
+        try:
+            px_side = 120
+            img.width = px_side
+            img.height = px_side
+            new_row = new_message_row - 1
+            new_col = 1
+            marker = AnchorMarker(col=new_col, colOff=0, row=new_row, rowOff=0)
+            emu = px_side * 9525
+            img.anchor = OneCellAnchor(_from=marker, ext=XDRPositiveSize2D(cx=emu, cy=emu))
+        except Exception:
+            pass
+
+    message_text = (
+        "Просим заполнить анкету обратной связи о предоставляемых рекомендациях к графикам сменности линейного персонала АЗС.\n"
+        "Для заполнения анкеты необходимо отсканировать QR-код с мобильного телефона."
+    )
+    ws.merge_cells(start_row=new_message_row, end_row=new_message_row, start_column=5, end_column=11)
+    message_set = False
+    for row in ws.iter_rows(min_row=new_message_row, max_row=min(new_message_row + 1, ws.max_row)):
+        for cell in row:
+            if isinstance(cell.value, str) and "Просим заполнить анкету" in cell.value:
+                cell.value = message_text
+                message_set = True
+                break
+        if message_set:
+            break
+    if not message_set:
+        target_cell = ws.cell(new_message_row, 5)
+        target_cell.value = message_text
+    target_cell = ws.cell(new_message_row, 5)
+    target_cell.font = copy(target_cell.font)
+    target_cell.font = target_cell.font.copy(italic=True)
+    target_cell.alignment = copy(target_cell.alignment)
+    target_cell.alignment = target_cell.alignment.copy(horizontal="left", vertical="bottom", wrap_text=True)
+    ws.row_dimensions[new_message_row].height = 35 * 0.75
+
+    if total_rows > 0:
+        for merge_range in list(ws.merged_cells.ranges):
+            if merge_range.min_row < data_end_row + 1:
+                continue
+            if (
+                merge_range.min_row == new_message_row
+                and merge_range.max_row == new_message_row
+                and merge_range.min_col == 5
+                and merge_range.max_col == 11
+            ):
+                continue
+            for row in range(merge_range.min_row, merge_range.max_row + 1):
+                for col in range(merge_range.min_col, merge_range.max_col + 1):
+                    ws.cell(row, col)
+            ws.unmerge_cells(str(merge_range))
+
+    last_keep_row = new_message_row + 1
+    if ws.max_row > last_keep_row:
+        ws.delete_rows(last_keep_row + 1, ws.max_row - last_keep_row)
+
+    export_root = Path(RESULT_PREDICTIONS).parents[1] / "Рекомендации формат"
+    export_dir = export_root / f"Рекомендации {month_name} {month_start.year}"
+    export_dir.mkdir(parents=True, exist_ok=True)
+    stamp = now.strftime("%d.%m.%Y %H.%M")
+    export_name = f"{month_start.month:02d}.{month_start.year % 100:02d} {month_name} {month_start.year} ({stamp}).xlsx"
+    export_path = export_dir / export_name
+    wb.save(export_path)
+    return export_path
+
+
 def print_mape_stats(path: str) -> None:
     try:
         df = pd.read_csv(path)
@@ -1421,7 +1827,17 @@ if stop_requested():
     print(f'--- Прогноз остановлен пользователем ---\n')
 else:
     print(f'--- Программа отработала! ---\n')
-print(f'Файл прогноза: {out_csv}')
-print(f'Файл MAPE: {mape_out_csv}')
-print_mape_stats(mape_out_csv)
-print(f'Для выполнения потребовалось {round(time.time() - start_all, 0)} сек.')
+    print(f'Файл прогноза: {out_csv}')
+    print(f'Файл MAPE: {mape_out_csv}')
+    print_mape_stats(mape_out_csv)
+    recommendations_path = None
+    if not stop_requested():
+        recommendations_path = build_recommendations_export(
+            out_csv,
+            target_month_start,
+            target_month_end,
+            now,
+        )
+    if recommendations_path is not None:
+        print(f"Файл рассылки рекомендаций: {recommendations_path}")
+    print(f'Для выполнения потребовалось {round(time.time() - start_all, 0)} сек.')
