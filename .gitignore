@@ -5,3 +5,4 @@ __pycache__/
 trainer_output/
 .DS_Store
 *.txt
+!requirements.txt

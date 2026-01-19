@@ -1,0 +1,8 @@
+numpy
+pandas
+openpyxl
+matplotlib
+scikit-learn
+statsmodels
+# Опционально, для N-BEATS (torch)
+torch
